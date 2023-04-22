@@ -1,0 +1,51 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.login-section{
+    @include Border(13px);
+    @include Flex(column, center, center);
+    background-color: $--light;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: absolute;
+    top: 260px;
+    left: 128px;
+    right: 168px;
+    padding: 31px 300px  100px 300px;
+    z-index: 999;
+    @media (max-width: 576px){
+        top: 170px;
+        left: 29px;
+        right: 28px; 
+        padding: 23px 19px 40px 19px;   
+    }
+    h1{
+        text-align: center;
+        margin: 94px 0 46px 0;
+        @include Font('Inter', 600, 34px);
+        @media (max-width: 576px){
+            margin: 0 0 23px 0;   
+            @include Font('Inter', 600, 18px);
+        }
+    }
+    .form-check{
+        width: 100%
+    }
+    .login-btn{
+        @include Border(13px);
+        background-color: $--orange;
+        color: $--light;
+        border: none;
+        @include Flex(row, center, center);
+        padding-top: 13px;
+    }
+    .register{
+        @include Flex(row, center, center);
+        margin-top: 71px;
+        gap: 10px;
+        color: $--gray;
+        @media (max-width: 576px){
+            @include Flex(column, center, center);
+        }
+    }
+}

@@ -1,0 +1,144 @@
+
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+header {
+    background-color: $--orange;
+    padding: 20px 0 280px 0;
+    .image-box{
+        background-color: $--light;
+        @include Border(50px);
+        width: 60px;
+        height: 60px;
+        @include Flex(row, center, center);
+        @media (max-width: 576px){
+            width: 40px;
+            height: 40px;        
+        }
+        img{
+            width: 30px;
+            height: 30px; 
+        }
+    }
+    .buttons-group { 
+        .menu-box {
+            @media (max-width: 576px){
+                display: none;
+            }
+            button {
+                @include Flex(row, none, center);
+                @include Border(50.1425px);
+                gap: 11px;
+                background-color: $--light;
+                border: none;
+                color: $--orange;
+                padding: 4px 25px 4px 8px;
+
+                .menu-icon-box {
+                    background-color: $--orange;
+                    @include Border(50px);
+                    width: 30px;
+                    height: 30px;
+                    @include Flex(row, center, center);
+
+                    i {
+                        color: $--light;
+                    }
+                }
+            }
+        }
+        .login-box{
+            @media (max-width: 576px){
+                display: none;
+            }
+            button {
+                @include Flex(row, none, center);
+                @include Border(50.1425px);
+                gap: 13px;
+                background-color: $--light;
+                border: none;
+                color: $--orange;
+                padding: 4px 35px 4px 8px;
+
+                .login-icon-box {
+                    background-color: $--orange;
+                    @include Border(50px);
+                    width: 30px;
+                    height: 30px;
+                    @include Flex(row, center, center);
+
+                    i {
+                        color: $--light;
+                    }
+                }
+            }
+        }
+        .register-box{
+            @media (max-width: 576px){
+                display: none;
+            }
+            button {
+                @include Flex(row, none, center);
+                gap: 9px;
+                background-color: $--dark;
+                border: none;
+                color: $--light;
+                padding: 4px 20px 4px 8px;
+                @include Border(50.1425px);
+                .register-icon-box {
+                    background-color: $--light;
+                    @include Border(50px);
+                    width: 30px;
+                    height: 30px;
+                    @include Flex(row, center, center);
+
+                    i {
+                        color: $--dark;
+                    }
+                    a{
+                            color: $--light;
+                    }
+                }
+            }
+        }
+        .mobile-menu{
+            display: none;
+            @media (max-width: 576px){
+                display: block;
+                button{
+                    @include Flex(row, none, center);
+                    @include Border(50.1425px);
+                    gap: 11px;
+                    background-color: $--light;
+                    border: none;
+                    color: $--orange;
+                    padding: 4px;
+                }
+                .menu-icon-box {
+                    background-color: $--light;
+                    @include Border(50px);
+                    width: 30px;
+                    height: 30px;
+                    @include Flex(row, center, center);
+                    i {
+                        color: $--orange;
+                    }
+                }
+            }
+        }
+    }
+    .penguin-logo-background{
+        position: absolute;
+        top: 50px;
+        left: 570px;
+        width: 334px;
+        height: 300px;
+        @media (max-width: 576px){
+            top: 0px;
+            left: 130px;
+            width: 250px;
+            height: 228ox;
+        }
+    }
+    
+}

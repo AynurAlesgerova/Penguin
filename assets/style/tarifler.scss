@@ -1,0 +1,115 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.tarifler{
+    margin-bottom: 80px;
+    .tarifler-info{
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        @media (max-width: 576px){
+            @include Flex(column, center, center);       
+        }
+        .logo-box{
+            width: 30%;
+            background-color: $--dark;
+            padding: 50px 50px;
+            color: $--light;
+            position: relative;
+            @media (max-width: 576px){
+                width: 100%; 
+            }
+            .dollar{
+                padding: 10px 20px;
+                background-color: $--light;
+                @include Border(50px);
+
+            }
+            .img{
+                position: relative;
+                padding-top: 30px;
+                #logo{
+                    position: absolute;
+                    top: 70px;
+                    left: 40px;
+                }
+            }
+            #coin{
+                position: absolute;
+                left: 260px;
+                top: 160px;
+                    @media (max-width: 576px){
+                        left: 260px;
+                        top: 150px;    
+                    }
+            }
+        }
+        .main-info{
+            width: 70%;
+            @media (max-width: 576px){
+                width: 100%; 
+                }
+            h2{
+                color: $--orange;
+                
+            }
+            p{
+                @include Font('Inter', 400, 16px);
+                line-height: 147.52%;
+            }
+        }
+    }
+    .prices{
+        h1{
+            color: $--orange;
+            @include Font('Inter', 600, 34px);
+        }
+        .delivery{
+
+            .branch-delivery{
+                @include Border(13px);
+                padding: 10px  ;  
+                @include Flex(row,center,center);     
+                border: 2px solid $--orange;
+                color: $--orange;
+                width: 208px;
+                height: 94px
+            }
+            .address-delivery{
+                @include Border(13px);
+                @include Flex(row,center,center);     
+                padding: 10px;       
+                border: 2px solid $--orange;
+                color: $--orange;
+                width: 208px;
+                height: 94px
+            }
+        }
+        .branches{
+            .branch{
+                padding: 10px;
+                border: 2px solid $--dark;
+                @include Border(13px);
+
+            }
+        }
+        .price-list{
+            padding: 10px;
+            .price{
+                border-bottom: 2px solid $--orange;
+                width: 700px;
+                padding: 10px;
+                @media (max-width: 576px){
+                    width: 100%;      
+                }
+                #each-price{
+                    color: $--orange;
+                    @include Font('Inter', 600, 18px);
+                }
+            }
+            p{
+                @include Font('Inter', 600, 20px);
+
+            }
+        }
+    }
+}

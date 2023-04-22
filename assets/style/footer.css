@@ -1,0 +1,199 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Sans-Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: none;
+  margin-top: 700px;
+}
+@media (max-width: 576px) {
+  .footer {
+    margin-top: 500px;
+  }
+}
+.footer .contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+}
+@media (max-width: 576px) {
+  .footer .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: none;
+  }
+}
+.footer .contact-section .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+  gap: 110px;
+  width: 60%;
+  padding: 20px 60px 0 60px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+@media (max-width: 576px) {
+  .footer .contact-section .contact {
+    width: 100%;
+    order: 2;
+    padding: 20px 20px 0 20px;
+    gap: 50px;
+  }
+}
+.footer .contact-section .contact .contact-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: none;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+@media (max-width: 576px) {
+  .footer .contact-section .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: none;
+  }
+}
+.footer .contact-section .contact .contact-container .contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: flex-start;
+  gap: 15px;
+}
+@media (max-width: 576px) {
+  .footer .contact-section .contact .contact-container .contact-section {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-bottom: 20px;
+  }
+}
+.footer .contact-section .contact .contact-container .contact-section .number {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  gap: 6px;
+}
+.footer .contact-section .contact .contact-container .contact-section .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  gap: 6px;
+}
+.footer .contact-section .contact .contact-container .questions-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .contact-section .contact .contact-container .questions-section .question {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  gap: 6px;
+}
+.footer .contact-section .social-media {
+  background-color: #FF6600;
+  width: 40%;
+  padding: 100px 60px;
+  color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .footer .contact-section .social-media {
+    width: 100%;
+    order: 1;
+    padding: 50px 30px;
+  }
+}
+.footer .contact-section .social-media .icon-facebook {
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contact-section .social-media .icon-facebook .background-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+.footer .contact-section .social-media .icon-facebook .facebook {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+.footer .contact-section .social-media .icon-instagram {
+  position: absolute;
+  left: 60px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .contact-section .social-media .icon-instagram .background-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+.footer .contact-section .social-media .icon-instagram .instagram {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+}
+.footer .developed-by {
+  text-align: center;
+  padding: 30px 0 70px 0;
+}
+@media (max-width: 576px) {
+  .footer .developed-by {
+    display: none;
+  }
+}/*# sourceMappingURL=footer.css.map */
