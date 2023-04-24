@@ -4,20 +4,7 @@
 
 
 
-.page-text{
-    position: absolute;
-    top: 181px;
-    left: 462px;
-    color: $--light;
-    z-index: 999;
-    @include Font('Inter', 600, 34px);
-    line-height: 41px;
-    @media (max-width: 576px){
-        top:110px;
-        left: 130px;
-        @include Font('Inter', 600, 18px);
-    }
-}
+
 .register-section{
     @include Border(13px);
     @include Flex(column, center, center);

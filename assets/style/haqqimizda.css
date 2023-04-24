@@ -1,0 +1,152 @@
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Sans-Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .haqqimizda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.haqqimizda h2 {
+  color: #FF6600;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+}
+.haqqimizda .haqqimizda-img {
+  width: 50%;
+}
+@media (max-width: 576px) {
+  .haqqimizda .haqqimizda-img {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .haqqimizda .haqqimizda-img img {
+    width: 100%;
+  }
+}
+
+.haqqimizda-info {
+  padding: 250px 240px;
+  position: relative;
+  background-color: #EEEEEE;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info {
+    padding: 70px 40px;
+  }
+}
+.haqqimizda-info h1 {
+  color: #FF6600;
+  z-index: 999;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+}
+.haqqimizda-info p {
+  z-index: 999;
+}
+.haqqimizda-info .icon-1 {
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+.haqqimizda-info .icon-2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+.haqqimizda-info .icon-3 {
+  position: absolute;
+  top: 0;
+  right: 300px;
+}
+.haqqimizda-info .haqqimizda-logo-img {
+  position: absolute;
+  bottom: 200px;
+  left: 550px;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info .haqqimizda-logo-img {
+    width: 190px;
+    height: 190px;
+    left: 90px;
+    top: 40px;
+  }
+}
+.haqqimizda-info .haqqimizda-letter {
+  position: absolute;
+  bottom: 70px;
+  left: 300px;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info .haqqimizda-letter {
+    width: 300px;
+    height: 90px;
+    left: 50px;
+    bottom: 0px;
+  }
+}
+.haqqimizda-info .car-icon {
+  position: absolute;
+  bottom: 90px;
+  left: 230px;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info .car-icon {
+    width: 35px;
+    height: 22px;
+    left: 15px;
+    bottom: 20px;
+  }
+}
+.haqqimizda-info .basket-icon {
+  position: absolute;
+  bottom: 90px;
+  right: 190px;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info .basket-icon {
+    width: 35px;
+    height: 22px;
+    right: 15px;
+    bottom: 20px;
+  }
+}
+.haqqimizda-info .box-icon {
+  position: absolute;
+  top: 30px;
+  left: 47%;
+}
+@media (max-width: 576px) {
+  .haqqimizda-info .box-icon {
+    width: 25px;
+    height: 22px;
+  }
+}/*# sourceMappingURL=haqqimizda.css.map */

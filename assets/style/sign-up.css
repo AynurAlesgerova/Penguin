@@ -22,27 +22,6 @@ a {
   text-decoration: none;
 }
 
-.page-text {
-  position: absolute;
-  top: 181px;
-  left: 462px;
-  color: #fff;
-  z-index: 999;
-  font-family: "Inter";
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 41px;
-}
-@media (max-width: 576px) {
-  .page-text {
-    top: 110px;
-    left: 130px;
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 18px;
-  }
-}
-
 .register-section {
   border-radius: 13px;
   -webkit-border-radius: 13px;

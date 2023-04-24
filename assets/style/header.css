@@ -22,6 +22,28 @@ a {
   text-decoration: none;
 }
 
+.page-text {
+  position: absolute;
+  top: 181px;
+  left: 462px;
+  color: #fff;
+  z-index: 999;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .page-text {
+    top: 110px;
+    left: 50px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
 header {
   background-color: #FF6600;
   padding: 20px 0 280px 0;
