@@ -1,0 +1,345 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+@media screen and (max-width: 576px){
+    header{
+        .image-box{
+            width: 40px;
+            height: 40px;    
+        }
+        .buttons-group{
+            .menu-box {
+                display: none;
+            }
+            .login-box{
+                display: none;
+
+            }
+            .register-box{
+                display: none;
+            }
+            .mobile-menu{
+                    display: block;
+                    button{
+                        @include Flex(row, none, center);
+                        @include Border(50.1425px);
+                        gap: 11px;
+                        background-color: $--light;
+                        border: none;
+                        color: $--orange;
+                        padding: 4px;
+                    }
+                    .menu-icon-box {
+                        background-color: $--light;
+                        @include Border(50px);
+                        width: 30px;
+                        height: 30px;
+                        @include Flex(row, center, center);
+                        i {
+                            color: $--orange;
+                        }
+                    }
+            }
+        }
+        .penguin-logo-background{
+            top: 0px;
+            left: 70px;
+            width: 250px;
+            height: 228px;
+        }
+    }
+    .xidmetler{
+        .xidmetler-info{
+                // @include Flex(column, center, center);       
+                display: flex;
+                flex-direction: column;
+                .logo-box{
+                    width: 100%; 
+                }
+                .main-info{
+                    width: 100%; 
+                }
+        }
+    }
+    .forget-password-section{
+            top: 137px;
+            left: 29px; 
+            right: 28px;  
+            padding: 23px 19px 50px 19px;
+            .register{
+                    @include Flex(column, center, center);
+            }
+    }
+    .haqqimizda{
+            @include Flex(column, center, center);
+            .haqqimizda-img{
+                    width: 100%;
+                    img{
+                            width: 100%;
+                    }
+            }
+    }
+    .haqqimizda-info{
+            padding: 70px 40px ;
+            .haqqimizda-logo-img{    
+                    width: 190px;
+                    height: 190px;  
+                    left: 90px;  
+                    top: 40px;    
+            }
+            .haqqimizda-letter{
+                    width: 300px;
+                    height: 90px;  
+                    left: 50px;
+                    bottom: 0px;      
+            }
+            .car-icon{
+                    width: 35px;
+                    height: 22px;  
+                    left: 15px;
+                    bottom: 20px;      
+            }
+            .basket-icon{
+                    width: 35px;
+                    height: 22px;  
+                    right:  15px;
+                    bottom: 20px;      
+            }
+            .box-icon{
+                    width: 25px;
+                    height: 22px;      
+            }
+    }
+    .login-section{
+        top: 170px;
+        left: 29px;
+        right: 28px; 
+        padding: 23px 19px 40px 19px;  
+        h1{
+                margin: 0 0 23px 0;   
+                @include Font('Inter', 600, 18px);
+        } 
+        .register{
+                @include Flex(column, center, center);
+        }
+    }
+    .register-section{
+        top: 170px;  
+    }
+    .tarifler{
+        .tarifler-info{
+                @include Flex(column, center, center);  
+                .logo-box{
+                        width: 100%; 
+                        #coin{
+                                left: 260px;
+                                top: 150px;    
+                        }
+                } 
+                .main-info{
+                        width: 100%; 
+
+                }    
+        }
+        .prices{
+                .price-list{
+                        .price{
+                            width: 100%;      
+                        }
+                }
+        }
+    }
+    .footer{
+       margin-top: 500px;
+       .contact-section{
+        @include Flex(column, space-between, none);
+        .contact {
+                width: 100%;
+                order: 2;
+                padding: 20px 20px 0 20px;
+                gap: 50px;
+                .contact-container{
+                        @include Flex(column, space-between, none);
+                        .contact-section{
+                                box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+                                margin-bottom: 20px;
+                        }
+                }
+        }
+        .social-media{
+                width: 100%;
+                order: 1;
+                padding: 50px 30px;
+        }
+       }
+       .developed-by{
+        display: none;
+       }
+
+    }
+    .ana-sehife-text{
+        top: 100px;
+        left: 20px;    
+        @include Font('Inter', 400, 12px);
+    }
+    .calculator{
+        @include Flex(column, none, center) ;
+        display: block !important;
+        .calculator-info{
+            padding: 20px 20px 0 20px;
+            width: 100%;
+            .calc-logo-img{
+                width: 40px;
+                height: 40px; 
+            }
+            .calc-img{
+                img{
+
+                        width: 170px;
+                        height: 195px;
+                }
+            }
+        }
+        .calculations{
+            width: 100%;
+            padding: 20px;
+            .select-form{
+                width: 370px;
+            }
+        }
+    }
+    .advantages{
+        width: 100%;
+        // @include Flex(column, center, center);
+        display: flex !important;
+        flex-direction: column !important;
+        .advantage-info{
+            width: 100%;
+            .adv-logo-img{
+                width: 40px;
+                height: 40px; 
+            }
+        }
+        .advantages-section{
+                width: 100%;
+                padding: 20px 10px;
+                @include Flex(column, center, center) ;
+                .advantage{
+                        width: 100%;
+                        gap:0;
+                        .logo{
+                                width: 40px;
+                                height: 40px;
+                        }
+                }
+                :nth-child(1){
+                        padding: 5px;
+                    }
+                    :nth-child(2){
+                        padding: 5px;
+                    }
+                    :nth-child(3){
+                        padding: 5px;
+                    }
+        }
+    }
+    .work{
+        @include Flex(column, center, center);
+        .how-to-work-info{
+                width: 100%;
+                .work-logo-img{
+                        width: 40px;
+                height: 40px;
+                }
+        }
+        .steps{
+                width: 100%;
+                .step{
+                        .step-logo{
+                                width: 40px;
+                                height: 40px;
+                        }
+                }
+        }
+    }
+    .latest-news{
+        .news{
+                .some-news{
+                        .logo{
+                                width: 40px;
+                                height: 40px;
+                                img{
+                                        width: 20px;
+                                        height: 20px;
+                                }
+                        }
+                }
+        }
+    }
+    .example-sites{
+        .sites{
+                display: flex;
+                overflow-x: scroll;
+        }
+    }
+
+    .balance-services{
+        display: flex;
+        flex-direction: column !important;
+        .menu-bar{
+                width: 100%;
+                padding: 10px 0;
+                .menu{
+                        display: none !important;
+                }
+        }
+        .balance-transactions{
+                display: flex;
+                padding: 20px;
+                width: 100%;
+                .head{
+                        display: flex;
+                        flex-direction: column !important;
+                        align-items: flex-start !important;
+                        gap: 20px;
+                        .headline{
+                                display: none;
+                        }
+                        .headline-responsive{
+                                display: block;
+                                @include Font('Inter', 600, 18px);
+                        }
+                }
+                .services{
+                flex-direction: column !important;
+                gap: 20px;
+                        h5{
+                                @include Font('Inter', 600, 18px);
+                        }
+                        .balance-services{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        }
+                        .increase-balance{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                .buttons{
+                                        flex-direction: column !important;
+                                        .enter-amount{
+                                                width: 100%;
+                                                padding: 10px 80px;
+                                        }
+                                        .increase-btn{
+                                                width: 100%;
+                                                padding: 10px 100px;
+                                        }
+                                }
+                        }
+        }
+        }
+    }
+}
+
+
+

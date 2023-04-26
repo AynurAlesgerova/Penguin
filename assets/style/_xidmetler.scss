@@ -6,18 +6,12 @@
     margin-bottom: 80px;
     .xidmetler-info{
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-        @media (max-width: 576px){
-            @include Flex(column, center, center);       
-        }
         .logo-box{
             width: 30%;
             background-color: $--dark;
             padding: 50px 50px;
             color: $--light;
             position: relative;
-            @media (max-width: 576px){
-                width: 100%; 
-            }
             .image{
                 padding: 12px 10px ;
                 background-color: $--light;
@@ -31,9 +25,6 @@
         }
         .main-info{
             width: 70%;
-            @media (max-width: 576px){
-                width: 100%; 
-                }
             h2{
                 color: $--orange;
                 

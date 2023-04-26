@@ -2,10 +2,7 @@
 @import '../sass-utils/mixins';
 @import '../sass-utils/_variable.scss';
 
-
-
-
-.register-section{
+.login-section{
     @include Border(13px);
     @include Flex(column, center, center);
     background-color: $--light;
@@ -14,17 +11,17 @@
     top: 260px;
     left: 128px;
     right: 168px;
-    padding: 31px 40px;
+    padding: 31px 300px  100px 300px;
     z-index: 999;
-   margin-bottom: 500px;
-   @media (max-width: 576px){
-    top: 170px;  
-}
     h1{
         text-align: center;
-        margin-bottom: 46px;
+        margin: 94px 0 46px 0;
+        @include Font('Inter', 600, 34px);
     }
-    .register-btn{
+    .form-check{
+        width: 100%
+    }
+    .login-btn{
         @include Border(13px);
         background-color: $--orange;
         color: $--light;
@@ -32,12 +29,10 @@
         @include Flex(row, center, center);
         padding-top: 13px;
     }
-    .login{
+    .register{
         @include Flex(row, center, center);
-        margin-top: 94px;
+        margin-top: 71px;
         gap: 10px;
         color: $--gray;
     }
-  
 }
-

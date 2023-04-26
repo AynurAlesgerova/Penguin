@@ -1,0 +1,35 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.menu-bar{
+    width: 15%;
+    .account{
+        .logo{
+            width: 50px;
+            height: 40px;
+        }
+        .account-info{
+            .name{
+                color: $--orange;
+                @include Font('Inter', 600, 18px);
+            }
+            .customer-code{
+                @include Font('Inter', 600, 18px);
+            }
+        }
+    }
+    .menu{
+        .menu-logo{
+                background-color: $--orange;
+                @include Border(50px);
+                width: 26px;
+                height: 26px;
+                @include Flex(row, center, center);
+                img{
+                    width: 10px;
+                    height: 10px; 
+                }
+        }
+    }
+}

@@ -6,18 +6,13 @@
     margin-bottom: 80px;
     .tarifler-info{
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-        @media (max-width: 576px){
-            @include Flex(column, center, center);       
-        }
         .logo-box{
             width: 30%;
             background-color: $--dark;
             padding: 50px 50px;
             color: $--light;
             position: relative;
-            @media (max-width: 576px){
-                width: 100%; 
-            }
+          
             .dollar{
                 padding: 10px 20px;
                 background-color: $--light;
@@ -37,17 +32,10 @@
                 position: absolute;
                 left: 260px;
                 top: 160px;
-                    @media (max-width: 576px){
-                        left: 260px;
-                        top: 150px;    
-                    }
             }
         }
         .main-info{
             width: 70%;
-            @media (max-width: 576px){
-                width: 100%; 
-                }
             h2{
                 color: $--orange;
                 
@@ -64,7 +52,6 @@
             @include Font('Inter', 600, 34px);
         }
         .delivery{
-
             .branch-delivery{
                 @include Border(13px);
                 padding: 10px  ;  
@@ -98,9 +85,6 @@
                 border-bottom: 2px solid $--orange;
                 width: 700px;
                 padding: 10px;
-                @media (max-width: 576px){
-                    width: 100%;      
-                }
                 #each-price{
                     color: $--orange;
                     @include Font('Inter', 600, 18px);

@@ -3,9 +3,7 @@
 @import '../sass-utils/_variable.scss';
 
 .haqqimizda{
-    @media (max-width: 576px){
-        @include Flex(column, center, center);
-    }
+   
     h2{
         color: $--orange;
         text-align: center;
@@ -13,14 +11,6 @@
     }
     .haqqimizda-img{
         width: 50%;
-        @media (max-width: 576px){
-            width: 100%;
-        }
-        img{
-            @media (max-width: 576px){
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -28,15 +18,11 @@
     padding: 250px 240px ;
     position: relative;
     background-color: $--lightgray;
-    @media (max-width: 576px){
-        padding: 70px 40px ;
-    }
     h1{
         color: $--orange;
         z-index: 999;
         text-align: center;
         @include Font('Inter', 600, 18px);
-
     }
     p{
         z-index: 999;
@@ -59,54 +45,27 @@
     .haqqimizda-logo-img{
         position: absolute;
         bottom: 200px;
-        left: 550px;    
-        @media (max-width: 576px){
-            width: 190px;
-            height: 190px;  
-            left: 90px;  
-            top: 40px;    
-        }
+        left: 550px;
     }
     .haqqimizda-letter{
         position: absolute;
         bottom: 70px;
         left: 300px;
-        @media (max-width: 576px){
-            width: 300px;
-            height: 90px;  
-            left: 50px;
-            bottom: 0px;      
-        }
     }
     .car-icon{
         position: absolute;
         bottom: 90px;
         left: 230px;
-        @media (max-width: 576px){
-            width: 35px;
-            height: 22px;  
-            left: 15px;
-            bottom: 20px;      
-        }
     }
     .basket-icon{
         position: absolute;
         bottom: 90px;
         right: 190px;
-        @media (max-width: 576px){
-            width: 35px;
-            height: 22px;  
-            right:  15px;
-            bottom: 20px;      
-        }
+       
     }
     .box-icon{
         position: absolute;
         top: 30px;
         left: 47%;
-        @media (max-width: 576px){
-            width: 25px;
-            height: 22px;      
-        }
     }
 }
