@@ -11,6 +11,7 @@
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 * {
   margin: 0;
   padding: 0;
@@ -1161,6 +1162,8 @@ a {
 }
 
 .menu-bar {
+  display: flex;
+  justify-content: start !important;
   width: 15%;
 }
 .menu-bar .account .logo {
@@ -1620,6 +1623,179 @@ a {
   text-decoration: none;
 }
 
+.baglamalarim .baglamalarim-section {
+  width: 85%;
+  padding: 20px;
+  background-color: #EEEEEE;
+}
+.baglamalarim .baglamalarim-section .make-order-btn button {
+  background-color: #fff;
+  width: 155px;
+  height: 50px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+  color: #FF6600;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+}
+.baglamalarim .baglamalarim-section .make-order-btn button .icon {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.baglamalarim .baglamalarim-section .make-order-btn button .icon img {
+  width: 10px;
+  height: 10px;
+}
+.baglamalarim .baglamalarim-section .baglama-sayi {
+  padding: 9px 20px;
+  border: 2px solid #000000;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.baglamalarim .baglamalarim-section .table {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.baglamalarim .baglamalarim-section .table .titles {
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 13px 13px 0 0;
+  -webkit-border-radius: 13px 13px 0 0;
+  -moz-border-radius: 13px 13px 0 0;
+  -ms-border-radius: 13px 13px 0 0;
+  -o-border-radius: 13px 13px 0 0;
+}
+.baglamalarim .baglamalarim-section .table .titles .col {
+  border-right: 1px solid #fff;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row {
+  width: 100%;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .insure-btn {
+  background-color: #4CB71A;
+  width: 105px;
+  height: 35px;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .open-detail {
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .open-detail img {
+  width: 20px;
+  height: 20px;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .details {
+  width: 100%;
+  padding: 20px;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .details .products {
+  width: 48%;
+  background-color: #FF6600;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+}
+.baglamalarim .baglamalarim-section .table .baglamalarim-row .details .history {
+  width: 48%;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+}
+.baglamalarim .baglamalarim-section .pages .previous {
+  width: 120px;
+  height: 50px;
+  background-color: #E4E4E4;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #8B8B8B;
+  border: none;
+}
+.baglamalarim .baglamalarim-section .pages .next {
+  width: 120px;
+  height: 50px;
+  background-color: #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #fff;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Sans-Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 576px) {
   header .image-box {
     width: 40px;
@@ -1974,5 +2150,15 @@ a {
   .balance-services .balance-transactions .services .increase-balance .buttons .increase-btn {
     width: 100%;
     padding: 10px 100px;
+  }
+  .baglamalarim {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .baglamalarim .menu-bar {
+    width: 100%;
+  }
+  .baglamalarim .baglamalarim-section {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

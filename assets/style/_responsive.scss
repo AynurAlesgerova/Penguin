@@ -339,6 +339,16 @@
         }
         }
     }
+    .baglamalarim{
+        display: flex;
+        flex-direction: column !important;
+        .menu-bar{
+                width: 100%;
+        }
+        .baglamalarim-section{
+                width: 100%;
+        }
+    }
 }
 
 

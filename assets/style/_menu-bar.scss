@@ -3,6 +3,8 @@
 @import '../sass-utils/_variable.scss';
 
 .menu-bar{
+    display: flex;
+    justify-content: start !important;
     width: 15%;
     .account{
         .logo{

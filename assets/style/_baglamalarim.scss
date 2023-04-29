@@ -1,0 +1,124 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.baglamalarim{
+   
+    .baglamalarim-section{
+        width: 85%;
+        padding: 20px;
+        background-color: $--lightgray;
+        .make-order-btn{
+            button{
+                background-color: $--light;
+                width: 155px;
+                height: 50px;
+                @include Border(13px);
+                border: none;
+                color: $--orange;
+                @include Font('Inter', 600, 20px);
+                .icon{
+                    background-color: $--orange;
+                    @include Border(50px);
+                    width: 26px;
+                    height: 26px;
+                    @include Flex(row, center, center);
+                    img{
+                        width: 10px;
+                        height: 10px; 
+                    }
+                
+                }
+            }
+        }
+        .baglama-sayi{
+            padding: 9px 20px;
+            border: 2px solid $--dark;
+            @include Border(13px);
+
+        }
+        .table{
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            .titles{
+                color: $--light;
+                background-color: $--orange;
+                @include Border(13px 13px 0 0);
+                .col{
+                    border-right: 1px solid $--light;
+                    // :nth-child(4) {
+                    //     border-right: 1px solid $--orange;
+                    // }
+                }
+            }
+           .baglamalarim-row{
+            // :nth-child(odd) {
+            //     background-color: $--light;
+            // }
+            // :nth-child(even) {
+            //     background-color: $--lightgray;
+            // }
+            width: 100%;
+            .col{
+                .insure-btn{
+                    background-color: $--green;
+                    width: 105px;
+                    height: 35px;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Flex(row, center, center);
+                }
+                .open-detail{
+                    background-color: $--light;
+                    @include Border(50px);
+                    width: 35px;
+                    height: 35px;
+                    @include Flex(row, center, center);
+                    img{
+                        width: 20px;
+                        height: 20px; 
+                    }
+                    
+                }  
+            }
+            .details{
+                width: 100%;
+                padding: 20px;
+                .products{
+                    width: 48%;
+                    background-color: $--orange;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                }
+                .history{
+                    width: 48%;
+                    background-color: $--dark;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                }
+            }
+           }
+        }
+        .pages{
+            .previous{
+                width: 120px;
+                height: 50px;
+                background-color: #E4E4E4;
+                @include Border(13px);
+                color:  #8B8B8B;
+                border: none;
+            }
+            .next{
+                width: 120px;
+                height: 50px;
+                background-color: $--orange;
+                @include Border(13px);
+                color:  $--light;
+                border: none;
+    
+            }
+        }
+    }
+}
