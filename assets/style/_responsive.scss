@@ -3,6 +3,7 @@
 @import '../sass-utils/_variable.scss';
 
 @media screen and (max-width: 576px){
+//----- Header -------
     header{
         .image-box{
             width: 40px;
@@ -49,6 +50,8 @@
             height: 228px;
         }
     }
+
+//----- Xidmetler -------
     .xidmetler{
         .xidmetler-info{
                 // @include Flex(column, center, center);       
@@ -62,6 +65,8 @@
                 }
         }
     }
+
+//----- Sifremi unuttum -------
     .forget-password-section{
             top: 137px;
             left: 29px; 
@@ -71,6 +76,8 @@
                     @include Flex(column, center, center);
             }
     }
+
+//----- Haqqimizda -------
     .haqqimizda{
             @include Flex(column, center, center);
             .haqqimizda-img{
@@ -111,6 +118,8 @@
                     height: 22px;      
             }
     }
+
+//----- Daxil ol -------
     .login-section{
         top: 170px;
         left: 29px;
@@ -124,9 +133,13 @@
                 @include Flex(column, center, center);
         }
     }
+
+//----- Qeydiyyat -------
     .register-section{
         top: 170px;  
     }
+
+//----- Traifler -------
     .tarifler{
         .tarifler-info{
                 @include Flex(column, center, center);  
@@ -150,6 +163,8 @@
                 }
         }
     }
+
+//----- Footer -------
     .footer{
        margin-top: 500px;
        .contact-section{
@@ -178,6 +193,8 @@
        }
 
     }
+
+//----- Ana sehife -------
     .ana-sehife-text{
         top: 100px;
         left: 20px;    
@@ -284,20 +301,16 @@
         }
     }
 
+//----- Balans xidmetleri -------
     .balance-services{
         display: flex;
         flex-direction: column !important;
-        .menu-bar{
-                width: 100%;
-                padding: 10px 0;
-                .menu{
-                        display: none !important;
-                }
-        }
         .balance-transactions{
                 display: flex;
                 padding: 20px;
                 width: 100%;
+                padding: 20px 55px;
+                background-color: $--lightgray;
                 .head{
                         display: flex;
                         flex-direction: column !important;
@@ -336,20 +349,341 @@
                                         }
                                 }
                         }
-        }
+                }
+                .transactions{
+                        display: none !important;
+                }
+                .transactions-responsive{
+                        display: flex !important;
+                        width: 100%;
+                        .product{
+                                width: 100%;
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .icon-close{
+                                        position: absolute;
+                                        right: 25px;
+                                        top: 25px;
+                                }
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                                .pay-btn{
+                                @include Border(13px);
+                                background-color: $--orange;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .insure-btn{
+                                @include Border(13px);
+                                background-color:  #4CB71A;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .edit-trash{
+                                        .edit{
+                                                background-color: $--orange;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                                
+                                        } 
+                                        .delete{
+                                                background-color: $--dark;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                        }
+                                }
+                        }
+                }
         }
     }
-    .baglamalarim{
+
+
+//----- Baglamalarim -------
+.baglamalarim{
+display: flex;
+flex-direction: column !important;
+.baglamalarim-section{
+        display: none !important;
+}
+.baglamalarim-section-responsive{
+        display: block !important;
+        padding: 20px 55px;
+        background-color: $--lightgray;
+        .baglama-sayi{
+        width: 80%;
+                margin-bottom: 20px;
+                padding: 9px 0 9px 10px;
+                border: 2px solid $--dark;
+                @include Border(13px);
+                img{
+                margin-left: 35px;
+                }
+        }
+        .responsive-table{
+                .product{
+                        margin-bottom: 20px;
+                        position: relative;
+                        @include Border(14.2401px);
+                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        background-color: #FFFFFF;
+                        gap: 40px;
+                        padding: 13px 20px;
+                        .icon-close{
+                                position: absolute;
+                                right: 25px;
+                                top: 25px;
+                        }
+                        .info{
+                                border-bottom: 1px solid #DCDCDC;
+                                padding: 10px 0;
+                        }
+                        p{
+                                @include Font('Inter', 600, 18px);   
+                        }
+                        span{
+                                @include Font('Inter', 500, 16px);
+                        }
+                        .product-btn{
+                        @include Border(13px);
+                        background-color: $--orange;
+                        color: $--light;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        }
+                        .history-btn{
+                        @include Border(13px);
+                        background-color: $--dark;
+                        color: $--light;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        }
+                        .insure-btn{
+                        @include Border(13px);
+                        background-color:  #4CB71A;
+                        color: $--light;
+                        width: 100%;
+                        padding: 8px;
+                        border: none;
+                        }
+                }
+        }
+}
+}
+// ------ Sifarislerim ------
+.orders{
         display: flex;
         flex-direction: column !important;
-        .menu-bar{
-                width: 100%;
+        .order-section{
+                display: none !important;        
+        } 
+        .order-section-responsive{
+                display: block !important;
+                padding: 20px 55px;
+                background-color: $--lightgray;
+                h5{
+                        @include Font('Inter', 600, 18px);
+                }
+                .responsive-table{
+                        .product{
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .icon-close{
+                                        position: absolute;
+                                        right: 25px;
+                                        top: 25px;
+                                }
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                                .pay-btn{
+                                @include Border(13px);
+                                background-color: $--orange;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .insure-btn{
+                                @include Border(13px);
+                                background-color:  #4CB71A;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .edit-trash{
+                                        .edit{
+                                                background-color: $--orange;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                                
+                                        } 
+                                        .delete{
+                                                background-color: $--dark;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                        }
+                                }
+                        }
+                }
         }
-        .baglamalarim-section{
-                width: 100%;
-        }
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  cox yerde olanlar
+.menu-bar{
+        width: 100%;
+        display: flex !important;
+        align-items: flex-start !important;
+        padding: 10px 0 10px 30px;
+        .account{
+                display: flex !important;
+                align-items: flex-start !important;
+        }
+        .menu{
+                display: none !important;
+        }
+}
+
+.make-order-btn{
+        margin-bottom: 20px;
+        button{
+        padding-left: 10px;
+        background-color: $--light;
+        width: 155px;
+        height: 50px;
+        @include Border(13px);
+        border: none;
+        color: $--orange;
+        @include Font('Inter', 600, 20px);
+        .icon{
+                background-color: $--orange;
+                @include Border(50px);
+                width: 26px;
+                height: 26px;
+                @include Flex(row, center, center);
+                img{
+                width: 10px;
+                height: 10px; 
+                }
+        
+        }
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
 
 
 

@@ -9,7 +9,9 @@
         padding: 20px;
         background-color: $--lightgray;
         .make-order-btn{
+            margin-bottom: 20px;
             button{
+                padding-left: 10px;
                 background-color: $--light;
                 width: 155px;
                 height: 50px;
@@ -35,7 +37,6 @@
             padding: 9px 20px;
             border: 2px solid $--dark;
             @include Border(13px);
-
         }
         .table{
             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -120,5 +121,8 @@
     
             }
         }
+    }
+    .baglamalarim-section-responsive{
+        display: none;
     }
 }
