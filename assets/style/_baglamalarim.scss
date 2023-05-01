@@ -104,17 +104,18 @@
         }
         .pages{
             .previous{
-                width: 120px;
-                height: 50px;
+                padding: 13px 25px;
+                @include Flex(row, center, center);
                 background-color: #E4E4E4;
+                @include Flex(row, center, center);
                 @include Border(13px);
                 color:  #8B8B8B;
                 border: none;
             }
             .next{
-                width: 120px;
-                height: 50px;
+                padding: 13px 25px;
                 background-color: $--orange;
+                @include Flex(row, center, center);
                 @include Border(13px);
                 color:  $--light;
                 border: none;

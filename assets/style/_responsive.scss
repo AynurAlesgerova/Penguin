@@ -423,99 +423,282 @@
                                 }
                         }
                 }
+                .pages{
+                        .previous{
+                            padding: 8px 15px;
+                            @include Flex(row, center, center);
+                            background-color: #E4E4E4;
+                            @include Border(13px);
+                            color:  #8B8B8B;
+                            border: none;
+                        }
+                        .next{
+                                padding: 8px 15px;
+                                @include Flex(row, center, center);
+                                background-color: $--orange;
+                                @include Border(13px);
+                                color:  $--light;
+                                border: none;
+                
+                        }
+                }
         }
+        
     }
 
 
 //----- Baglamalarim -------
-.baglamalarim{
-display: flex;
-flex-direction: column !important;
-.baglamalarim-section{
-        display: none !important;
-}
-.baglamalarim-section-responsive{
-        display: block !important;
-        padding: 20px 55px;
-        background-color: $--lightgray;
-        .baglama-sayi{
-        width: 80%;
-                margin-bottom: 20px;
-                padding: 9px 0 9px 10px;
-                border: 2px solid $--dark;
-                @include Border(13px);
-                img{
-                margin-left: 35px;
-                }
-        }
-        .responsive-table{
-                .product{
-                        margin-bottom: 20px;
-                        position: relative;
-                        @include Border(14.2401px);
-                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                        background-color: #FFFFFF;
-                        gap: 40px;
-                        padding: 13px 20px;
-                        .icon-close{
-                                position: absolute;
-                                right: 25px;
-                                top: 25px;
-                        }
-                        .info{
-                                border-bottom: 1px solid #DCDCDC;
-                                padding: 10px 0;
-                        }
-                        p{
-                                @include Font('Inter', 600, 18px);   
-                        }
-                        span{
-                                @include Font('Inter', 500, 16px);
-                        }
-                        .product-btn{
-                        @include Border(13px);
-                        background-color: $--orange;
-                        color: $--light;
-                        width: 100%;
-                        padding: 8px;
-                        border: none;
-                        }
-                        .history-btn{
-                        @include Border(13px);
-                        background-color: $--dark;
-                        color: $--light;
-                        width: 100%;
-                        padding: 8px;
-                        border: none;
-                        }
-                        .insure-btn{
-                        @include Border(13px);
-                        background-color:  #4CB71A;
-                        color: $--light;
-                        width: 100%;
-                        padding: 8px;
-                        border: none;
-                        }
-                }
-        }
-}
-}
-// ------ Sifarislerim ------
-.orders{
+        .baglamalarim{
         display: flex;
         flex-direction: column !important;
-        .order-section{
-                display: none !important;        
-        } 
-        .order-section-responsive{
+        .baglamalarim-section{
+                display: none !important;
+        }
+        .baglamalarim-section-responsive{
                 display: block !important;
                 padding: 20px 55px;
                 background-color: $--lightgray;
-                h5{
-                        @include Font('Inter', 600, 18px);
+                .baglama-sayi{
+                width: 80%;
+                        margin-bottom: 20px;
+                        padding: 9px 0 9px 10px;
+                        border: 2px solid $--dark;
+                        @include Border(13px);
+                        img{
+                        margin-left: 35px;
+                        }
                 }
                 .responsive-table{
                         .product{
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .icon-close{
+                                        position: absolute;
+                                        right: 25px;
+                                        top: 25px;
+                                }
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                                .product-btn{
+                                @include Border(13px);
+                                background-color: $--orange;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .history-btn{
+                                @include Border(13px);
+                                background-color: $--dark;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .insure-btn{
+                                @include Border(13px);
+                                background-color:  #4CB71A;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                        }
+                }
+                .pages{
+                        .previous{
+                        padding: 8px 15px;
+                        @include Flex(row, center, center);
+                        background-color: #E4E4E4;
+                        @include Border(13px);
+                        color:  #8B8B8B;
+                        border: none;
+                        }
+                        .next{
+                                padding: 8px 15px;
+                                @include Flex(row, center, center);
+                                background-color: $--orange;
+                                @include Border(13px);
+                                color:  $--light;
+                                border: none;
+                
+                        }
+                }
+        }
+        }
+// ------ Sifarislerim ------
+        .orders{
+                display: flex;
+                flex-direction: column !important;
+                .order-section{
+                        display: none !important;        
+                } 
+                .order-section-responsive{
+                        display: block !important;
+                        padding: 20px 55px;
+                        background-color: $--lightgray;
+                        h5{
+                                @include Font('Inter', 600, 18px);
+                        }
+                        .responsive-table{
+                                .product{
+                                        margin-bottom: 20px;
+                                        position: relative;
+                                        @include Border(14.2401px);
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        background-color: #FFFFFF;
+                                        gap: 40px;
+                                        padding: 13px 20px;
+                                        .icon-close{
+                                                position: absolute;
+                                                right: 25px;
+                                                top: 25px;
+                                        }
+                                        .info{
+                                                border-bottom: 1px solid #DCDCDC;
+                                                padding: 10px 0;
+                                        }
+                                        p{
+                                                @include Font('Inter', 600, 18px);   
+                                        }
+                                        span{
+                                                @include Font('Inter', 500, 16px);
+                                        }
+                                        .pay-btn{
+                                        @include Border(13px);
+                                        background-color: $--orange;
+                                        color: $--light;
+                                        width: 100%;
+                                        padding: 8px;
+                                        border: none;
+                                        }
+                                        .insure-btn{
+                                        @include Border(13px);
+                                        background-color:  #4CB71A;
+                                        color: $--light;
+                                        width: 100%;
+                                        padding: 8px;
+                                        border: none;
+                                        }
+                                        .edit-trash{
+                                                .edit{
+                                                        background-color: $--orange;
+                                                        @include Border(50px);
+                                                        width: 26px;
+                                                        height: 26px;
+                                                        @include Flex(row, center, center);
+                                                        img{
+                                                        width: 10px;
+                                                        height: 10px; 
+                                                        }
+                                                        
+                                                } 
+                                                .delete{
+                                                        background-color: $--dark;
+                                                        @include Border(50px);
+                                                        width: 26px;
+                                                        height: 26px;
+                                                        @include Flex(row, center, center);
+                                                        img{
+                                                        width: 10px;
+                                                        height: 10px; 
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                        .pages{
+                                .previous{
+                                padding: 8px 15px;
+                                @include Flex(row, center, center);
+                                background-color: #E4E4E4;
+                                @include Border(13px);
+                                color:  #8B8B8B;
+                                border: none;
+                                }
+                                .next{
+                                        padding: 8px 15px;
+                                        @include Flex(row, center, center);
+                                        background-color: $--orange;
+                                        @include Border(13px);
+                                        color:  $--light;
+                                        border: none;
+                        
+                                }
+                        }
+                }
+        }
+
+// ------- Borclarim --------
+.dubts{
+        display: flex;
+        flex-direction: column !important;
+        .balance-dubts{
+                display: flex;
+                padding: 20px;
+                width: 100%;
+                padding: 20px 55px;
+                background-color: $--lightgray;
+                .head{
+                        display: flex;
+                        flex-direction: column !important;
+                        align-items: flex-start !important;
+                        gap: 20px;
+                        .headline{
+                                display: none;
+                        }
+                        .headline-responsive{
+                                display: block;
+                                @include Font('Inter', 600, 18px);
+                        }
+                }
+                .services{
+                flex-direction: column !important;
+                gap: 20px;
+                        h5{
+                                @include Font('Inter', 600, 18px);
+                        }
+                        .balance-services{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        }
+                        .increase-balance{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                .buttons{
+                                        flex-direction: column !important;
+                                        .enter-amount{
+                                                width: 100%;
+                                                padding: 10px 80px;
+                                        }
+                                        .increase-btn{
+                                                width: 100%;
+                                                padding: 10px 100px;
+                                        }
+                                }
+                        }
+                }
+                .services-table{
+                        display: none !important;
+                }
+                .services-table-responsive{
+                        display: flex !important;
+                        width: 100%;
+                        .product{
+                                width: 100%;
                                 margin-bottom: 20px;
                                 position: relative;
                                 @include Border(14.2401px);
@@ -581,10 +764,28 @@ flex-direction: column !important;
                                 }
                         }
                 }
+                .pages{
+                        .previous{
+                            padding: 8px 15px;
+                            @include Flex(row, center, center);
+                            background-color: #E4E4E4;
+                            @include Border(13px);
+                            color:  #8B8B8B;
+                            border: none;
+                        }
+                        .next{
+                                padding: 8px 15px;
+                                @include Flex(row, center, center);
+                                background-color: $--orange;
+                                @include Border(13px);
+                                color:  $--light;
+                                border: none;
+                
+                        }
+                }
         }
-}
-
-
+        
+    }
 
 
 
@@ -636,6 +837,7 @@ flex-direction: column !important;
         }
         }
 }
+
 
 
 
