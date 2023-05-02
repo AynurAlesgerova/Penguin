@@ -45,11 +45,12 @@
                 background-color: $--orange;
                 @include Border(13px 13px 0 0);
                 .col{
+                            @include Flex(row, none, center);
                     border-right: 1px solid $--light;
-                    // :nth-child(4) {
-                    //     border-right: 1px solid $--orange;
-                    // }
                 }
+                // :last-child {
+                //     border-right: 1px solid $--orange !important ;
+                // }
             }
            .baglamalarim-row{
             // :nth-child(odd) {

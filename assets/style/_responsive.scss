@@ -5,49 +5,54 @@
 @media screen and (max-width: 576px){
 //----- Header -------
     header{
-        .image-box{
-            width: 40px;
-            height: 40px;    
-        }
-        .buttons-group{
-            .menu-box {
-                display: none;
-            }
-            .login-box{
-                display: none;
-
-            }
-            .register-box{
-                display: none;
-            }
-            .mobile-menu{
-                    display: block;
-                    button{
-                        @include Flex(row, none, center);
-                        @include Border(50.1425px);
-                        gap: 11px;
-                        background-color: $--light;
-                        border: none;
-                        color: $--orange;
-                        padding: 4px;
+        nav{
+                .image-box{
+                    width: 40px;
+                    height: 40px;    
+                }
+                .buttons-group{
+                    .menu-box {
+                        display: none;
                     }
-                    .menu-icon-box {
-                        background-color: $--light;
-                        @include Border(50px);
-                        width: 30px;
-                        height: 30px;
-                        @include Flex(row, center, center);
-                        i {
-                            color: $--orange;
-                        }
+                    .login-box{
+                        display: none;
+        
                     }
-            }
+                    .register-box{
+                        display: none;
+                    }
+                    .mobile-menu{
+                            display: block;
+                            button{
+                                @include Flex(row, none, center);
+                                @include Border(50.1425px);
+                                gap: 11px;
+                                background-color: $--light;
+                                border: none;
+                                color: $--orange;
+                                padding: 4px;
+                            }
+                            .menu-icon-box {
+                                background-color: $--light;
+                                @include Border(50px);
+                                width: 30px;
+                                height: 30px;
+                                @include Flex(row, center, center);
+                                i {
+                                    color: $--orange;
+                                }
+                            }
+                    }
+                }
         }
         .penguin-logo-background{
-            top: 0px;
-            left: 70px;
             width: 250px;
             height: 228px;
+        }
+        .page-text{
+                top:110px;
+                left: 120px;
+                @include Font('Inter', 600, 18px);
         }
     }
 
@@ -787,7 +792,185 @@
         
     }
 
+//-------- Kuryer sifarisi -----
+.make-courier-order{
+        display: flex;
+        flex-direction: column !important;
+        .courier-order-section{
+                display: flex;
+                padding: 20px;
+                width: 100%;
+                padding: 20px 55px;
+                background-color: $--lightgray;
+                .head{
+                        display: flex;
+                        flex-direction: column !important;
+                        align-items: flex-start !important;
+                        gap: 20px;
+                        .headline{
+                                display: none;
+                        }
+                        .headline-responsive{
+                                display: block;
+                                @include Font('Inter', 600, 18px);
+                        }
+                }
+                .services{
+                flex-direction: column !important;
+                gap: 20px;
+                        h5{
+                                @include Font('Inter', 600, 18px);
+                        }
+                        .balance-services{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        }
+                        .increase-balance{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                .buttons{
+                                        flex-direction: column !important;
+                                        .enter-amount{
+                                                width: 100%;
+                                                padding: 10px 80px;
+                                        }
+                                        .increase-btn{
+                                                width: 100%;
+                                                padding: 10px 100px;
+                                        }
+                                }
+                        }
+                }
+                .order-table{
+                        .head{
+                                .orders{
+                                        display: none !important;
+                                }
+                        }
+                        .table{
 
+                                display: none !important;
+                        }
+                }
+                .order-table-responsive{
+                        display: flex !important;
+                        flex-direction: column !important;
+                        width: 100%;
+                        .product{
+                                width: 100%;
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .icon-close{
+                                        position: absolute;
+                                        right: 25px;
+                                        top: 25px;
+                                }
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                                .pay-btn{
+                                @include Border(13px);
+                                background-color: $--orange;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .insure-btn{
+                                @include Border(13px);
+                                background-color:  #4CB71A;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                                .edit-trash{
+                                        .edit{
+                                                background-color: $--orange;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                                
+                                        } 
+                                        .delete{
+                                                background-color: $--dark;
+                                                @include Border(50px);
+                                                width: 26px;
+                                                height: 26px;
+                                                @include Flex(row, center, center);
+                                                img{
+                                                width: 10px;
+                                                height: 10px; 
+                                                }
+                                        }
+                                }
+                        }
+                        .orders{
+                                @include Font('Inter', 600, 18px);
+                                display: flex !important;
+                                flex-direction: row !important;
+                                justify-content: center !important;
+                                align-items: center !important;
+                                @include Border(13px);
+                                padding: 5px 15px;
+                                background-color: $--light;
+                                color:  $--orange;
+                                border: none;
+                                gap: 10px;
+                                width: 70%;
+                                div{
+                                    background-color: $--orange;
+                                    @include Border(50px);
+                                    width: 33px;
+                                    height: 33px;
+                                    @include Flex(row, center, center);
+                                    img{
+                                        width: 20px;
+                                        height: 20px; 
+                                    }
+                                }
+                            }
+                }
+
+                .pages{
+                        .previous{
+                            padding: 8px 15px;
+                            @include Flex(row, center, center);
+                            background-color: #E4E4E4;
+                            @include Border(13px);
+                            color:  #8B8B8B;
+                            border: none;
+                        }
+                        .next{
+                                padding: 8px 15px;
+                                @include Flex(row, center, center);
+                                background-color: $--orange;
+                                @include Border(13px);
+                                color:  $--light;
+                                border: none;
+                
+                        }
+                }
+        }
+        
+    }
 
 
 

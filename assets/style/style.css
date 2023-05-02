@@ -13,6 +13,7 @@
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +26,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -44,7 +45,7 @@ p {
 .page-text {
   position: absolute;
   top: 181px;
-  left: 462px;
+  left: 500px;
   color: #fff;
   z-index: 999;
   font-family: "Inter";
@@ -53,21 +54,12 @@ p {
   line-height: 41px;
   text-align: center;
 }
-@media (max-width: 576px) {
-  .page-text {
-    top: 110px;
-    left: 50px;
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 18px;
-  }
-}
 
 header {
   background-color: #FF6600;
-  padding: 20px 0 280px 0;
+  padding: 20px;
 }
-header .image-box {
+header nav .image-box {
   background-color: #fff;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -81,11 +73,11 @@ header .image-box {
   justify-content: center;
   align-items: center;
 }
-header .image-box img {
+header nav .image-box img {
   width: 30px;
   height: 30px;
 }
-header .buttons-group .menu-box button {
+header nav .buttons-group .menu-box button {
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -101,7 +93,7 @@ header .buttons-group .menu-box button {
   color: #FF6600;
   padding: 4px 25px 4px 8px;
 }
-header .buttons-group .menu-box button .menu-icon-box {
+header nav .buttons-group .menu-box button .menu-icon-box {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -115,10 +107,10 @@ header .buttons-group .menu-box button .menu-icon-box {
   justify-content: center;
   align-items: center;
 }
-header .buttons-group .menu-box button .menu-icon-box i {
+header nav .buttons-group .menu-box button .menu-icon-box i {
   color: #fff;
 }
-header .buttons-group .login-box button {
+header nav .buttons-group .login-box button {
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -134,7 +126,7 @@ header .buttons-group .login-box button {
   color: #FF6600;
   padding: 4px 35px 4px 8px;
 }
-header .buttons-group .login-box button .login-icon-box {
+header nav .buttons-group .login-box button .login-icon-box {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -148,10 +140,10 @@ header .buttons-group .login-box button .login-icon-box {
   justify-content: center;
   align-items: center;
 }
-header .buttons-group .login-box button .login-icon-box i {
+header nav .buttons-group .login-box button .login-icon-box i {
   color: #fff;
 }
-header .buttons-group .register-box button {
+header nav .buttons-group .register-box button {
   display: flex;
   flex-direction: row;
   justify-content: none;
@@ -167,7 +159,7 @@ header .buttons-group .register-box button {
   -ms-border-radius: 50.1425px;
   -o-border-radius: 50.1425px;
 }
-header .buttons-group .register-box button .register-icon-box {
+header nav .buttons-group .register-box button .register-icon-box {
   background-color: #fff;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -181,19 +173,16 @@ header .buttons-group .register-box button .register-icon-box {
   justify-content: center;
   align-items: center;
 }
-header .buttons-group .register-box button .register-icon-box i {
+header nav .buttons-group .register-box button .register-icon-box i {
   color: #000000;
 }
-header .buttons-group .register-box button .register-icon-box a {
+header nav .buttons-group .register-box button .register-icon-box a {
   color: #fff;
 }
-header .buttons-group .mobile-menu {
+header nav .buttons-group .mobile-menu {
   display: none;
 }
 header .penguin-logo-background {
-  position: absolute;
-  top: 50px;
-  left: 380px;
   width: 334px;
   height: 300px;
 }
@@ -210,7 +199,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -367,7 +356,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -655,7 +644,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -751,7 +740,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -827,7 +816,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -904,7 +893,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1047,7 +1036,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1114,7 +1103,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1196,7 +1185,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1263,7 +1252,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1490,7 +1479,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1710,7 +1699,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -1790,6 +1779,10 @@ p {
   -o-border-radius: 13px 13px 0 0;
 }
 .baglamalarim .baglamalarim-section .table .titles .col {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
   border-right: 1px solid #fff;
 }
 .baglamalarim .baglamalarim-section .table .baglamalarim-row {
@@ -1905,7 +1898,7 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
 }
 
 li {
@@ -2138,7 +2131,331 @@ ol, ul {
 
 body {
   font-family: "Euclid Circular A";
-  font-family: Sans-Serif;
+  font-family: Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+.make-courier-order .courier-order-section {
+  width: 80%;
+  height: 100%;
+  background-color: #F5F5F5;
+  padding: 50px;
+  gap: 30px !important;
+}
+.make-courier-order .courier-order-section .head span {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 24px;
+}
+.make-courier-order .courier-order-section .head .headline-responsive {
+  display: none;
+}
+.make-courier-order .courier-order-section .head .make-order-btn {
+  margin-bottom: 20px;
+}
+.make-courier-order .courier-order-section .head .make-order-btn button {
+  padding-left: 10px;
+  background-color: #fff;
+  width: 155px;
+  height: 50px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+  color: #FF6600;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+}
+.make-courier-order .courier-order-section .head .make-order-btn button .icon {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.make-courier-order .courier-order-section .head .make-order-btn button .icon img {
+  width: 10px;
+  height: 10px;
+}
+.make-courier-order .courier-order-section .services h5 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+}
+.make-courier-order .courier-order-section .services .balance-services {
+  width: 48%;
+  padding: 10px 20px !important;
+  background-color: #FFFFFF;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.make-courier-order .courier-order-section .services .balance-services p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+}
+.make-courier-order .courier-order-section .services .balance-services .money {
+  width: 25%;
+  padding: 5px 8px;
+  color: #FF6600;
+  border: 1px solid #FF6600;
+  background-color: #FFF0E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.make-courier-order .courier-order-section .services .increase-balance {
+  width: 48%;
+  background-color: #FFFFFF;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 20px !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.make-courier-order .courier-order-section .services .increase-balance .buttons {
+  width: 100%;
+}
+.make-courier-order .courier-order-section .services .increase-balance .enter-amount {
+  width: 45%;
+  padding: 5px 10px;
+  color: #A7A7A7;
+  border: 1.5px solid #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.make-courier-order .courier-order-section .services .increase-balance .increase-btn {
+  background-color: #FF6600;
+  width: 45%;
+  padding: 5px 10px;
+  color: #fff;
+  border: 1px solid #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+.make-courier-order .courier-order-section .order-table .head {
+  margin-bottom: 20px;
+}
+.make-courier-order .courier-order-section .order-table .head .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #FF6600;
+  border: none;
+  gap: 10px;
+}
+.make-courier-order .courier-order-section .order-table .head .orders div {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.make-courier-order .courier-order-section .order-table .head .orders div img {
+  width: 20px;
+  height: 20px;
+}
+.make-courier-order .courier-order-section .order-table .head .package-in-office {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #000000;
+  border: 1.7px solid #000000;
+  gap: 10px;
+}
+.make-courier-order .courier-order-section .order-table .table {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+.make-courier-order .courier-order-section .order-table .table .titles {
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 13px 13px 0 0;
+  -webkit-border-radius: 13px 13px 0 0;
+  -moz-border-radius: 13px 13px 0 0;
+  -ms-border-radius: 13px 13px 0 0;
+  -o-border-radius: 13px 13px 0 0;
+}
+.make-courier-order .courier-order-section .order-table .table .titles .col {
+  border-right: 1px solid #fff;
+}
+.make-courier-order .courier-order-section .order-table .table .dubts .pay-btn button {
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  padding: 5px 20px;
+  border: none;
+}
+.make-courier-order .courier-order-section .order-table-responsive {
+  display: none !important;
+}
+.make-courier-order .courier-order-section .pages .previous {
+  padding: 13px 25px;
+  background-color: #E4E4E4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #8B8B8B;
+  border: none;
+}
+.make-courier-order .courier-order-section .pages .next {
+  padding: 13px 25px;
+  background-color: #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #fff;
+  border: none;
+}
+.make-courier-order .onclick-section .head .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 10px 25px;
+  background-color: #FF6600;
+  color: #FF6600;
+  border: none;
+  gap: 10px;
+}
+.make-courier-order .onclick-section .head .orders div {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.make-courier-order .onclick-section .head .orders div img {
+  width: 20px;
+  height: 20px;
+}
+.make-courier-order .onclick-section .head .close {
+  width: 30px;
+  height: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Serif;
 }
 
 li {
@@ -2155,23 +2472,23 @@ p {
 }
 
 @media screen and (max-width: 576px) {
-  header .image-box {
+  header nav .image-box {
     width: 40px;
     height: 40px;
   }
-  header .buttons-group .menu-box {
+  header nav .buttons-group .menu-box {
     display: none;
   }
-  header .buttons-group .login-box {
+  header nav .buttons-group .login-box {
     display: none;
   }
-  header .buttons-group .register-box {
+  header nav .buttons-group .register-box {
     display: none;
   }
-  header .buttons-group .mobile-menu {
+  header nav .buttons-group .mobile-menu {
     display: block;
   }
-  header .buttons-group .mobile-menu button {
+  header nav .buttons-group .mobile-menu button {
     display: flex;
     flex-direction: row;
     justify-content: none;
@@ -2187,7 +2504,7 @@ p {
     color: #FF6600;
     padding: 4px;
   }
-  header .buttons-group .mobile-menu .menu-icon-box {
+  header nav .buttons-group .mobile-menu .menu-icon-box {
     background-color: #fff;
     border-radius: 50px;
     -webkit-border-radius: 50px;
@@ -2201,14 +2518,19 @@ p {
     justify-content: center;
     align-items: center;
   }
-  header .buttons-group .mobile-menu .menu-icon-box i {
+  header nav .buttons-group .mobile-menu .menu-icon-box i {
     color: #FF6600;
   }
   header .penguin-logo-background {
-    top: 0px;
-    left: 70px;
     width: 250px;
     height: 228px;
+  }
+  header .page-text {
+    top: 110px;
+    left: 120px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
   }
   .xidmetler .xidmetler-info {
     display: flex;
@@ -3067,6 +3389,232 @@ p {
     border: none;
   }
   .dubts .balance-dubts .pages .next {
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    color: #fff;
+    border: none;
+  }
+  .make-courier-order {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .make-courier-order .courier-order-section {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    padding: 20px 55px;
+    background-color: #EEEEEE;
+  }
+  .make-courier-order .courier-order-section .head {
+    display: flex;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px;
+  }
+  .make-courier-order .courier-order-section .head .headline {
+    display: none;
+  }
+  .make-courier-order .courier-order-section .head .headline-responsive {
+    display: block;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .make-courier-order .courier-order-section .services {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  .make-courier-order .courier-order-section .services h5 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .make-courier-order .courier-order-section .services .balance-services {
+    width: 100%;
+    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+  }
+  .make-courier-order .courier-order-section .services .increase-balance {
+    width: 100%;
+    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+  }
+  .make-courier-order .courier-order-section .services .increase-balance .buttons {
+    flex-direction: column !important;
+  }
+  .make-courier-order .courier-order-section .services .increase-balance .buttons .enter-amount {
+    width: 100%;
+    padding: 10px 80px;
+  }
+  .make-courier-order .courier-order-section .services .increase-balance .buttons .increase-btn {
+    width: 100%;
+    padding: 10px 100px;
+  }
+  .make-courier-order .courier-order-section .order-table .head .orders {
+    display: none !important;
+  }
+  .make-courier-order .courier-order-section .order-table .table {
+    display: none !important;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 14.2401px;
+    -webkit-border-radius: 14.2401px;
+    -moz-border-radius: 14.2401px;
+    -ms-border-radius: 14.2401px;
+    -o-border-radius: 14.2401px;
+    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    gap: 40px;
+    padding: 13px 20px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .icon-close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .info {
+    border-bottom: 1px solid #DCDCDC;
+    padding: 10px 0;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product p {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product span {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .pay-btn {
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    background-color: #FF6600;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    border: none;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .insure-btn {
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    background-color: #4CB71A;
+    color: #fff;
+    width: 100%;
+    padding: 8px;
+    border: none;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .edit {
+    background-color: #FF6600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .edit img {
+    width: 10px;
+    height: 10px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .delete {
+    background-color: #000000;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .delete img {
+    width: 10px;
+    height: 10px;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .orders {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: #FF6600;
+    border: none;
+    gap: 10px;
+    width: 70%;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .orders div {
+    background-color: #FF6600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .make-courier-order .courier-order-section .order-table-responsive .orders div img {
+    width: 20px;
+    height: 20px;
+  }
+  .make-courier-order .courier-order-section .pages .previous {
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #E4E4E4;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    color: #8B8B8B;
+    border: none;
+  }
+  .make-courier-order .courier-order-section .pages .next {
     padding: 8px 15px;
     display: flex;
     flex-direction: row;
