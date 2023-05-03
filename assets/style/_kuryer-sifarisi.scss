@@ -144,10 +144,11 @@
                         border-right: 1px solid $--light;
                     }
                 }
-                .dubts{
+                .orders-section{
                     .pay-btn{
                         button{
                             @include Border(13px);
+                            @include Flex(row, center, center);
                             background-color:  $--dark;
                             color: $--light;
                             width: 100%;
@@ -182,33 +183,118 @@
         }
     }
 
-    .onclick-section{
-        .head{
-            .orders{
-                @include Flex(row, center, center);
-                @include Font('Inter', 600, 20px);
-                @include Border(13px);
-                padding: 10px 25px;
+}
+.onclick-modal{
+    display: none;
+    width: 70%;
+    z-index: 9999999;
+    position: absolute;
+    top: 10%;
+    left: 16%;
+    background-color: $--light;
+    @include Border(13px);
+    padding: 20px;
+    .head{
+        .orders{
+            @include Flex(row, space-between, center);
+            @include Font('Inter', 600, 20px);
+            @include Border(13px);
+            background-color: $--light;
+            color:  $--orange;
+            border: none;
+            gap: 10px;
+            div{
                 background-color: $--orange;
-                color:  $--orange;
-                border: none;
-                gap: 10px;
-                div{
+                @include Border(50px);
+                width: 33px;
+                height: 33px;
+                @include Flex(row, center, center);
+                img{
+                    width: 20px;
+                    height: 20px; 
+                }
+            }
+        }
+        .close{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    } 
+    .section{
+        .choose-package{
+            width: 50%;
+            .table{
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                margin-bottom: 70px;
+                max-height: 300px;
+                
+                .titles{
+                    color: $--light;
                     background-color: $--orange;
-                    @include Border(50px);
-                    width: 33px;
-                    height: 33px;
-                    @include Flex(row, center, center);
-                    img{
-                        width: 20px;
-                        height: 20px; 
+                    @include Border(13px 13px 0 0);
+                    .col{
+                        border-right: 1px solid $--light;
+                    }
+                }
+                .orders-section{
+                    .pay-btn{
+                        button{
+                            @include Border(13px);
+                            background-color:  $--dark;
+                            color: $--light;
+                            width: 100%;
+                            padding: 5px 20px;
+                            border: none;
+                        }
                     }
                 }
             }
-            .close{
-                width: 30px;
-                height: 30px;
+        }
+        .make-order{
+            width: 49%;
+            border-left: 2px solid $--orange;
+            padding-left: 10px;
+            form{
+                label{
+                    @include Font('Inter', 600, 17px);
+                }
+            }
+            .checkbox:checked {
+                background-color: #a77e2d !important;
+                color: #ffffff !important;
+            }
+            .checkbox:after {
+                box-shadow: none !important;
+            }                          
+            .payment{
+                span{
+                    @include Font('Inter', 600, 16px);
+                }
+                div{
+                    border: 2px solid $--orange;
+                    @include Border(13px);
+                    color: $--orange;
+                    // width: 100%;
+                    padding: 5px 8px;
+                }
+            }
+            .make-order-btn{
+                button{
+                    @include Font('Inter', 600, 17px);
+                @include Flex(row, center, center);
+                border: 2px solid $--orange;
+                @include Border(13px);
+                color: $--light;
+                background-color:  $--orange;
+                padding: 10px 20px;
+                width: 50%;
+                }
             }
         }
     }
+}
+.onclick-modal-responsive{
+    display: none !important;
 }

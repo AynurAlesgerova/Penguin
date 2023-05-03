@@ -11,12 +11,29 @@
     color: $--light;
     @include Font('Inter', 400, 16px);
 }
+.highlights{
+    padding: 20px 0;
+    .highlight{
+        .highlight-img{
+            width: 100px;
+            height: 100px;
+            @include Border(50px);
+            border: 1px solid red;
+            padding: 2px;
+            img{
+                width: 100%;
+                height: 100%;
+                @include Border(50px);
+
+            }
+        }
+    }
+}
 .calculator{
-    margin-top: 50px;
     .calculator-info{
         width: 30%;
         background-color: $--orange;
-        padding: 50px 50px 0 50px;
+        padding: 10px 10px 0 10px;
         color: $--light;
         .calc-logo-img{
             background-color: $--light;
@@ -43,6 +60,12 @@
         width: 70%;
         .select-form{
             width: 800px;
+            select{
+                border: 1px solid $--orange
+            }
+            input{
+                border: 1px solid $--orange
+            }
         }
         .calc-btn{
             @include Border(13px);
@@ -50,6 +73,10 @@
             border: none;
             padding: 10px 50px;
             color: $--light;
+        }
+        p{
+            color: $--orange;
+            @include Font('Inter',600, 17px)
         }
     }
 }
@@ -95,6 +122,7 @@
                 img{
                     width: 30px;
                     height: 30px; 
+                    z-index: 999;
                 }
             }
             h3{
@@ -109,15 +137,15 @@
         }
         :nth-child(1){
             width: 30%;
-            padding: 10px;
+            padding: 10px 20px;
         }
         :nth-child(2){
             width: 30%;
-            padding: 7px;
+            padding: 10px 20px;
         }
         :nth-child(3){
             width: 30%;
-            padding: 5px;
+            padding: 10px 20px;
         }
     }
 }  
@@ -143,6 +171,7 @@
         }
     }
     .steps{
+        display: block !important;
         width: 70%;
         .step{
             padding: 20px;
@@ -168,6 +197,9 @@
             }
         }
     }
+    .steps-responsive{
+        display: none !important;
+    }
 }
 .latest-news{
     padding: 40px 0;
@@ -175,9 +207,13 @@
         h2{
             @include Font('Inter', 600, 34px);
         }
+        span{
+            color: $--orange;
+            text-align: end;
+        }
         .some-news{
             box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-            padding: 20px;
+            padding: 20px 30px;
             .logo{
                 margin-bottom: 10px;
                 background-color: $--orange;

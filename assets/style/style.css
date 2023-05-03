@@ -220,7 +220,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   align-items: none;
-  margin-top: 700px;
 }
 .footer .contact-section {
   display: flex;
@@ -384,13 +383,34 @@ p {
   font-size: 16px;
 }
 
-.calculator {
-  margin-top: 50px;
+.highlights {
+  padding: 20px 0;
 }
+.highlights .highlight .highlight-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: 1px solid red;
+  padding: 2px;
+}
+.highlights .highlight .highlight-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 .calculator .calculator-info {
   width: 30%;
   background-color: #FF6600;
-  padding: 50px 50px 0 50px;
+  padding: 10px 10px 0 10px;
   color: #fff;
 }
 .calculator .calculator-info .calc-logo-img {
@@ -424,6 +444,12 @@ p {
 .calculator .calculations .select-form {
   width: 800px;
 }
+.calculator .calculations .select-form select {
+  border: 1px solid #FF6600;
+}
+.calculator .calculations .select-form input {
+  border: 1px solid #FF6600;
+}
 .calculator .calculations .calc-btn {
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -434,6 +460,12 @@ p {
   border: none;
   padding: 10px 50px;
   color: #fff;
+}
+.calculator .calculations p {
+  color: #FF6600;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .advantages .advantage-info {
@@ -496,6 +528,7 @@ p {
 .advantages .advantages-section .advantage .logo img {
   width: 30px;
   height: 30px;
+  z-index: 999;
 }
 .advantages .advantages-section .advantage h3 {
   color: #FF6600;
@@ -509,15 +542,15 @@ p {
 }
 .advantages .advantages-section :nth-child(1) {
   width: 30%;
-  padding: 10px;
+  padding: 10px 20px;
 }
 .advantages .advantages-section :nth-child(2) {
   width: 30%;
-  padding: 7px;
+  padding: 10px 20px;
 }
 .advantages .advantages-section :nth-child(3) {
   width: 30%;
-  padding: 5px;
+  padding: 10px 20px;
 }
 
 .work .how-to-work-info {
@@ -548,6 +581,7 @@ p {
   width: 75%;
 }
 .work .steps {
+  display: block !important;
   width: 70%;
 }
 .work .steps .step {
@@ -581,6 +615,9 @@ p {
   width: 20px;
   height: 20px;
 }
+.work .steps-responsive {
+  display: none !important;
+}
 
 .latest-news {
   padding: 40px 0;
@@ -590,9 +627,13 @@ p {
   font-weight: 600;
   font-size: 34px;
 }
+.latest-news .news span {
+  color: #FF6600;
+  text-align: end;
+}
 .latest-news .news .some-news {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
-  padding: 20px;
+  padding: 20px 30px;
 }
 .latest-news .news .some-news .logo {
   margin-bottom: 10px;
@@ -662,13 +703,17 @@ p {
 
 .haqqimizda h2 {
   color: #FF6600;
-  text-align: center;
+  text-align: start;
   font-family: "Inter";
   font-weight: 600;
-  font-size: 18px;
+  font-size: 34px;
 }
 .haqqimizda .haqqimizda-img {
   width: 50%;
+}
+.haqqimizda .haqqimizda-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .haqqimizda-info {
@@ -846,15 +891,19 @@ p {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
   top: 260px;
-  left: 128px;
+  left: 75px;
   right: 168px;
-  padding: 31px 40px;
+  padding: 31px 20px;
   z-index: 999;
   margin-bottom: 500px;
+  width: 90%;
 }
 .register-section h1 {
   text-align: center;
   margin-bottom: 46px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 34px;
 }
 .register-section .register-btn {
   border-radius: 13px;
@@ -876,9 +925,12 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 94px;
+  margin-top: 50px;
   gap: 10px;
   color: #A7A7A7;
+}
+.register-section .responsive-form {
+  display: none !important;
 }
 
 * {
@@ -2356,12 +2408,16 @@ p {
 .make-courier-order .courier-order-section .order-table .table .titles .col {
   border-right: 1px solid #fff;
 }
-.make-courier-order .courier-order-section .order-table .table .dubts .pay-btn button {
+.make-courier-order .courier-order-section .order-table .table .orders-section .pay-btn button {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: #000000;
   color: #fff;
   width: 100%;
@@ -2401,10 +2457,26 @@ p {
   color: #fff;
   border: none;
 }
-.make-courier-order .onclick-section .head .orders {
+
+.onclick-modal {
+  display: none;
+  width: 70%;
+  z-index: 9999999;
+  position: absolute;
+  top: 10%;
+  left: 16%;
+  background-color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  padding: 20px;
+}
+.onclick-modal .head .orders {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-family: "Inter";
   font-weight: 600;
@@ -2414,13 +2486,12 @@ p {
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
-  padding: 10px 25px;
-  background-color: #FF6600;
+  background-color: #fff;
   color: #FF6600;
   border: none;
   gap: 10px;
 }
-.make-courier-order .onclick-section .head .orders div {
+.onclick-modal .head .orders div {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -2434,13 +2505,100 @@ p {
   justify-content: center;
   align-items: center;
 }
-.make-courier-order .onclick-section .head .orders div img {
+.onclick-modal .head .orders div img {
   width: 20px;
   height: 20px;
 }
-.make-courier-order .onclick-section .head .close {
-  width: 30px;
-  height: 30px;
+.onclick-modal .head .close img {
+  width: 20px;
+  height: 20px;
+}
+.onclick-modal .section .choose-package {
+  width: 50%;
+}
+.onclick-modal .section .choose-package .table {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+  max-height: 300px;
+}
+.onclick-modal .section .choose-package .table .titles {
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 13px 13px 0 0;
+  -webkit-border-radius: 13px 13px 0 0;
+  -moz-border-radius: 13px 13px 0 0;
+  -ms-border-radius: 13px 13px 0 0;
+  -o-border-radius: 13px 13px 0 0;
+}
+.onclick-modal .section .choose-package .table .titles .col {
+  border-right: 1px solid #fff;
+}
+.onclick-modal .section .choose-package .table .orders-section .pay-btn button {
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  padding: 5px 20px;
+  border: none;
+}
+.onclick-modal .section .make-order {
+  width: 49%;
+  border-left: 2px solid #FF6600;
+  padding-left: 10px;
+}
+.onclick-modal .section .make-order form label {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+}
+.onclick-modal .section .make-order .checkbox:checked {
+  background-color: #a77e2d !important;
+  color: #ffffff !important;
+}
+.onclick-modal .section .make-order .checkbox:after {
+  box-shadow: none !important;
+}
+.onclick-modal .section .make-order .payment span {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+}
+.onclick-modal .section .make-order .payment div {
+  border: 2px solid #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #FF6600;
+  padding: 5px 8px;
+}
+.onclick-modal .section .make-order .make-order-btn button {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #fff;
+  background-color: #FF6600;
+  padding: 10px 20px;
+  width: 50%;
+}
+
+.onclick-modal-responsive {
+  display: none !important;
 }
 
 * {
@@ -2527,7 +2685,7 @@ p {
   }
   header .page-text {
     top: 110px;
-    left: 120px;
+    left: 70px;
     font-family: "Inter";
     font-weight: 600;
     font-size: 18px;
@@ -2543,7 +2701,7 @@ p {
     width: 100%;
   }
   .forget-password-section {
-    top: 137px;
+    top: 170px;
     left: 29px;
     right: 28px;
     padding: 23px 19px 50px 19px;
@@ -2617,6 +2775,22 @@ p {
   }
   .register-section {
     top: 170px;
+    padding: 30px 10px;
+    left: 18px;
+  }
+  .register-section .desktop-form {
+    display: none !important;
+  }
+  .register-section .responsive-form {
+    display: block !important;
+    width: 400px;
+    width: 100%;
+  }
+  .register-section .responsive-form form {
+    width: 100%;
+  }
+  .register-section .login {
+    margin-top: 20px;
   }
   .tarifler .tarifler-info {
     display: flex;
@@ -2633,12 +2807,13 @@ p {
   }
   .tarifler .tarifler-info .main-info {
     width: 100%;
+    padding: 25px !important;
   }
   .tarifler .prices .price-list .price {
     width: 100%;
   }
   .footer {
-    margin-top: 500px;
+    margin-top: 50px;
   }
   .footer .contact-section {
     display: flex;
@@ -2671,8 +2846,9 @@ p {
     display: none;
   }
   .ana-sehife-text {
-    top: 100px;
-    left: 20px;
+    width: 300px;
+    top: 150px;
+    left: 40px;
     font-family: "Inter";
     font-weight: 400;
     font-size: 12px;
@@ -2717,7 +2893,7 @@ p {
   }
   .advantages .advantages-section {
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2754,11 +2930,42 @@ p {
     height: 40px;
   }
   .work .steps {
+    display: none !important;
+  }
+  .work .steps-responsive {
+    display: block !important;
     width: 100%;
   }
-  .work .steps .step .step-logo {
+  .work .steps-responsive .step {
+    padding: 20px;
+  }
+  .work .steps-responsive .step h3 {
+    color: #FF6600;
+    width: 60%;
+  }
+  .work .steps-responsive .step .step-number {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 50px;
+    color: rgba(102, 102, 102, 0.15);
+  }
+  .work .steps-responsive .step .step-logo {
+    background-color: #FF6600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     width: 40px;
     height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .work .steps-responsive .step .step-logo img {
+    width: 20px;
+    height: 20px;
   }
   .latest-news .news .some-news .logo {
     width: 40px;
@@ -3501,66 +3708,6 @@ p {
     font-weight: 500;
     font-size: 16px;
   }
-  .make-courier-order .courier-order-section .order-table-responsive .product .pay-btn {
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    background-color: #FF6600;
-    color: #fff;
-    width: 100%;
-    padding: 8px;
-    border: none;
-  }
-  .make-courier-order .courier-order-section .order-table-responsive .product .insure-btn {
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    background-color: #4CB71A;
-    color: #fff;
-    width: 100%;
-    padding: 8px;
-    border: none;
-  }
-  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .edit {
-    background-color: #FF6600;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .edit img {
-    width: 10px;
-    height: 10px;
-  }
-  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .delete {
-    background-color: #000000;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    width: 26px;
-    height: 26px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .make-courier-order .courier-order-section .order-table-responsive .product .edit-trash .delete img {
-    width: 10px;
-    height: 10px;
-  }
   .make-courier-order .courier-order-section .order-table-responsive .orders {
     font-family: "Inter";
     font-weight: 600;
@@ -3628,6 +3775,145 @@ p {
     -o-border-radius: 13px;
     color: #fff;
     border: none;
+  }
+  .onclick-modal-responsive {
+    display: block !important;
+  }
+  .onclick-modal-responsive .orders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    background-color: #fff;
+    color: #FF6600;
+    border: none;
+    gap: 10px;
+  }
+  .onclick-modal-responsive .orders div {
+    background-color: #FF6600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 33px;
+    height: 33px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .onclick-modal-responsive .orders div img {
+    width: 20px;
+    height: 20px;
+  }
+  .onclick-modal-responsive .order-table-responsive {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100%;
+  }
+  .onclick-modal-responsive .order-table-responsive .product {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    border-radius: 14.2401px;
+    -webkit-border-radius: 14.2401px;
+    -moz-border-radius: 14.2401px;
+    -ms-border-radius: 14.2401px;
+    -o-border-radius: 14.2401px;
+    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    gap: 40px;
+    padding: 10px 20px 30px 45px;
+  }
+  .onclick-modal-responsive .order-table-responsive .product .icon-close {
+    position: absolute;
+    right: 25px;
+    top: 30px;
+  }
+  .onclick-modal-responsive .order-table-responsive .product .checkbox {
+    position: absolute;
+    left: 18px;
+    top: 25px;
+    width: 18px;
+    height: 18px;
+  }
+  .onclick-modal-responsive .order-table-responsive .product .info {
+    border-bottom: 1px solid #DCDCDC;
+    padding: 10px 0;
+  }
+  .onclick-modal-responsive .order-table-responsive .product p {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .onclick-modal-responsive .order-table-responsive .product span {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .onclick-modal-responsive h5 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+    margin: 20px 0;
+  }
+  .onclick-modal-responsive .make-order {
+    padding: 0 20px;
+  }
+  .onclick-modal-responsive .make-order form label {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .onclick-modal-responsive .make-order .checkbox:checked {
+    background-color: #a77e2d !important;
+    color: #ffffff !important;
+  }
+  .onclick-modal-responsive .make-order .checkbox:after {
+    box-shadow: none !important;
+  }
+  .onclick-modal-responsive .make-order .payment span {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .onclick-modal-responsive .make-order .payment div {
+    border: 2px solid #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    color: #FF6600;
+    padding: 5px 8px;
+  }
+  .onclick-modal-responsive .make-order .make-order-btn button {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 17px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    color: #fff;
+    background-color: #FF6600;
+    padding: 10px 20px;
+    width: 100%;
   }
   .menu-bar {
     width: 100%;

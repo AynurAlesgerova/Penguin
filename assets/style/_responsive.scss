@@ -51,7 +51,7 @@
         }
         .page-text{
                 top:110px;
-                left: 120px;
+                left: 70px;
                 @include Font('Inter', 600, 18px);
         }
     }
@@ -73,7 +73,7 @@
 
 //----- Sifremi unuttum -------
     .forget-password-section{
-            top: 137px;
+            top: 170px;
             left: 29px; 
             right: 28px;  
             padding: 23px 19px 50px 19px;
@@ -91,6 +91,11 @@
                             width: 100%;
                     }
             }
+//      :first-child{
+//             padding: 0 20px;
+//             width: 50%;
+//        }
+           
     }
     .haqqimizda-info{
             padding: 70px 40px ;
@@ -142,6 +147,23 @@
 //----- Qeydiyyat -------
     .register-section{
         top: 170px;  
+        padding: 30px 10px;
+        left: 18px;
+        .desktop-form{
+                display: none !important;
+        }
+        .responsive-form{
+                display: block !important;
+                width: 400px;
+                width: 100%;
+                // padding: 0 20px;
+                form{
+                        width: 100%;
+                }
+        }
+        .login{
+                margin-top: 20px
+        }
     }
 
 //----- Traifler -------
@@ -157,10 +179,11 @@
                 } 
                 .main-info{
                         width: 100%; 
-
+                        padding:  25px !important;
                 }    
         }
         .prices{
+                // padding: 0 50px !important;
                 .price-list{
                         .price{
                             width: 100%;      
@@ -171,7 +194,7 @@
 
 //----- Footer -------
     .footer{
-       margin-top: 500px;
+       margin-top: 50px;
        .contact-section{
         @include Flex(column, space-between, none);
         .contact {
@@ -201,8 +224,9 @@
 
 //----- Ana sehife -------
     .ana-sehife-text{
-        top: 100px;
-        left: 20px;    
+        width: 300px;
+        top: 150px;
+        left: 40px;    
         @include Font('Inter', 400, 12px);
     }
     .calculator{
@@ -245,7 +269,7 @@
         }
         .advantages-section{
                 width: 100%;
-                padding: 20px 10px;
+                padding: 20px 40px;
                 @include Flex(column, center, center) ;
                 .advantage{
                         width: 100%;
@@ -276,13 +300,34 @@
                 }
         }
         .steps{
+                display: none !important;
+        }
+        .steps-responsive{
+                display: block !important;
                 width: 100%;
                 .step{
-                        .step-logo{
-                                width: 40px;
-                                height: 40px;
+                        padding: 20px;
+                        h3{
+                            color: $--orange;
+                            width: 60%;
                         }
-                }
+                        .step-number{
+                            @include Font('Inter', 600, 50px);
+                            color: rgba(102, 102, 102, 0.15);
+            
+                        }
+                        .step-logo{
+                            background-color: $--orange;
+                        @include Border(50px);
+                        width: 40px;
+                        height: 40px;
+                        @include Flex(row, center, center);
+                        img{
+                            width: 20px;
+                            height: 20px; 
+                        }
+                        }
+                    }
         }
     }
     .latest-news{
@@ -880,47 +925,6 @@
                                 span{
                                         @include Font('Inter', 500, 16px);
                                 }
-                                .pay-btn{
-                                @include Border(13px);
-                                background-color: $--orange;
-                                color: $--light;
-                                width: 100%;
-                                padding: 8px;
-                                border: none;
-                                }
-                                .insure-btn{
-                                @include Border(13px);
-                                background-color:  #4CB71A;
-                                color: $--light;
-                                width: 100%;
-                                padding: 8px;
-                                border: none;
-                                }
-                                .edit-trash{
-                                        .edit{
-                                                background-color: $--orange;
-                                                @include Border(50px);
-                                                width: 26px;
-                                                height: 26px;
-                                                @include Flex(row, center, center);
-                                                img{
-                                                width: 10px;
-                                                height: 10px; 
-                                                }
-                                                
-                                        } 
-                                        .delete{
-                                                background-color: $--dark;
-                                                @include Border(50px);
-                                                width: 26px;
-                                                height: 26px;
-                                                @include Flex(row, center, center);
-                                                img{
-                                                width: 10px;
-                                                height: 10px; 
-                                                }
-                                        }
-                                }
                         }
                         .orders{
                                 @include Font('Inter', 600, 18px);
@@ -970,7 +974,111 @@
                 }
         }
         
-    }
+}
+.onclick-modal-responsive{
+        display: block !important;
+        .orders{
+                @include Flex(row, space-between, center);
+                @include Font('Inter', 600, 20px);
+                @include Border(13px);
+                background-color: $--light;
+                color:  $--orange;
+                border: none;
+                gap: 10px;
+                div{
+                    background-color: $--orange;
+                    @include Border(50px);
+                    width: 33px;
+                    height: 33px;
+                    @include Flex(row, center, center);
+                    img{
+                        width: 20px;
+                        height: 20px; 
+                    }
+                }
+            }
+        .order-table-responsive{
+                display: flex !important;
+                flex-direction: column !important;
+                width: 100%;
+                .product{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        position: relative;
+                        @include Border(14.2401px);
+                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        background-color: #FFFFFF;
+                        gap: 40px;
+                        padding: 10px 20px 30px 45px;
+                        .icon-close{
+                                position: absolute;
+                                right: 25px;
+                                top: 30px;
+                        }
+                        .checkbox{
+                                position: absolute;
+                                left: 18px;
+                                top: 25px;
+                                width: 18px;
+                                height: 18px;
+                        }
+                        .info{
+                                border-bottom: 1px solid #DCDCDC;
+                                padding: 10px 0;
+                        }
+                        p{
+                                @include Font('Inter', 600, 18px);   
+                        }
+                        span{
+                                @include Font('Inter', 500, 16px);
+                        }
+                        
+                }
+        }
+        h5{
+                @include Font('Inter', 600, 16px); 
+                margin: 20px 0;    
+        }
+        .make-order{
+                padding: 0 20px;
+                form{
+                    label{
+                        @include Font('Inter', 600, 17px);
+                    }
+                }
+                .checkbox:checked {
+                    background-color: #a77e2d !important;
+                    color: #ffffff !important;
+                }
+                .checkbox:after {
+                    box-shadow: none !important;
+                }                          
+                .payment{
+                    span{
+                        @include Font('Inter', 600, 16px);
+                    }
+                    div{
+                        border: 2px solid $--orange;
+                        @include Border(13px);
+                        color: $--orange;
+                        // width: 100%;
+                        padding: 5px 8px;
+                    }
+                }
+                .make-order-btn{
+                    button{
+                        @include Font('Inter', 600, 17px);
+                    @include Flex(row, center, center);
+                    border: 2px solid $--orange;
+                    @include Border(13px);
+                    color: $--light;
+                    background-color:  $--orange;
+                    padding: 10px 20px;
+                    width: 100%;
+                    }
+                }
+        }
+}
 
 
 

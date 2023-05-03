@@ -4,7 +4,7 @@
 
 .footer {
     @include Flex(column, space-between, none);
-    margin-top: 700px;
+    // margin-top: 700px;
     .contact-section{
         @include Flex(row, space-between, none);
         .contact {
