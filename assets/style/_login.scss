@@ -3,36 +3,45 @@
 @import '../sass-utils/_variable.scss';
 
 .login-section{
-    @include Border(13px);
-    @include Flex(column, center, center);
-    background-color: $--light;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: absolute;
-    top: 260px;
-    left: 128px;
-    right: 168px;
-    padding: 31px 300px  100px 300px;
-    z-index: 999;
-    h1{
-        text-align: center;
-        margin: 94px 0 46px 0;
-        @include Font('Inter', 600, 34px);
-    }
-    .form-check{
-        width: 100%
-    }
-    .login-btn{
+    position: relative;
+    margin-bottom: 50px;
+    height: 500px;
+    .bg-login{
         @include Border(13px);
-        background-color: $--orange;
-        color: $--light;
-        border: none;
-        @include Flex(row, center, center);
-        padding-top: 13px;
-    }
-    .register{
-        @include Flex(row, center, center);
-        margin-top: 71px;
-        gap: 10px;
-        color: $--gray;
+        @include Flex(column, center, center);
+        background-color: $--light;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: absolute;
+        top: -130px;
+        left: 100px;
+        right: 168px;
+        padding: 31px 200px  100px 200px;
+        z-index: 999;
+        h1{
+            text-align: center;
+            margin: 94px 0 46px 0;
+            @include Font('Inter', 600, 34px);
+        }
+        .form-check{
+            width: 100%
+        }
+        .login-btn{
+            @include Border(13px);
+            background-color: $--orange;
+            color: $--light;
+            border: none;
+            @include Flex(row, center, center);
+            padding-top: 13px;
+        }
+        form{
+            width: 70%;
+        }
+        .register{
+            @include Flex(row, center, center);
+            margin-top: 71px;
+            gap: 10px;
+            color: $--gray;
+            width: 100%;
+        }
     }
 }

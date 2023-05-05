@@ -101,27 +101,7 @@
             h4{
                 @include Font('Inter', 600, 20px);
             }
-            .table{
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                .titles{
-                    color: $--light;
-                    background-color: $--orange;
-                    @include Border(13px 13px 0 0);
-                    .col{
-                        border-right: 1px solid $--light;
-                    }
-                }
-            //    .orders{
-            //     .col{
-            //         :nth-child(odd) {
-            //             background-color: $--light;
-            //         }
-            //         :nth-child(even) {
-            //             background-color: $--lightgray;
-            //         }
-            //     }
-            //    }
-            }
+            
         }
         .transactions-responsive{
             display: none !important;
@@ -148,3 +128,4 @@
         }
     }
 }
+

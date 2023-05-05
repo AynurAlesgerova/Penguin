@@ -1,0 +1,17 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.table{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    thead{
+        color: $--light;
+        @include Border(13px);
+        background-color: $--orange;
+        tr{
+            th{
+                border-right: 2px solid $--light;
+            }
+        }
+    }
+}

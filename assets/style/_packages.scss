@@ -2,9 +2,9 @@
 @import '../sass-utils/mixins';
 @import '../sass-utils/_variable.scss';
 
-.baglamalarim{
+.packages{
    
-    .baglamalarim-section{
+    .packages-section{
         width: 85%;
         padding: 20px;
         background-color: $--lightgray;
@@ -33,8 +33,8 @@
                 }
             }
         }
-        .baglama-sayi{
-            padding: 9px 20px;
+        .package-number{
+            padding: 9px 20px; 
             border: 2px solid $--dark;
             @include Border(13px);
         }
@@ -52,7 +52,7 @@
                 //     border-right: 1px solid $--orange !important ;
                 // }
             }
-           .baglamalarim-row{
+           .packages-row{
             // :nth-child(odd) {
             //     background-color: $--light;
             // }
@@ -124,7 +124,7 @@
             }
         }
     }
-    .baglamalarim-section-responsive{
+    .packages-section-responsive{
         display: none;
     }
 }

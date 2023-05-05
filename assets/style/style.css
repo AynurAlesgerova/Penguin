@@ -14,6 +14,7 @@
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 * {
   margin: 0;
   padding: 0;
@@ -384,27 +385,7 @@ p {
 }
 
 .highlights {
-  padding: 20px 0;
-}
-.highlights .highlight .highlight-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border: 1px solid red;
-  padding: 2px;
-}
-.highlights .highlight .highlight-img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
+  display: none !important;
 }
 
 .calculator .calculator-info {
@@ -673,6 +654,10 @@ p {
   font-size: 34px;
 }
 
+.advantage .logo svg path {
+  fill: red !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -715,13 +700,17 @@ p {
   width: 100%;
   height: 100%;
 }
+.haqqimizda :first-child {
+  padding: 0 30px;
+  width: 50%;
+}
 
-.haqqimizda-info {
+.about-info {
   padding: 250px 240px;
   position: relative;
   background-color: #EEEEEE;
 }
-.haqqimizda-info h1 {
+.about-info h1 {
   color: #FF6600;
   z-index: 999;
   text-align: center;
@@ -729,45 +718,45 @@ p {
   font-weight: 600;
   font-size: 18px;
 }
-.haqqimizda-info p {
+.about-info p {
   z-index: 999;
 }
-.haqqimizda-info .icon-1 {
+.about-info .icon-1 {
   position: absolute;
   top: 0;
   left: 300px;
 }
-.haqqimizda-info .icon-2 {
+.about-info .icon-2 {
   position: absolute;
   top: 0;
   left: 50%;
 }
-.haqqimizda-info .icon-3 {
+.about-info .icon-3 {
   position: absolute;
   top: 0;
   right: 300px;
 }
-.haqqimizda-info .haqqimizda-logo-img {
+.about-info .about-logo-img {
   position: absolute;
   bottom: 200px;
   left: 550px;
 }
-.haqqimizda-info .haqqimizda-letter {
+.about-info .about-letter {
   position: absolute;
   bottom: 70px;
   left: 300px;
 }
-.haqqimizda-info .car-icon {
+.about-info .car-icon {
   position: absolute;
   bottom: 90px;
   left: 230px;
 }
-.haqqimizda-info .basket-icon {
+.about-info .basket-icon {
   position: absolute;
   bottom: 90px;
   right: 190px;
 }
-.haqqimizda-info .box-icon {
+.about-info .box-icon {
   position: absolute;
   top: 30px;
   left: 47%;
@@ -802,6 +791,10 @@ p {
 }
 
 .forget-password-section {
+  position: relative;
+  height: 400px;
+}
+.forget-password-section .bg-forget-password {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -814,17 +807,17 @@ p {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
-  top: 260px;
+  top: -150px;
   left: 128px;
   right: 168px;
   padding: 31px 300px 100px 300px;
   z-index: 999;
 }
-.forget-password-section h1 {
+.forget-password-section .bg-forget-password h1 {
   text-align: center;
   margin: 94px 0 46px 0;
 }
-.forget-password-section .forget-password-btn {
+.forget-password-section .bg-forget-password .forget-password-btn {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -839,7 +832,7 @@ p {
   align-items: center;
   padding-top: 13px;
 }
-.forget-password-section .register {
+.forget-password-section .bg-forget-password .register {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -878,6 +871,10 @@ p {
 }
 
 .register-section {
+  position: relative;
+  height: 500px;
+}
+.register-section .bg-sign-up {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -890,7 +887,7 @@ p {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
-  top: 260px;
+  top: -130px;
   left: 75px;
   right: 168px;
   padding: 31px 20px;
@@ -898,14 +895,14 @@ p {
   margin-bottom: 500px;
   width: 90%;
 }
-.register-section h1 {
+.register-section .bg-sign-up h1 {
   text-align: center;
   margin-bottom: 46px;
   font-family: "Inter";
   font-weight: 600;
   font-size: 34px;
 }
-.register-section .register-btn {
+.register-section .bg-sign-up .register-btn {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -920,7 +917,7 @@ p {
   align-items: center;
   padding-top: 13px;
 }
-.register-section .login {
+.register-section .bg-sign-up .login {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -929,7 +926,7 @@ p {
   gap: 10px;
   color: #A7A7A7;
 }
-.register-section .responsive-form {
+.register-section .bg-sign-up .responsive-form {
   display: none !important;
 }
 
@@ -961,20 +958,20 @@ p {
   margin-bottom: 0 !important;
 }
 
-.tarifler {
+.rates {
   margin-bottom: 80px;
 }
-.tarifler .tarifler-info {
+.rates .rates-info {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
-.tarifler .tarifler-info .logo-box {
+.rates .rates-info .logo-box {
   width: 30%;
   background-color: #000000;
   padding: 50px 50px;
   color: #fff;
   position: relative;
 }
-.tarifler .tarifler-info .logo-box .dollar {
+.rates .rates-info .logo-box .dollar {
   padding: 10px 20px;
   background-color: #fff;
   border-radius: 50px;
@@ -983,39 +980,39 @@ p {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
-.tarifler .tarifler-info .logo-box .img {
+.rates .rates-info .logo-box .img {
   position: relative;
   padding-top: 30px;
 }
-.tarifler .tarifler-info .logo-box .img #logo {
+.rates .rates-info .logo-box .img #logo {
   position: absolute;
   top: 70px;
   left: 40px;
 }
-.tarifler .tarifler-info .logo-box #coin {
+.rates .rates-info .logo-box #coin {
   position: absolute;
   left: 260px;
   top: 160px;
 }
-.tarifler .tarifler-info .main-info {
+.rates .rates-info .main-info {
   width: 70%;
 }
-.tarifler .tarifler-info .main-info h2 {
+.rates .rates-info .main-info h2 {
   color: #FF6600;
 }
-.tarifler .tarifler-info .main-info p {
+.rates .rates-info .main-info p {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
   line-height: 147.52%;
 }
-.tarifler .prices h1 {
+.rates .prices h1 {
   color: #FF6600;
   font-family: "Inter";
   font-weight: 600;
   font-size: 34px;
 }
-.tarifler .prices .delivery .branch-delivery {
+.rates .prices .delivery .branch-delivery {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -1031,7 +1028,7 @@ p {
   width: 208px;
   height: 94px;
 }
-.tarifler .prices .delivery .address-delivery {
+.rates .prices .delivery .address-delivery {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -1047,7 +1044,7 @@ p {
   width: 208px;
   height: 94px;
 }
-.tarifler .prices .branches .branch {
+.rates .prices .branches .branch {
   padding: 10px;
   border: 2px solid #000000;
   border-radius: 13px;
@@ -1056,21 +1053,21 @@ p {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-.tarifler .prices .price-list {
+.rates .prices .price-list {
   padding: 10px;
 }
-.tarifler .prices .price-list .price {
+.rates .prices .price-list .price {
   border-bottom: 2px solid #FF6600;
   width: 700px;
   padding: 10px;
 }
-.tarifler .prices .price-list .price #each-price {
+.rates .prices .price-list .price #each-price {
   color: #FF6600;
   font-family: "Inter";
   font-weight: 600;
   font-size: 18px;
 }
-.tarifler .prices .price-list p {
+.rates .prices .price-list p {
   font-family: "Inter";
   font-weight: 600;
   font-size: 20px;
@@ -1104,20 +1101,20 @@ p {
   margin-bottom: 0 !important;
 }
 
-.xidmetler {
+.services {
   margin-bottom: 80px;
 }
-.xidmetler .xidmetler-info {
+.services .services-info {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
-.xidmetler .xidmetler-info .logo-box {
+.services .services-info .logo-box {
   width: 30%;
   background-color: #000000;
   padding: 50px 50px;
   color: #fff;
   position: relative;
 }
-.xidmetler .xidmetler-info .logo-box .image {
+.services .services-info .logo-box .image {
   padding: 12px 10px;
   background-color: #fff;
   border-radius: 50px;
@@ -1126,17 +1123,17 @@ p {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
 }
-.xidmetler .xidmetler-info .logo-box .img {
+.services .services-info .logo-box .img {
   position: relative;
   padding-top: 30px;
 }
-.xidmetler .xidmetler-info .main-info {
+.services .services-info .main-info {
   width: 70%;
 }
-.xidmetler .xidmetler-info .main-info h2 {
+.services .services-info .main-info h2 {
   color: #FF6600;
 }
-.xidmetler .xidmetler-info .main-info p {
+.services .services-info .main-info p {
   font-family: "Inter";
   font-weight: 400;
   font-size: 16px;
@@ -1172,6 +1169,11 @@ p {
 }
 
 .login-section {
+  position: relative;
+  margin-bottom: 50px;
+  height: 500px;
+}
+.login-section .bg-login {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -1184,23 +1186,23 @@ p {
   background-color: #fff;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   position: absolute;
-  top: 260px;
-  left: 128px;
+  top: -130px;
+  left: 100px;
   right: 168px;
-  padding: 31px 300px 100px 300px;
+  padding: 31px 200px 100px 200px;
   z-index: 999;
 }
-.login-section h1 {
+.login-section .bg-login h1 {
   text-align: center;
   margin: 94px 0 46px 0;
   font-family: "Inter";
   font-weight: 600;
   font-size: 34px;
 }
-.login-section .form-check {
+.login-section .bg-login .form-check {
   width: 100%;
 }
-.login-section .login-btn {
+.login-section .bg-login .login-btn {
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
@@ -1215,7 +1217,10 @@ p {
   align-items: center;
   padding-top: 13px;
 }
-.login-section .register {
+.login-section .bg-login form {
+  width: 70%;
+}
+.login-section .bg-login .register {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1223,6 +1228,7 @@ p {
   margin-top: 71px;
   gap: 10px;
   color: #A7A7A7;
+  width: 100%;
 }
 
 * {
@@ -1686,21 +1692,6 @@ p {
   font-weight: 600;
   font-size: 20px;
 }
-.balance-services .balance-transactions .transactions .table {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-.balance-services .balance-transactions .transactions .table .titles {
-  color: #fff;
-  background-color: #FF6600;
-  border-radius: 13px 13px 0 0;
-  -webkit-border-radius: 13px 13px 0 0;
-  -moz-border-radius: 13px 13px 0 0;
-  -ms-border-radius: 13px 13px 0 0;
-  -o-border-radius: 13px 13px 0 0;
-}
-.balance-services .balance-transactions .transactions .table .titles .col {
-  border-right: 1px solid #fff;
-}
 .balance-services .balance-transactions .transactions-responsive {
   display: none !important;
 }
@@ -1767,15 +1758,15 @@ p {
   margin-bottom: 0 !important;
 }
 
-.baglamalarim .baglamalarim-section {
+.packages .packages-section {
   width: 85%;
   padding: 20px;
   background-color: #EEEEEE;
 }
-.baglamalarim .baglamalarim-section .make-order-btn {
+.packages .packages-section .make-order-btn {
   margin-bottom: 20px;
 }
-.baglamalarim .baglamalarim-section .make-order-btn button {
+.packages .packages-section .make-order-btn button {
   padding-left: 10px;
   background-color: #fff;
   width: 155px;
@@ -1791,7 +1782,7 @@ p {
   font-weight: 600;
   font-size: 20px;
 }
-.baglamalarim .baglamalarim-section .make-order-btn button .icon {
+.packages .packages-section .make-order-btn button .icon {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -1805,11 +1796,11 @@ p {
   justify-content: center;
   align-items: center;
 }
-.baglamalarim .baglamalarim-section .make-order-btn button .icon img {
+.packages .packages-section .make-order-btn button .icon img {
   width: 10px;
   height: 10px;
 }
-.baglamalarim .baglamalarim-section .baglama-sayi {
+.packages .packages-section .package-number {
   padding: 9px 20px;
   border: 2px solid #000000;
   border-radius: 13px;
@@ -1818,10 +1809,10 @@ p {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-.baglamalarim .baglamalarim-section .table {
+.packages .packages-section .table {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
-.baglamalarim .baglamalarim-section .table .titles {
+.packages .packages-section .table .titles {
   color: #fff;
   background-color: #FF6600;
   border-radius: 13px 13px 0 0;
@@ -1830,17 +1821,17 @@ p {
   -ms-border-radius: 13px 13px 0 0;
   -o-border-radius: 13px 13px 0 0;
 }
-.baglamalarim .baglamalarim-section .table .titles .col {
+.packages .packages-section .table .titles .col {
   display: flex;
   flex-direction: row;
   justify-content: none;
   align-items: center;
   border-right: 1px solid #fff;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row {
+.packages .packages-section .table .packages-row {
   width: 100%;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .insure-btn {
+.packages .packages-section .table .packages-row .col .insure-btn {
   background-color: #4CB71A;
   width: 105px;
   height: 35px;
@@ -1856,7 +1847,7 @@ p {
   justify-content: center;
   align-items: center;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .open-detail {
+.packages .packages-section .table .packages-row .col .open-detail {
   background-color: #fff;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -1870,15 +1861,15 @@ p {
   justify-content: center;
   align-items: center;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .col .open-detail img {
+.packages .packages-section .table .packages-row .col .open-detail img {
   width: 20px;
   height: 20px;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .details {
+.packages .packages-section .table .packages-row .details {
   width: 100%;
   padding: 20px;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .details .products {
+.packages .packages-section .table .packages-row .details .products {
   width: 48%;
   background-color: #FF6600;
   color: #fff;
@@ -1889,7 +1880,7 @@ p {
   -o-border-radius: 13px;
   border: none;
 }
-.baglamalarim .baglamalarim-section .table .baglamalarim-row .details .history {
+.packages .packages-section .table .packages-row .details .history {
   width: 48%;
   background-color: #000000;
   color: #fff;
@@ -1900,7 +1891,7 @@ p {
   -o-border-radius: 13px;
   border: none;
 }
-.baglamalarim .baglamalarim-section .pages .previous {
+.packages .packages-section .pages .previous {
   padding: 13px 25px;
   display: flex;
   flex-direction: row;
@@ -1919,7 +1910,7 @@ p {
   color: #8B8B8B;
   border: none;
 }
-.baglamalarim .baglamalarim-section .pages .next {
+.packages .packages-section .pages .next {
   padding: 13px 25px;
   background-color: #FF6600;
   display: flex;
@@ -1934,7 +1925,7 @@ p {
   color: #fff;
   border: none;
 }
-.baglamalarim .baglamalarim-section-responsive {
+.packages .packages-section-responsive {
   display: none;
 }
 
@@ -2629,6 +2620,50 @@ p {
   margin-bottom: 0 !important;
 }
 
+.table {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.table thead {
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  background-color: #FF6600;
+}
+.table thead tr th {
+  border-right: 2px solid #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
 @media screen and (max-width: 576px) {
   header nav .image-box {
     width: 40px;
@@ -2690,126 +2725,142 @@ p {
     font-weight: 600;
     font-size: 18px;
   }
-  .xidmetler .xidmetler-info {
+  .services .services-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
   }
-  .xidmetler .xidmetler-info .logo-box {
+  .services .services-info .logo-box {
     width: 100%;
   }
-  .xidmetler .xidmetler-info .main-info {
+  .services .services-info .main-info {
     width: 100%;
   }
   .forget-password-section {
-    top: 170px;
-    left: 29px;
+    width: 100%;
+    height: 340px;
+  }
+  .forget-password-section .bg-forget-password {
+    width: 90%;
+    top: -150px;
+    left: 20px;
     right: 28px;
-    padding: 23px 19px 50px 19px;
+    padding: 23px 0px 50px 0px;
   }
-  .forget-password-section .register {
+  .forget-password-section .bg-forget-password .register {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .haqqimizda {
+  .about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .haqqimizda .haqqimizda-img {
+  .about .about-img {
     width: 100%;
   }
-  .haqqimizda .haqqimizda-img img {
+  .about .about-img img {
     width: 100%;
   }
-  .haqqimizda-info {
+  .about-info {
     padding: 70px 40px;
   }
-  .haqqimizda-info .haqqimizda-logo-img {
+  .about-info .about-logo-img {
     width: 190px;
     height: 190px;
     left: 90px;
     top: 40px;
   }
-  .haqqimizda-info .haqqimizda-letter {
+  .about-info .about-letter {
     width: 300px;
     height: 90px;
     left: 50px;
     bottom: 0px;
   }
-  .haqqimizda-info .car-icon {
+  .about-info .car-icon {
     width: 35px;
     height: 22px;
     left: 15px;
     bottom: 20px;
   }
-  .haqqimizda-info .basket-icon {
+  .about-info .basket-icon {
     width: 35px;
     height: 22px;
     right: 15px;
     bottom: 20px;
   }
-  .haqqimizda-info .box-icon {
+  .about-info .box-icon {
     width: 25px;
     height: 22px;
   }
   .login-section {
-    top: 170px;
-    left: 29px;
-    right: 28px;
-    padding: 23px 19px 40px 19px;
+    height: 300px;
   }
-  .login-section h1 {
+  .login-section .bg-login {
+    top: -150px;
+    left: 18px;
+    padding: 23px 0px 40px 0px;
+    width: 90%;
+  }
+  .login-section .bg-login h1 {
     margin: 0 0 23px 0;
     font-family: "Inter";
     font-weight: 600;
     font-size: 18px;
   }
-  .login-section .register {
+  .login-section .bg-login .register {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+  .login-section .bg-login form {
+    width: 80%;
+  }
   .register-section {
-    top: 170px;
+    height: 750px;
+  }
+  .register-section .bg-sign-up {
+    top: -150px;
     padding: 30px 10px;
     left: 18px;
   }
-  .register-section .desktop-form {
+  .register-section .bg-sign-up .desktop-form {
     display: none !important;
   }
-  .register-section .responsive-form {
+  .register-section .bg-sign-up .responsive-form {
     display: block !important;
     width: 400px;
     width: 100%;
   }
-  .register-section .responsive-form form {
+  .register-section .bg-sign-up .responsive-form form {
     width: 100%;
   }
-  .register-section .login {
+  .register-section .bg-sign-up .login {
     margin-top: 20px;
   }
-  .tarifler .tarifler-info {
+  .rates .rates-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
   }
-  .tarifler .tarifler-info .logo-box {
+  .rates .rates-info .logo-box {
     width: 100%;
   }
-  .tarifler .tarifler-info .logo-box #coin {
+  .rates .rates-info .logo-box #coin {
     left: 260px;
     top: 150px;
   }
-  .tarifler .tarifler-info .main-info {
+  .rates .rates-info .main-info {
     width: 100%;
     padding: 25px !important;
   }
-  .tarifler .prices .price-list .price {
+  .rates .prices .price-list .price {
     width: 100%;
   }
   .footer {
@@ -2852,6 +2903,30 @@ p {
     font-family: "Inter";
     font-weight: 400;
     font-size: 12px;
+  }
+  .highlights {
+    display: flex !important;
+    padding: 20px 0;
+  }
+  .highlights .highlight .highlight-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid red;
+    padding: 2px;
+  }
+  .highlights .highlight .highlight-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
   }
   .calculator {
     display: flex;

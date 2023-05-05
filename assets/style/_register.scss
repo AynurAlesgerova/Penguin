@@ -3,26 +3,28 @@
 @import '../sass-utils/_variable.scss';
 
 
-.forget-password-section{
+.register-section{
     position: relative;
-    height: 400px;
-    .bg-forget-password{
+    height: 500px;
+    .bg-sign-up{
         @include Border(13px);
         @include Flex(column, center, center);
         background-color: $--light;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: absolute;
-        top: -150px;
-        left: 128px;
+        top: -130px;
+        left: 75px;
         right: 168px;
-        padding: 31px 300px  100px 300px;
+        padding: 31px 20px;
         z-index: 999;
-       
+        margin-bottom: 500px;
+        width: 90%;
         h1{
             text-align: center;
-            margin: 94px 0 46px 0;
+            margin-bottom: 46px;
+            @include Font('Inter', 600,34px)
         }
-        .forget-password-btn{
+        .register-btn{
             @include Border(13px);
             background-color: $--orange;
             color: $--light;
@@ -30,12 +32,15 @@
             @include Flex(row, center, center);
             padding-top: 13px;
         }
-        .register{
+        .login{
             @include Flex(row, center, center);
-            margin-top: 71px;
+            margin-top: 50px;
             gap: 10px;
             color: $--gray;
-          
+        }
+        .responsive-form{
+            display: none !important;
         }
     }
 }
+
