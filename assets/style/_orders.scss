@@ -4,11 +4,11 @@
 
 .orders{
     display: flex !important;
-    
     .order-section{
         width: 85%;
         padding: 40px;
         background-color: $--lightgray;
+        padding: 30px 50px 200px 50px !important; 
         .make-order-btn{
             margin-bottom: 20px;
             button{
@@ -139,7 +139,7 @@
     
             }
         }
-    }
+    } 
     .order-section-responsive{
         display: none !important;
     }

@@ -14,4 +14,78 @@
             }
         }
     }
+    tbody{
+        tr{
+            .col{
+                .insure-btn{
+                    background-color: $--green;
+                    width: 105px;
+                    height: 35px;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Flex(row, center, center);
+                }
+                .open-detail{
+                    background-color: $--light;
+                    @include Border(50px);
+                    width: 35px;
+                    height: 35px;
+                    @include Flex(row, center, center);
+                    img{
+                        width: 20px;
+                        height: 20px; 
+                    }
+                    
+                }  
+                .edit-trash{
+                    .edit{
+                            background-color: $--orange;
+                            @include Border(50px);
+                            width: 26px;
+                            height: 26px;
+                            @include Flex(row, center, center);
+                            img{
+                            width: 10px;
+                            height: 10px; 
+                            }
+                            
+                    } 
+                    .delete{
+                            background-color: $--dark;
+                            @include Border(50px);
+                            width: 26px;
+                            height: 26px;
+                            @include Flex(row, center, center);
+                            img{
+                            width: 10px;
+                            height: 10px; 
+                            }
+                    }
+            } 
+            }
+        }
+        .details{
+            width: 100%;
+            padding: 20px;
+            td{
+                width: 50%;
+                
+            }
+            .products{
+                width: 48%;
+                background-color: $--orange;
+                color: $--light;
+                @include Border(13px);
+                border: none;
+            }
+            .history{
+                width: 48%;
+                background-color: $--dark;
+                color: $--light;
+                @include Border(13px);
+                border: none;
+            }
+        }
+    }
 }

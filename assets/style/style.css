@@ -1333,6 +1333,7 @@ p {
   width: 85%;
   padding: 40px;
   background-color: #EEEEEE;
+  padding: 30px 50px 200px 50px !important;
 }
 .orders .order-section .make-order-btn {
   margin-bottom: 20px;
@@ -1762,6 +1763,7 @@ p {
   width: 85%;
   padding: 20px;
   background-color: #EEEEEE;
+  padding: 30px 50px 200px 50px !important;
 }
 .packages .packages-section .make-order-btn {
   margin-bottom: 20px;
@@ -2635,6 +2637,105 @@ p {
 .table thead tr th {
   border-right: 2px solid #fff;
 }
+.table tbody tr .col .insure-btn {
+  background-color: #4CB71A;
+  width: 105px;
+  height: 35px;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.table tbody tr .col .open-detail {
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.table tbody tr .col .open-detail img {
+  width: 20px;
+  height: 20px;
+}
+.table tbody tr .col .edit-trash .edit {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.table tbody tr .col .edit-trash .edit img {
+  width: 10px;
+  height: 10px;
+}
+.table tbody tr .col .edit-trash .delete {
+  background-color: #000000;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.table tbody tr .col .edit-trash .delete img {
+  width: 10px;
+  height: 10px;
+}
+.table tbody .details {
+  width: 100%;
+  padding: 20px;
+}
+.table tbody .details td {
+  width: 50%;
+}
+.table tbody .details .products {
+  width: 48%;
+  background-color: #FF6600;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+}
+.table tbody .details .history {
+  width: 48%;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  border: none;
+}
 
 * {
   margin: 0;
@@ -2724,6 +2825,39 @@ p {
     font-family: "Inter";
     font-weight: 600;
     font-size: 18px;
+  }
+  .footer {
+    margin-top: 50px;
+  }
+  .footer .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: none;
+  }
+  .footer .contact-section .contact {
+    width: 100%;
+    order: 2;
+    padding: 20px 20px 0 20px;
+    gap: 50px;
+  }
+  .footer .contact-section .contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: none;
+  }
+  .footer .contact-section .contact .contact-container .contact-section {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    margin-bottom: 20px;
+  }
+  .footer .contact-section .social-media {
+    width: 100%;
+    order: 1;
+    padding: 50px 30px;
+  }
+  .footer .developed-by {
+    display: none;
   }
   .services .services-info {
     display: flex;
@@ -2862,39 +2996,6 @@ p {
   }
   .rates .prices .price-list .price {
     width: 100%;
-  }
-  .footer {
-    margin-top: 50px;
-  }
-  .footer .contact-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: none;
-  }
-  .footer .contact-section .contact {
-    width: 100%;
-    order: 2;
-    padding: 20px 20px 0 20px;
-    gap: 50px;
-  }
-  .footer .contact-section .contact .contact-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: none;
-  }
-  .footer .contact-section .contact .contact-container .contact-section {
-    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    margin-bottom: 20px;
-  }
-  .footer .contact-section .social-media {
-    width: 100%;
-    order: 1;
-    padding: 50px 30px;
-  }
-  .footer .developed-by {
-    display: none;
   }
   .ana-sehife-text {
     width: 300px;
@@ -3238,19 +3339,19 @@ p {
     color: #fff;
     border: none;
   }
-  .baglamalarim {
+  .packages {
     display: flex;
     flex-direction: column !important;
   }
-  .baglamalarim .baglamalarim-section {
+  .packages .packages-section {
     display: none !important;
   }
-  .baglamalarim .baglamalarim-section-responsive {
+  .packages .packages-section-responsive {
     display: block !important;
     padding: 20px 55px;
     background-color: #EEEEEE;
   }
-  .baglamalarim .baglamalarim-section-responsive .baglama-sayi {
+  .packages .packages-section-responsive .package-number {
     width: 80%;
     margin-bottom: 20px;
     padding: 9px 0 9px 10px;
@@ -3261,10 +3362,10 @@ p {
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
   }
-  .baglamalarim .baglamalarim-section-responsive .baglama-sayi img {
+  .packages .packages-section-responsive .package-number img {
     margin-left: 35px;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product {
+  .packages .packages-section-responsive .responsive-table .product {
     margin-bottom: 20px;
     position: relative;
     border-radius: 14.2401px;
@@ -3277,26 +3378,26 @@ p {
     gap: 40px;
     padding: 13px 20px;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product .icon-close {
+  .packages .packages-section-responsive .responsive-table .product .icon-close {
     position: absolute;
     right: 25px;
     top: 25px;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product .info {
+  .packages .packages-section-responsive .responsive-table .product .info {
     border-bottom: 1px solid #DCDCDC;
     padding: 10px 0;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product p {
+  .packages .packages-section-responsive .responsive-table .product p {
     font-family: "Inter";
     font-weight: 600;
     font-size: 18px;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product span {
+  .packages .packages-section-responsive .responsive-table .product span {
     font-family: "Inter";
     font-weight: 500;
     font-size: 16px;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product .product-btn {
+  .packages .packages-section-responsive .responsive-table .product .product-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -3308,7 +3409,7 @@ p {
     padding: 8px;
     border: none;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product .history-btn {
+  .packages .packages-section-responsive .responsive-table .product .history-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -3320,7 +3421,7 @@ p {
     padding: 8px;
     border: none;
   }
-  .baglamalarim .baglamalarim-section-responsive .responsive-table .product .insure-btn {
+  .packages .packages-section-responsive .responsive-table .product .insure-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -3332,7 +3433,7 @@ p {
     padding: 8px;
     border: none;
   }
-  .baglamalarim .baglamalarim-section-responsive .pages .previous {
+  .packages .packages-section-responsive .pages .previous {
     padding: 8px 15px;
     display: flex;
     flex-direction: row;
@@ -3347,7 +3448,7 @@ p {
     color: #8B8B8B;
     border: none;
   }
-  .baglamalarim .baglamalarim-section-responsive .pages .next {
+  .packages .packages-section-responsive .pages .next {
     padding: 8px 15px;
     display: flex;
     flex-direction: row;
