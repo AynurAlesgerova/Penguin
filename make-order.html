@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Sifariş et</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="d-flex justify-content-between align-items-center">
+                <div class="image-box">
+                    <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
+                </div>
+                <div class="buttons-group d-flex justify-content-between align-items-center gap-3">
+                    <div class="menu-box">
+                        <button>
+                            <div class="menu-icon-box">
+                                <i class="fa-sharp fa-solid fa-list-ul"></i>
+                            </div>
+                            Menu Bar
+                        </button>
+                    </div>
+                    <div class="login-box">
+                        <button>
+                            <div class="login-icon-box">
+                                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                             </div>
+                             <a href="login.html">Login</a>
+                        </button>
+                    </div>
+                    <div class="register-box">
+                        <button>
+                            <div class="register-icon-box">
+                                <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                            </div>
+                            <a href="register.html">Qeydiyyat</a>
+                        </button>
+                    </div>
+                    <div class="mobile-menu">
+                        <button>
+                            <div class="menu-icon-box">
+                                <img src="./assets/images/anasehife/Vector (41).svg">
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="make-order-section">
+        <h3 class="desktop-h3">Sifarişin edilməsi</h3>
+        <h3 class="responsive-h3 mb-4">Sifariş et</h3>
+        <div class="d-flex gap-2 info">
+            <strong>DİQQƏT!</strong>
+            <p class="mb-3">Ödəniş olunmayan sifarişlər gün ərzində silinir. Məhsul qiymətlərini ölkəyə uyğun valyutada və düzgün daxil edin.
+            </p>
+        </div>
+        <div class="responsive-turkey-btn">
+            Türkiyə
+        </div>
+        <form class="desktop-form mb-3">
+            <button>Türkiyə</button>
+            <div class="row mb-4">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Link" required>
+                </div>
+                <div class="col">
+                    <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
+                        <option selected>Kateqoriya seçin</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                 </div>
+            </div>
+            <div class="row  mb-4">
+                <div class="col-4 ">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Məhsulun sayı</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Rəngi" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Ölçüsü" required>
+                </div>
+            </div>
+            <div class="row  mb-4">
+                <div class="col-4">
+                    <input type="text" class="form-control " placeholder="Qiyməti" required>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control " placeholder="Qeyd" required>
+                </div>
+                
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Sığortala
+                </label>
+            </div>
+        </form>
+        <form class="desktop-form mb-3">
+            <div class="delete-btn">
+                <img alt="delete" src="'./assets/images/make-order/Vector (45).svg"> 
+            </div>
+            <button>#2</button>
+            <div class="row mb-4">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Link" required>
+                </div>
+                <div class="col">
+                    <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
+                        <option selected>Kateqoriya seçin</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                 </div>
+            </div>
+            <div class="row  mb-4">
+                <div class="col-4 ">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Məhsulun sayı</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Rəngi" required>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Ölçüsü" required>
+                </div>
+            </div>
+            <div class="row  mb-4">
+                <div class="col-4">
+                    <input type="text" class="form-control " placeholder="Qiyməti" required>
+                </div>
+                <div class="col-8">
+                    <input type="text" class="form-control " placeholder="Qeyd" required>
+                </div>
+                
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Sığortala
+                </label>
+            </div>
+        </form>
+
+        <form class="responsive-form mb-3">
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Link" required>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
+                        <option selected>Kateqoriya seçin</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                 </div>
+            </div>
+            <div class="row  mb-2">
+                <div class="col">
+                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Məhsulun sayı</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Rəngi" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Ölçüsü" required>
+                </div>
+            </div>
+            <div class="row  mb-2">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Qiyməti" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <div class="col">
+                    <input type="text" class="form-control " placeholder="Qeyd" required>
+                </div>
+            </div>
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                    Sığortala
+                </label>
+            </div>
+            <div class="buttons-responsive d-flex flex-column gap-2 justify-content-end">
+                <div class="add-new-link-responsive d-flex gap-2">
+                    <div>
+                        <img src="./assets/images/make-order/Vector (42).svg">
+                    </div>
+                    <p>Yeni link əlavə edin</p>
+                </div>
+                <button class="make-order-btn-responsive">
+                    Sifariş et
+                </button>
+            </div>
+        </form>
+
+        <div class="chooses">
+            <div class="row d-flex">
+                <div class="col-2 form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Sürətli sifariş
+                    </label>
+                </div>
+                <div class=" col-2 form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Qaydalarla Razıyam
+                    </label>
+                </div>
+                <div class="col-3 form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Türkiyə daxili kuryer xərci ilə razıyam
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="chooses-responsive d-flex flex-column">
+            <div class="row d-flex">
+                <div class="col form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Sürətli sifariş
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" col form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Qaydalarla Razıyam
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col form-check mb-4">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Türkiyə daxili kuryer xərci ilə razıyam
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="buttons d-flex gap-4 justify-content-end">
+            <div class="add-new-link d-flex gap-2">
+                <div>
+                    <img src="./assets/images/make-order/Vector (42).svg">
+                </div>
+                <p>Yeni link əlavə edin</p>
+            </div>
+            <button class="make-order-btn">
+                Sifariş et
+            </button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="contact-section" >
+            <div class="contact">
+                <div class="contact-container">
+                    <div class="contact-section">
+                        <p style="color:  #A8A8A8;">Bizə sualınız var?</p>
+                        <div class="number">
+                            <img alt="phone-icon" style="width: 20px; height: 20px;" src="./assets/images/footer/Vector (3).svg">
+                            <p>*9999</p>
+                        </div>
+                        <div class="email">
+                            <img alt="email-icon" style="width: 20px; height: 20px;" src="./assets/images/footer/Vector (4).svg">
+                            <p>info@penguin.az</p>
+                        </div>
+                    </div>
+                    <div class="questions-section">
+                        <div class="question">
+                            <img alt="question-icon" style="width: 20px; height: 20px;" src="./assets/images/footer/Vector (5).svg">
+                            <p>Tez-tez verilən suallar(FAQ)</p>
+                        </div>
+                        <div class="question">
+                            <img alt="info-icon" style="width: 20px; height: 20px;" src="./assets/images/footer/Vector (6).svg">
+                            <p>İstifadəçi və Gizlilik şərtləri</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment-methods d-flex  align-items-center gap-3 mb-5    ">
+                    <img alt="mastercard-icon" src="./assets/images/footer/image 11.svg">
+                    <img alt="visa-icon" src="./assets/images/footer/image 12.svg">
+                    <img alt="pay-icon" src="./assets/images/footer/image 13.svg">
+                </div>
+            </div>
+            <div class="social-media">
+                <p style="font-size: 26px; letter-spacing: 10%; text-align: center;">It is a long established fact that
+                    a reader will be distracted by the</p>
+                <div class="icon-facebook">
+                    <img alt="facebook-icon" class="facebook" src="./assets/images/footer/Vector (7).svg">
+                </div>
+                <div class="icon-instagram">
+                    <img alt="instagram-icon" class="instagram" src="./assets/images/footer/Vector (8).svg">
+                </div>
+            </div>
+        </div>
+        <div class="developed-by">
+            <p>Developed by Goweb All rights reserved</p>
+            <p>© 2022 Penguin | Bütün Hüquqlar Qorunur</p>
+        </div>
+    </footer>
+</body>
+</html>

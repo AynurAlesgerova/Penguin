@@ -98,7 +98,7 @@
             }
         }
         .order-table{
-            .head{
+            .orders-header{
                 margin-bottom: 20px;
                 .orders{
                     @include Flex(row, center, center);
@@ -123,13 +123,14 @@
                 }
                 .package-in-office{
                     @include Flex(row, center, center);
-                    @include Font('Inter', 600, 20px);
+                    @include Font('Inter', 600, 16px);
                     @include Border(13px);
-                    padding: 10px 25px;
+                    padding: 10px 0px;
                     background-color: $--light;
                     color:  $--dark;
                     border: 1.7px solid $--dark;
                     gap: 10px;
+                    width: 25%;
                 }
             }
 
@@ -185,7 +186,7 @@
 
 }
 .onclick-modal{
-    display: none;
+    display: none ;
     width: 70%;
     z-index: 9999999;
     position: absolute;

@@ -30,7 +30,7 @@
             color: $--light;
             border: none;
             @include Flex(row, center, center);
-            padding-top: 13px;
+            padding: 10px;
         }
         .login{
             @include Flex(row, center, center);

@@ -15,7 +15,11 @@
         }
     }
     tbody{
+        // :nth-child(odd) {
+        //     background: red;
+        //   }
         tr{
+          width: 100%;
             .col{
                 .insure-btn{
                     background-color: $--green;

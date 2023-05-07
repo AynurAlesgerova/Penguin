@@ -4,8 +4,6 @@
 
 .footer {
     @include Flex(column, space-between, none);
-    // margin-top: 700px;
-    // position: relative;
     .contact-section{
         @include Flex(row, space-between, none);
         .contact {
@@ -58,14 +56,13 @@
             @include Flex(row, center, center);
             .icon-facebook {
                 position: absolute;
-                left: 25px;
+                left: 20px;
                 bottom: 20px;
                 @include Flex(row, center, center);
-                .background-icon {
-                    width: 25px;
-                    height: 25px;
-                    position: absolute;
-                }
+                border: 1px solid white;
+                @include Border(50px);
+                width: 30px;
+                height: 30px;
                 .facebook {
                     width: 15px;
                     height: 15px;
@@ -77,11 +74,10 @@
                 left: 60px;
                 bottom: 20px;
                 @include Flex(row, center, center);
-                .background-icon {
-                    width: 25px;
-                    height: 25px;
-                    position: absolute;
-                }
+                border: 1px solid white;
+                @include Border(50px);
+                width: 30px;
+                height: 30px;
                 .instagram {
                     width: 15px;
                     height: 15px;

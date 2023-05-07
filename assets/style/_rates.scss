@@ -3,7 +3,7 @@
 @import '../sass-utils/_variable.scss';
 
 .rates{
-    margin-bottom: 80px;
+    padding-bottom: 80px;
     .rates-info{
         box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
         .logo-box{
@@ -54,21 +54,17 @@
         .delivery{
             .branch-delivery{
                 @include Border(13px);
-                padding: 10px  ;  
+                padding: 30px  ;  
                 @include Flex(row,center,center);     
                 border: 2px solid $--orange;
                 color: $--orange;
-                width: 208px;
-                height: 94px
             }
             .address-delivery{
                 @include Border(13px);
                 @include Flex(row,center,center);     
-                padding: 10px;       
+                padding: 30px 10px  ;  
                 border: 2px solid $--orange;
                 color: $--orange;
-                width: 208px;
-                height: 94px
             }
         }
         .branches{

@@ -15,6 +15,7 @@
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
+@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +47,7 @@ p {
 .page-text {
   position: absolute;
   top: 181px;
-  left: 500px;
+  left: 460px;
   color: #fff;
   z-index: 999;
   font-family: "Inter";
@@ -303,17 +304,20 @@ p {
 }
 .footer .contact-section .social-media .icon-facebook {
   position: absolute;
-  left: 25px;
+  left: 20px;
   bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.footer .contact-section .social-media .icon-facebook .background-icon {
-  width: 25px;
-  height: 25px;
-  position: absolute;
+  border: 1px solid white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 30px;
+  height: 30px;
 }
 .footer .contact-section .social-media .icon-facebook .facebook {
   width: 15px;
@@ -328,11 +332,14 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-.footer .contact-section .social-media .icon-instagram .background-icon {
-  width: 25px;
-  height: 25px;
-  position: absolute;
+  border: 1px solid white;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 30px;
+  height: 30px;
 }
 .footer .contact-section .social-media .icon-instagram .instagram {
   width: 15px;
@@ -686,26 +693,26 @@ p {
   margin-bottom: 0 !important;
 }
 
-.haqqimizda h2 {
+.about .info {
+  padding: 0 50px;
+  width: 50%;
+}
+.about .info h2 {
   color: #FF6600;
-  text-align: start;
   font-family: "Inter";
   font-weight: 600;
   font-size: 34px;
 }
-.haqqimizda .haqqimizda-img {
+.about .about-img {
   width: 50%;
 }
-.haqqimizda .haqqimizda-img img {
+.about .about-img img {
   width: 100%;
   height: 100%;
 }
-.haqqimizda :first-child {
-  padding: 0 30px;
-  width: 50%;
-}
 
 .about-info {
+  margin-bottom: 50px;
   padding: 250px 240px;
   position: relative;
   background-color: #EEEEEE;
@@ -810,12 +817,15 @@ p {
   top: -150px;
   left: 128px;
   right: 168px;
-  padding: 31px 300px 100px 300px;
+  padding: 31px 200px 100px 200px;
   z-index: 999;
 }
 .forget-password-section .bg-forget-password h1 {
   text-align: center;
   margin: 94px 0 46px 0;
+}
+.forget-password-section .bg-forget-password form {
+  width: 90%;
 }
 .forget-password-section .bg-forget-password .forget-password-btn {
   border-radius: 13px;
@@ -830,7 +840,8 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 13px;
+  padding: 10px;
+  width: 90%;
 }
 .forget-password-section .bg-forget-password .register {
   display: flex;
@@ -915,7 +926,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 13px;
+  padding: 10px;
 }
 .register-section .bg-sign-up .login {
   display: flex;
@@ -959,7 +970,7 @@ p {
 }
 
 .rates {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 .rates .rates-info {
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
@@ -1018,15 +1029,13 @@ p {
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
-  padding: 10px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   border: 2px solid #FF6600;
   color: #FF6600;
-  width: 208px;
-  height: 94px;
 }
 .rates .prices .delivery .address-delivery {
   border-radius: 13px;
@@ -1038,11 +1047,9 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 30px 10px;
   border: 2px solid #FF6600;
   color: #FF6600;
-  width: 208px;
-  height: 94px;
 }
 .rates .prices .branches .branch {
   padding: 10px;
@@ -1332,7 +1339,7 @@ p {
 .orders .order-section {
   width: 85%;
   padding: 40px;
-  background-color: #EEEEEE;
+  background-color: #F5F5F5;
   padding: 30px 50px 200px 50px !important;
 }
 .orders .order-section .make-order-btn {
@@ -1762,7 +1769,7 @@ p {
 .packages .packages-section {
   width: 85%;
   padding: 20px;
-  background-color: #EEEEEE;
+  background-color: #F5F5F5;
   padding: 30px 50px 200px 50px !important;
 }
 .packages .packages-section .make-order-btn {
@@ -2326,10 +2333,10 @@ p {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-.make-courier-order .courier-order-section .order-table .head {
+.make-courier-order .courier-order-section .order-table .orders-header {
   margin-bottom: 20px;
 }
-.make-courier-order .courier-order-section .order-table .head .orders {
+.make-courier-order .courier-order-section .order-table .orders-header .orders {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -2348,7 +2355,7 @@ p {
   border: none;
   gap: 10px;
 }
-.make-courier-order .courier-order-section .order-table .head .orders div {
+.make-courier-order .courier-order-section .order-table .orders-header .orders div {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -2362,28 +2369,29 @@ p {
   justify-content: center;
   align-items: center;
 }
-.make-courier-order .courier-order-section .order-table .head .orders div img {
+.make-courier-order .courier-order-section .order-table .orders-header .orders div img {
   width: 20px;
   height: 20px;
 }
-.make-courier-order .courier-order-section .order-table .head .package-in-office {
+.make-courier-order .courier-order-section .order-table .orders-header .package-in-office {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-family: "Inter";
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
-  padding: 10px 25px;
+  padding: 10px 0px;
   background-color: #fff;
   color: #000000;
   border: 1.7px solid #000000;
   gap: 10px;
+  width: 25%;
 }
 .make-courier-order .courier-order-section .order-table .table {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -2637,6 +2645,9 @@ p {
 .table thead tr th {
   border-right: 2px solid #fff;
 }
+.table tbody tr {
+  width: 100%;
+}
 .table tbody tr .col .insure-btn {
   background-color: #4CB71A;
   width: 105px;
@@ -2735,6 +2746,163 @@ p {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Euclid Circular A";
+  font-family: Serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+}
+
+.make-order-section {
+  padding: 50px;
+  background-color: #F5F5F5;
+}
+.make-order-section .desktop-h3 {
+  color: #FF6600;
+}
+.make-order-section .responsive-h3 {
+  display: none;
+}
+.make-order-section .responsive-turkey-btn {
+  display: none !important;
+}
+.make-order-section .desktop-form {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.make-order-section .desktop-form button {
+  padding: 5px 10px;
+  border: 2px solid #FF6600;
+  color: #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.make-order-section .desktop-form .delete-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+}
+.make-order-section .desktop-form .delete-btn .img {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #FF6600;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.make-order-section .responsive-form {
+  display: none !important;
+}
+.make-order-section .chooses-responsive {
+  display: none !important;
+}
+.make-order-section .buttons .add-new-link {
+  width: 15%;
+  background-color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.make-order-section .buttons .add-new-link div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #FF6600;
+  width: 25px;
+  height: 25px;
+}
+.make-order-section .buttons .add-new-link div .img {
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  background-color: #FF6600;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+}
+.make-order-section .buttons .make-order-btn {
+  background-color: #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 10%;
+  border: none;
+  color: #fff;
 }
 
 * {
@@ -2975,6 +3143,9 @@ p {
   .register-section .bg-sign-up .login {
     margin-top: 20px;
   }
+  .rates {
+    padding-bottom: 0;
+  }
   .rates .rates-info {
     display: flex;
     flex-direction: column;
@@ -2993,6 +3164,23 @@ p {
   .rates .rates-info .main-info {
     width: 100%;
     padding: 25px !important;
+  }
+  .rates .prices {
+    padding: 0 20px !important;
+  }
+  .rates .prices h1 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .rates .prices .delivery .branch-delivery {
+    padding: 10px;
+  }
+  .rates .prices .delivery .address-delivery {
+    padding: 10px;
+  }
+  .rates .prices .branches .branch {
+    padding: 5px;
   }
   .rates .prices .price-list .price {
     width: 100%;
@@ -3164,7 +3352,7 @@ p {
     padding: 20px;
     width: 100%;
     padding: 20px 55px;
-    background-color: #EEEEEE;
+    background-color: #F5F5F5;
   }
   .balance-services .balance-transactions .head {
     display: flex;
@@ -3348,8 +3536,13 @@ p {
   }
   .packages .packages-section-responsive {
     display: block !important;
-    padding: 20px 55px;
-    background-color: #EEEEEE;
+    padding: 20px 30px;
+    background-color: #F5F5F5;
+  }
+  .packages .packages-section-responsive h5 {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
   }
   .packages .packages-section-responsive .package-number {
     width: 80%;
@@ -3472,8 +3665,8 @@ p {
   }
   .orders .order-section-responsive {
     display: block !important;
-    padding: 20px 55px;
-    background-color: #EEEEEE;
+    padding: 20px 30px;
+    background-color: #F5F5F5;
   }
   .orders .order-section-responsive h5 {
     font-family: "Inter";
@@ -3602,6 +3795,114 @@ p {
     color: #fff;
     border: none;
   }
+  .make-order-section {
+    padding: 30px;
+  }
+  .make-order-section h3 {
+    display: none !important;
+  }
+  .make-order-section .responsive-h3 {
+    display: block !important;
+  }
+  .make-order-section .info {
+    display: none !important;
+  }
+  .make-order-section .responsive-turkey-btn {
+    display: flex !important;
+    padding: 5px 10px;
+    border: 2px solid #FF6600;
+    color: #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+  .make-order-section .desktop-form {
+    display: none !important;
+  }
+  .make-order-section .responsive-form {
+    display: block !important;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+  }
+  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive {
+    width: 100%;
+    background-color: #fff;
+    border: 1.5px solid #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0px;
+  }
+  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    color: #FF6600;
+    width: 25px;
+    height: 25px;
+  }
+  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive div .img {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-color: #FF6600;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+  }
+  .make-order-section .responsive-form .buttons-responsive .make-order-btn-responsive {
+    background-color: #FF6600;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    color: #fff;
+  }
+  .make-order-section .chooses {
+    display: none !important;
+  }
+  .make-order-section .chooses-responsive {
+    display: flex !important;
+  }
+  .make-order-section .buttons {
+    display: none !important;
+  }
   .dubts {
     display: flex;
     flex-direction: column !important;
@@ -3611,7 +3912,7 @@ p {
     padding: 20px;
     width: 100%;
     padding: 20px 55px;
-    background-color: #EEEEEE;
+    background-color: #F5F5F5;
   }
   .dubts .balance-dubts .head {
     display: flex;
@@ -3792,10 +4093,9 @@ p {
   }
   .make-courier-order .courier-order-section {
     display: flex;
-    padding: 20px;
+    padding: 20px 30px;
     width: 100%;
-    padding: 20px 55px;
-    background-color: #EEEEEE;
+    background-color: #F5F5F5;
   }
   .make-courier-order .courier-order-section .head {
     display: flex;
@@ -3840,8 +4140,11 @@ p {
     width: 100%;
     padding: 10px 100px;
   }
-  .make-courier-order .courier-order-section .order-table .head .orders {
+  .make-courier-order .courier-order-section .order-table .orders-header .orders {
     display: none !important;
+  }
+  .make-courier-order .courier-order-section .order-table .orders-header .package-in-office {
+    width: 100%;
   }
   .make-courier-order .courier-order-section .order-table .table {
     display: none !important;
@@ -3951,145 +4254,6 @@ p {
     -o-border-radius: 13px;
     color: #fff;
     border: none;
-  }
-  .onclick-modal-responsive {
-    display: block !important;
-  }
-  .onclick-modal-responsive .orders {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 20px;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    background-color: #fff;
-    color: #FF6600;
-    border: none;
-    gap: 10px;
-  }
-  .onclick-modal-responsive .orders div {
-    background-color: #FF6600;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    width: 33px;
-    height: 33px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .onclick-modal-responsive .orders div img {
-    width: 20px;
-    height: 20px;
-  }
-  .onclick-modal-responsive .order-table-responsive {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100%;
-  }
-  .onclick-modal-responsive .order-table-responsive .product {
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 14.2401px;
-    -webkit-border-radius: 14.2401px;
-    -moz-border-radius: 14.2401px;
-    -ms-border-radius: 14.2401px;
-    -o-border-radius: 14.2401px;
-    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
-    gap: 40px;
-    padding: 10px 20px 30px 45px;
-  }
-  .onclick-modal-responsive .order-table-responsive .product .icon-close {
-    position: absolute;
-    right: 25px;
-    top: 30px;
-  }
-  .onclick-modal-responsive .order-table-responsive .product .checkbox {
-    position: absolute;
-    left: 18px;
-    top: 25px;
-    width: 18px;
-    height: 18px;
-  }
-  .onclick-modal-responsive .order-table-responsive .product .info {
-    border-bottom: 1px solid #DCDCDC;
-    padding: 10px 0;
-  }
-  .onclick-modal-responsive .order-table-responsive .product p {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 18px;
-  }
-  .onclick-modal-responsive .order-table-responsive .product span {
-    font-family: "Inter";
-    font-weight: 500;
-    font-size: 16px;
-  }
-  .onclick-modal-responsive h5 {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 16px;
-    margin: 20px 0;
-  }
-  .onclick-modal-responsive .make-order {
-    padding: 0 20px;
-  }
-  .onclick-modal-responsive .make-order form label {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 17px;
-  }
-  .onclick-modal-responsive .make-order .checkbox:checked {
-    background-color: #a77e2d !important;
-    color: #ffffff !important;
-  }
-  .onclick-modal-responsive .make-order .checkbox:after {
-    box-shadow: none !important;
-  }
-  .onclick-modal-responsive .make-order .payment span {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 16px;
-  }
-  .onclick-modal-responsive .make-order .payment div {
-    border: 2px solid #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    color: #FF6600;
-    padding: 5px 8px;
-  }
-  .onclick-modal-responsive .make-order .make-order-btn button {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 17px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    color: #fff;
-    background-color: #FF6600;
-    padding: 10px 20px;
-    width: 100%;
   }
   .menu-bar {
     width: 100%;
