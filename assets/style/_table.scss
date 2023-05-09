@@ -30,6 +30,15 @@
                     border: none;
                     @include Flex(row, center, center);
                 }
+                .confirm-btn{
+                    background-color: $--green;
+                    width: 105px;
+                    height: 35px;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Flex(row, center, center);
+                }
                 .open-detail{
                     background-color: $--light;
                     @include Border(50px);
@@ -93,3 +102,4 @@
         }
     }
 }
+

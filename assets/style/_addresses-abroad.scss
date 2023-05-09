@@ -1,0 +1,104 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.addresses-abroad{
+    .addresses-abroad-section{
+        width: 80%;
+        height: 100%;   
+        background-color: $--background-color;
+        padding: 50px;
+        gap: 30px !important;
+        .head{
+            span{
+                @include Font('Inter', 600, 24px);
+
+            }
+            .headline-responsive{
+                display: none;
+            }
+            .make-order-btn{
+                margin-bottom: 20px;
+                button{
+                padding-left: 10px;
+                background-color: $--light;
+                width: 155px;
+                height: 50px;
+                @include Border(13px);
+                border: none;
+                color: $--orange;
+                @include Font('Inter', 600, 20px);
+                .icon{
+                        background-color: $--orange;
+                        @include Border(50px);
+                        width: 26px;
+                        height: 26px;
+                        @include Flex(row, center, center);
+                        img{
+                        width: 10px;
+                        height: 10px; 
+                        }
+                
+                }
+                }
+        }
+        
+        }
+        .responsive-head{
+            display: none !important;
+        }
+        .turkey-btn{
+            border: 2px solid $--orange;
+            padding: 8px 10px;
+            width: 100px;
+            @include Flex(row,center,center);     
+            @include Border(13px);     
+            button{
+                border: none;
+                color: $--orange;
+            }
+        }
+        .addresses-abroad-table{
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px !important;
+            @include Border(13px);
+            width: 100%;
+            
+
+            .table{
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                margin-bottom: 70px;
+                .titles{
+                    color: $--light;
+                    background-color: $--orange;
+                    @include Border(13px 13px 0 0);
+                    .col{
+                        border-right: 1px solid $--light;
+                    }
+                }
+                .orders-section{
+                    .pay-btn{
+                        button{
+                            @include Border(13px);
+                            @include Flex(row, center, center);
+                            background-color:  $--dark;
+                            color: $--light;
+                            width: 100%;
+                            padding: 5px 20px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        .addresses-abroad-table-responsive{
+            display: none !important;
+        }
+    }
+
+}

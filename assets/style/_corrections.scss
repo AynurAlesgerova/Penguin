@@ -1,0 +1,146 @@
+@import '../sass-utils/helpers';
+@import '../sass-utils/mixins';
+@import '../sass-utils/_variable.scss';
+
+.corrections{
+    .corrections-section{
+        width: 80%;
+        height: 100%;   
+        background-color: $--background-color;
+        padding: 50px;
+        gap: 30px !important;
+        .head{
+            span{
+                @include Font('Inter', 600, 24px);
+
+            }
+            .headline-responsive{
+                display: none;
+            }
+            .make-order-btn{
+                margin-bottom: 20px;
+                button{
+                padding-left: 10px;
+                background-color: $--light;
+                width: 155px;
+                height: 50px;
+                @include Border(13px);
+                border: none;
+                color: $--orange;
+                @include Font('Inter', 600, 20px);
+                .icon{
+                        background-color: $--orange;
+                        @include Border(50px);
+                        width: 26px;
+                        height: 26px;
+                        @include Flex(row, center, center);
+                        img{
+                        width: 10px;
+                        height: 10px; 
+                        }
+                
+                }
+                }
+        }
+        
+        }
+        .services{
+            margin-bottom: 20px;
+            h5{
+                @include Font('Inter', 600, 20px);
+            }
+            .balance-services{
+                width: 48%;
+                padding: 10px 20px !important;
+                background-color: #FFFFFF;
+                @include Border(13px);
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                p{
+                    @include Font('Inter', 400, 16px);
+                }
+                .money{
+                    width: 25%;
+                    padding: 5px 8px;
+                    color: $--orange;
+                    border: 1px solid $--orange;
+                    background-color: #FFF0E5;
+                    @include Flex(row, center, center);
+                    @include Border(13px);
+                }
+            }
+            .increase-balance{
+                width: 48%;
+                background-color: #FFFFFF;
+                @include Border(13px);
+                padding: 10px 20px !important;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                .buttons{
+                    width: 100%;
+                }
+                .enter-amount{
+                    width: 45%;
+                    padding: 5px 10px;
+                    color: #A7A7A7;
+                    border: 1.5px solid $--orange;
+                    @include Flex(row, center, center);
+                    @include Border(13px);
+
+                }
+                .increase-btn{
+                    background-color: $--orange;
+                    width:45%;
+                    padding: 5px 10px;
+                    color: $--light;
+                    border: 1px solid $--orange;
+                    @include Flex(row, center, center);
+                    @include Border(13px);
+
+                }
+            }
+        }
+        .corrections-header{
+            p{
+                @include Font('Inter',600,20px);
+            }
+           span{
+            @include Font('Inter',500,16px);
+            color: $--orange;
+           }
+        }
+        .corrections-table{
+            background-color: $--light;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+           @include Border(13px);
+            form{
+                .row{
+                    .col{
+                        position: relative;
+                        img{
+                            position: absolute;
+                            right: 20px;
+                            top: 9px;
+                            width: 22px;
+                            height: 22px;
+                        }
+                    }
+                }
+                .save-btn{
+                    text-align: end;
+                    button{
+                        width: 20%;
+                        padding: 8px;
+                        color: $--light;
+                        background-color: $--orange;
+                        border: none;
+                        @include Border(13px);
+                    }
+                }
+            }
+        }
+        .corrections-table-responsive{
+            display: none !important;
+        }
+    }
+
+} 

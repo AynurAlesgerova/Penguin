@@ -1223,7 +1223,199 @@
         //         }
         // }
 
+// ------Addresses abroad------
+.addresses-abroad{
+        display: flex;
+        flex-direction: column !important;
+        .addresses-abroad-section{
+                width: 100%;
+                padding: 25px;
+                gap: 15px !important;
+                .head{
+                        display: none !important;
+                }
+                .responsive-head{
+                        display: block !important;
+                        h4{
+                                @include Font('Inter',600,18px)
+                        }
+                }
+                .addresses-abroad-table{
+                        display: none !important;
+                }
+                .addresses-abroad-table-responsive{
+                        display: flex !important;
+                        flex-direction: column !important;
+                        width: 100%;
+                        .informations{
+                                width: 100%;
+                                margin-bottom: 20px;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                        color: $--orange
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                        }
+                }
+        }
+}
 
+// ----------Tenzimlenmeler---------
+.corrections{
+        display: flex;
+        flex-direction: column !important;
+        .corrections-section{
+                width: 100%;
+                padding: 25px;
+                .head{
+                        display: none !important;
+                }
+                .services{
+                        display: none !important;
+                }
+                .corrections-header{
+                        display: none !important;
+                }
+                .corrections-table{
+                        display: none !important;
+                }
+                .corrections-table-responsive{
+                        display: flex !important;
+                        flex-direction: column !important;
+                        width: 100%;  
+                        .informations{
+                                width: 100%;
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                form{
+                                        .row{
+                                                .col{
+                                                    position: relative;
+                                                    img{
+                                                        position: absolute;
+                                                        right: 20px;
+                                                        top: 9px;
+                                                        width: 18px;
+                                                        height: 18px;
+                                                    }
+                                                }
+                                            }
+                                }
+                                .save-btn{
+                                        text-align: end;
+                                        button{
+                                            width: 100%;
+                                            padding: 8px;
+                                            color: $--light;
+                                            background-color: $--orange;
+                                            border: none;
+                                            @include Border(13px);
+                                        }
+                                    }
+                        }
+                }
+        }
+}
+
+// ------Tesdiq gozleyenler--------
+.awaiting-approval{
+        display: flex;
+        flex-direction: column !important;
+        .awaiting-approval-section{
+                width: 100%;
+                padding: 25px;
+                .head{
+                       display: none !important;
+                }
+                .head-responsive{
+                        display: block !important;
+                        @include Font('Inter',600,18px)
+                }
+                .services{
+                flex-direction: column !important;
+                gap: 20px;
+                        h5{
+                                @include Font('Inter', 600, 18px);
+                        }
+                        .balance-services{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                        }
+                        .increase-balance{
+                                width: 100%;
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                .buttons{
+                                        flex-direction: column !important;
+                                        .enter-amount{
+                                                width: 100%;
+                                                padding: 10px 80px;
+                                        }
+                                        .increase-btn{
+                                                width: 100%;
+                                                padding: 10px 100px;
+                                        }
+                                }
+                        }
+                }
+                .awaiting-approval-table{
+                        display: none !important;
+                }
+                .awaiting-approval-table-responsive{
+                        display: flex !important;
+                        width: 100%;
+                        .product{
+                                width: 100%;
+                                margin-bottom: 20px;
+                                position: relative;
+                                @include Border(14.2401px);
+                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                background-color: #FFFFFF;
+                                gap: 40px;
+                                padding: 13px 20px;
+                                .icon-close{
+                                        position: absolute;
+                                        right: 25px;
+                                        top: 25px;
+                                }
+                                .info{
+                                        border-bottom: 1px solid #DCDCDC;
+                                        padding: 10px 0;
+                                }
+                                p{
+                                        @include Font('Inter', 600, 18px);   
+                                }
+                                span{
+                                        @include Font('Inter', 500, 16px);
+                                }
+                                .confirm-btn{
+                                @include Border(13px);
+                                background-color:  #4CB71A;
+                                color: $--light;
+                                width: 100%;
+                                padding: 8px;
+                                border: none;
+                                }
+                        }
+                }
+
+        }
+}
 
 
 
