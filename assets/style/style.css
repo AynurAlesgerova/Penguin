@@ -1,25 +1,4 @@
 @import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
-@import url("https://fonts.cdnfonts.com/css/euclid-circular-a");
 * {
   margin: 0;
   padding: 0;
@@ -193,34 +172,6 @@ header .penguin-logo-background {
   height: 300px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -353,34 +304,6 @@ p {
 .footer .developed-by {
   text-align: center;
   padding: 30px 0 70px 0;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .ana-sehife-text {
@@ -669,34 +592,6 @@ p {
   fill: red !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .about .info {
   padding: 0 50px;
   width: 50%;
@@ -773,34 +668,6 @@ p {
   left: 47%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .forget-password-section {
   position: relative;
   height: 400px;
@@ -855,34 +722,6 @@ p {
   margin-top: 71px;
   gap: 10px;
   color: #A7A7A7;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .register-section {
@@ -943,34 +782,6 @@ p {
 }
 .register-section .bg-sign-up .responsive-form {
   display: none !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .rates {
@@ -1084,34 +895,6 @@ p {
   font-size: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .services {
   margin-bottom: 80px;
 }
@@ -1149,34 +932,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 147.52%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .login-section {
@@ -1242,34 +997,6 @@ p {
   width: 100%;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .menu-bar {
   display: flex;
   justify-content: start !important;
@@ -1307,34 +1034,6 @@ p {
 .menu-bar .menu .menu-logo img {
   width: 10px;
   height: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .orders {
@@ -1537,34 +1236,6 @@ p {
   display: none !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .balance-services .balance-transactions {
   width: 80%;
   height: 100%;
@@ -1742,34 +1413,6 @@ p {
   border: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .packages .packages-section {
   width: 85%;
   padding: 20px;
@@ -1940,34 +1583,6 @@ p {
 }
 .packages .packages-section-responsive {
   display: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .dubts .balance-dubts {
@@ -2173,34 +1788,6 @@ p {
   -o-border-radius: 13px;
   color: #fff;
   border: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .make-courier-order .courier-order-section {
@@ -2464,7 +2051,6 @@ p {
 }
 
 .onclick-modal {
-  display: none;
   width: 70%;
   z-index: 9999999;
   position: absolute;
@@ -2602,36 +2188,132 @@ p {
   width: 50%;
 }
 
+.modal .modal-dialog .modal-content .head .orders {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  background-color: #fff;
+  color: #FF6600;
+  border: none;
+  gap: 10px;
+}
+.modal .modal-dialog .modal-content .head .orders div {
+  background-color: #FF6600;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  width: 33px;
+  height: 33px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.modal .modal-dialog .modal-content .head .orders div img {
+  width: 20px;
+  height: 20px;
+}
+.modal .modal-dialog .modal-content .head .close img {
+  width: 20px;
+  height: 20px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .choose-package {
+  width: 50%;
+}
+.modal .modal-dialog .modal-content .modal-body .section .choose-package .table {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+  max-height: 300px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .choose-package .table .titles {
+  color: #fff;
+  background-color: #FF6600;
+  border-radius: 13px 13px 0 0;
+  -webkit-border-radius: 13px 13px 0 0;
+  -moz-border-radius: 13px 13px 0 0;
+  -ms-border-radius: 13px 13px 0 0;
+  -o-border-radius: 13px 13px 0 0;
+}
+.modal .modal-dialog .modal-content .modal-body .section .choose-package .table .titles .col {
+  border-right: 1px solid #fff;
+}
+.modal .modal-dialog .modal-content .modal-body .section .choose-package .table .orders-section .pay-btn button {
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  padding: 5px 20px;
+  border: none;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order {
+  width: 49%;
+  border-left: 2px solid #FF6600;
+  padding-left: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order form label {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:checked {
+  background-color: #a77e2d !important;
+  color: #ffffff !important;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:after {
+  box-shadow: none !important;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order .payment span {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order .payment div {
+  border: 2px solid #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #FF6600;
+  padding: 5px 8px;
+}
+.modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  color: #fff;
+  background-color: #FF6600;
+  padding: 10px 20px;
+  width: 50%;
+}
+
 .onclick-modal-responsive {
   display: none !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .table {
@@ -2651,6 +2333,9 @@ p {
 }
 .table tbody tr {
   width: 100%;
+}
+.table tbody tr:nth-child(odd) {
+  background: #fff;
 }
 .table tbody tr .col .insure-btn {
   background-color: #4CB71A;
@@ -2766,34 +2451,6 @@ p {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .make-order-section {
@@ -2925,62 +2582,6 @@ p {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .addresses-abroad .addresses-abroad-section {
   width: 80%;
   height: 100%;
@@ -3098,34 +2699,6 @@ p {
 }
 .addresses-abroad .addresses-abroad-section .addresses-abroad-table-responsive {
   display: none !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 .corrections .corrections-section {
@@ -3315,34 +2888,6 @@ p {
   display: none !important;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
-}
-
 .awaiting-approval .awaiting-approval-section {
   width: 80%;
   height: 100%;
@@ -3515,34 +3060,6 @@ p {
 }
 .awaiting-approval .awaiting-approval-section .awaiting-approval-table-responsive {
   display: none !important;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-ol, ul {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: "Euclid Circular A";
-  font-family: Serif;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 0 !important;
 }
 
 @media screen and (max-width: 576px) {
@@ -4736,6 +4253,11 @@ p {
   .make-courier-order .courier-order-section .services .balance-services {
     width: 100%;
     box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+  }
+  .make-courier-order .courier-order-section .services .balance-services .money {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .make-courier-order .courier-order-section .services .increase-balance {
     width: 100%;
