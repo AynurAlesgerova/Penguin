@@ -13,6 +13,7 @@
 header {
     background-color: $--orange;
     padding: 20px ;
+    position: relative;
     nav{
         .image-box{
             background-color: $--light;
@@ -70,6 +71,9 @@ header {
                             color: $--light;
                         }
                     }
+                    a{
+                        color: $--orange;
+                    }
                 }
             }
             .register-box{
@@ -105,5 +109,65 @@ header {
     .penguin-logo-background{
         width: 334px;
         height: 300px;
+    }
+    .header-menu-bar{
+        display: none !important;
+        background-color: $--orange;
+        padding: 200px 120px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 999999;
+        .close-icon{
+            position: absolute;
+            right: 50px;
+            top: 70px;
+        }
+        .background-img{
+            position: absolute;
+            left: 37%;
+            top: 25%;
+        }
+        .menu-section{
+            width: 100%;
+            z-index: 9999;
+            #pages{
+                padding: 50px;
+                width: 30%;
+                border-left: 0.5px solid #FFFFFF;
+                &:first-child{
+                    border-left: none;
+            }
+            .page{
+                color: $--light;
+                @include Fonts( 600,30px);
+                .icon-div{
+                    width: 30px;
+                    height: 30px;
+                    background-color: $--light;
+                    @include Border(50px);
+                    @include Flex(row, center,center);
+                    .img{
+                        // width: 25px;
+                        // height: 25px;
+                    }
+                }
+            }
+            .icons{
+                padding-left: 55px;
+                div{
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $--light;
+                    @include Border(50px);
+                    @include Flex(row, center,center);
+                    img{
+                        color: $--light;
+                    }
+                }
+            }
+            }
+        }
     }
 }
