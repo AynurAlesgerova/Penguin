@@ -36,7 +36,7 @@
                             <div class="login-icon-box">
                                 <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
                              </div>
-                             <a href="login.html">Daxil ol</a>
+                             <a href="login.html">Login</a>
                         </button>
                     </div>
                     <div class="register-box">
@@ -59,16 +59,35 @@
             <div class="d-flex justify-content-center align-items-center">
                 <img class="penguin-logo-background" src="./assets/images/header/Group 62.svg">
             </div>
-            <p class="page-text"> Penguin kargoya xoş gəlmisiniz! </p>
         </div>
-        <div class="header-menu-bar d-flex justify-content-center align-items-center">
+        <p class="page-text"> ‘’Lorem Ipsum has been the industry's’’
+        </p>
+        <div class="header-menu-bar flex-column gap-5 d-flex justify-content-start align-items-center">
             <div class="close-icon">
                 <img src="./assets/images/header/close.svg">
             </div>
             <div class="background-img">
                 <img src="./assets/images/header/Group 62.svg">
             </div>
-            <div class="menu-section d-flex ">
+            <div class="login-register-buttons d-flex gap-1">
+                <div class="login-box">
+                    <button>
+                        <div class="login-icon-box">
+                            <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                         </div>
+                         <a href="login.html">Login</a>
+                    </button>
+                </div>
+                <div class="register-box">
+                    <button>
+                        <div class="register-icon-box">
+                            <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                        </div>
+                        <a href="register.html">Qeydiyyat</a>
+                    </button>
+                </div>
+            </div>
+            <div class="menu-section d-flex">
                 <div id="pages" class=" d-flex flex-column gap-4">
                     <a href="./about.html">
                         <div class="page d-flex justify-content-center align-items-center gap-3">
@@ -145,31 +164,29 @@
         <div class="container bg-sign-up">
             <h1>Qeydiyyat</h1>
             <form class="desktop-form">
-                <div class="row mb-4">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-lg-4 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Adınız" required>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Soyadınız" required>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Email ünvanı" required>
                     </div>
-                </div>
-                <div class="row  mb-4">
-                    <div class="col">
-                                <div class="w-100 d-flex">
-                                    <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
+                    <div class="col-lg-4 mb-4 col-sm-12">
+                                <div class=" d-flex">
+                                    <select id="inlineFormCustomSelectPref" class="custom-select form-control select" >
                                         <option selected>+99450</option>
                                         <option value="1" >+99451</option>
                                         <option value="2">+99455</option>
                                         <option value="3">+99470</option>
                                         <option value="4">+99477</option>
                                     </select>
-                                    <input type="text" class="form-control" placeholder="000-00-00" required>
+                                    <input id="number" type="text" class="form-control" placeholder="000-00-00" required>
                                 </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 mb-4 col-sm-12">
                         <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
                             <option selected>Vətəndaşlığınız</option>
                             <option value="1">One</option>
@@ -177,15 +194,13 @@
                             <option value="3">Three</option>
                           </select>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-4 mb-4 col-sm-12">
                         <input type="text" class="form-control" placeholder="Fin kodunuz" required>
                     </div>
-                </div>
-                <div class="row  mb-4">
-                    <div class="col">
+                    <div class="col-lg-6 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Ünvanınız" required>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 mb-4 col-sm-12">
                         <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
                             <option selected>Çatdırılma ünvanını seçin</option>
                             <option value="1">One</option>
@@ -193,115 +208,25 @@
                             <option value="3">Three</option>
                           </select>
                     </div>
-                    
-                </div>
-                <div class="row  mb-4">
-                    
-                    <div class="col">
+                    <div class="col-lg-6 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Şifrə daxil et" required>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-6 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Təkrar şifrəniz" required>
                     </div>
-                </div>
-                <div class="form-check mb-4">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        SMS Bildirişləri almaq istəyirəm
-                    </label>
-                </div>
-                <div class="row">
-                    <button class="register-btn">
-                        <p>Qeydiyyatdan keç</p>
-                    </button>
-                </div>
-            </form>
-
-            <!--------- Responsive form ----------->
-            <div class="responsive-form">
-                <form>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Adınız" required>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Soyadınız" required>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Email ünvanı" required>
-                        </div>
-                    </div>
-                    <div class="row  mb-4">
-                        <div class="col-4">
-                            <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
-                                <option selected>+99450</option>
-                                <option value="1" >+99451</option>
-                                <option value="2">+99455</option>
-                                <option value="3">+99470</option>
-                                <option value="4">+99477</option>
-                            </select>
-                        </div>
-                        <div class="col-8">
-                            <input type="text" class="form-control" placeholder="000-00-00" required>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
-                                <option selected>Vətəndaşlığınız</option>
-                                <option value="1">...</option>
-                                <option value="2">...</option>
-                                <option value="3">...</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Fin kodunuz" required>
-                        </div>
-                    </div>
-                    <div class="row  mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Ünvanınız" required>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
-                                <option selected>Çatdırılma ünvanını seçin</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                        </div>
-                    </div>
-                    <div class="row  mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Şifrə daxil et" required>
-                        </div>
-                    </div>
-                    <div class="row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control " placeholder="Təkrar şifrəniz" required>
-                        </div>
-                    </div>
-                    <div class="form-check mb-4">
+                    <div class="col-12 form-check mb-4">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">
                             SMS Bildirişləri almaq istəyirəm
                         </label>
                     </div>
-                    <div class="row">
-                        <button class="register-btn">
+                    <div class="col-12 mb-4">
+                        <button class="register-btn w-100">
                             <p>Qeydiyyatdan keç</p>
                         </button>
                     </div>
-                </form>
-            </div>
+            </form>
+
             <div class="login">
                 <span>Artıq hesabınız var?</span>
                 <a href="login.html">Daxil ol</a>

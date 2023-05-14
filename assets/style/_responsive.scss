@@ -48,8 +48,104 @@
                 }
                 .page-text{
                         top:110px;
-                        left: 70px;
+                        left: 30px;
                         @include Fonts( 600, 18px);
+                }
+                .header-menu-bar{
+                        padding: 100px 30px;
+                        .close-icon{
+                                right: 20px;
+                                top: 20px;
+                                img{
+                                        width: 20px;
+                                        height: 20px;
+                                }
+                            }
+                        .background-img{
+                                left: 0px;
+                                top: 30%;
+                                width: 100%;
+                                img{
+                                        width: 370px;
+                                        height: 220px;
+                                }
+                        }
+                        .login-register-buttons{
+                                display: flex !important;
+                                padding: 0 40px;
+                                .login-box{
+                                        padding-right: 5px;
+                                        border-right: 1px solid white ;
+                                        button {
+                                            @include Flex(row, none, center);
+                                            @include Border(50.1425px);
+                                            gap: 13px;
+                                            background-color: $--light;
+                                            border: none;
+                                            color: $--orange;
+                                            padding: 4px 40px 4px 8px;
+                            
+                                            .login-icon-box {
+                                                background-color: $--orange;
+                                                @include Border(50px);
+                                                width: 30px;
+                                                height: 30px;
+                                                @include Flex(row, center, center);
+                            
+                                                i {
+                                                    color: $--light;
+                                                }
+                                            }
+                                            a{
+                                                color: $--orange;
+                                                @include Fonts(600,24px);
+                                            }
+                                        }
+                                    }
+                                    .register-box{
+                                        button {
+                                            @include Flex(row, none, center);
+                                            gap: 9px;
+                                            background-color: $--dark;
+                                            border: none;
+                                            color: $--light;
+                                            padding: 4px 17px 4px 8px;
+                                            @include Border(50.1425px);
+                                            .register-icon-box {
+                                                background-color: $--light;
+                                                @include Border(50px);
+                                                width: 30px;
+                                                height: 30px;
+                                                @include Flex(row, center, center);
+                            
+                                                i {
+                                                    color: $--dark;
+                                                }
+                                        }
+                                        a{
+                                                color: $--light;
+                                                @include Fonts(600,24px);
+                                        }
+                                        }
+                                    }
+                        }
+                        .menu-section{
+                                display: flex;
+                                flex-direction: column;
+                                // gap: 20px;
+                                #pages{
+                                        align-items: start;
+                                        border: none !important;
+                                        width: 100%;
+                                        // padding-bottom: 0 0 5px 0;
+                                        padding: 0;
+                                        padding-bottom: 20px;
+                                        gap: 20px !important;
+                                        .icons{
+                                                padding-left: 0px;
+                                        }
+                                }
+                        }
                 }
         }
         
@@ -117,16 +213,16 @@
 //----- Haqqimizda -------
         .about{
                 @include Flex(column, center, center);
+                .info{
+                        width: 100%;
+                        padding: 10px 20px;
+                }
                 .about-img{
                         width: 100%;
                         img{
                                 width: 100%;
                         }
                 }
-        //      :first-child{
-        //             padding: 0 20px;
-        //             width: 50%;
-        //        }
                 
         }
         .about-info{
@@ -189,18 +285,6 @@
                         top: -150px;  
                         padding: 30px 10px;
                         left: 18px;
-                        .desktop-form{
-                                display: none !important;
-                        }
-                        .responsive-form{
-                                display: block !important;
-                                width: 400px;
-                                width: 100%;
-                                // padding: 0 20px;
-                                form{
-                                        width: 100%;
-                                }
-                        }
                         .login{
                                 margin-top: 20px
                         }

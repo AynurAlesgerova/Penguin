@@ -33,9 +33,16 @@
             margin-top: 50px;
             gap: 10px;
             color: $--gray;
+            a{
+                color: $--orange
+            }
         }
-        .responsive-form{
-            display: none !important;
+        .select{
+            @include Border(5px 0 0 5px);
+            width: 45%;
+        }
+        #number{
+            @include Border(0 5px 5px 0);
         }
     }
 }
