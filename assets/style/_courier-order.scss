@@ -8,7 +8,7 @@
         gap: 30px !important;
         .head{
             span{
-                @include Font('Inter', 600, 24px);
+                @include Fonts(600, 24px);
 
             }
             .headline-responsive{
@@ -24,7 +24,7 @@
                 @include Border(13px);
                 border: none;
                 color: $--orange;
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
                 .icon{
                         background-color: $--orange;
                         @include Border(50px);
@@ -43,7 +43,7 @@
         }
         .services{
             h5{
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
             }
             .balance-services{
                 width: 48%;
@@ -52,7 +52,7 @@
                 @include Border(13px);
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                 p{
-                    @include Font('Inter', 400, 16px);
+                    @include Fonts(400, 16px);
                 }
                 .money{
                     width: 25%;
@@ -99,7 +99,7 @@
                 margin-bottom: 20px;
                 .orders{
                     @include Flex(row, center, center);
-                    @include Font('Inter', 600, 20px);
+                    @include Fonts( 600, 20px);
                     @include Border(13px);
                     padding: 10px 25px;
                     background-color: $--light;
@@ -120,7 +120,7 @@
                 }
                 .package-in-office{
                     @include Flex(row, center, center);
-                    @include Font('Inter', 600, 16px);
+                    @include Fonts( 600, 16px);
                     @include Border(13px);
                     padding: 10px 0px;
                     background-color: $--light;
@@ -196,7 +196,7 @@
         // display: none; 
         .orders{
             @include Flex(row, space-between, center);
-            @include Font('Inter', 600, 20px);
+            @include Fonts(600, 20px);
             @include Border(13px);
             background-color: $--light;
             color:  $--orange;
@@ -257,7 +257,7 @@
             padding-left: 10px;
             form{
                 label{
-                    @include Font('Inter', 600, 17px);
+                    @include Fonts( 600, 17px);
                 }
             }
             .checkbox:checked {
@@ -269,7 +269,7 @@
             }                          
             .payment{
                 span{
-                    @include Font('Inter', 600, 16px);
+                    @include Fonts( 600, 16px);
                 }
                 div{
                     border: 2px solid $--orange;
@@ -281,7 +281,7 @@
             }
             .make-order-btn{
                 button{
-                    @include Font('Inter', 600, 17px);
+                    @include Fonts( 600, 17px);
                 @include Flex(row, center, center);
                 border: 2px solid $--orange;
                 @include Border(13px);
@@ -302,7 +302,7 @@
                 // display: none; 
                 .orders{
                     @include Flex(row, space-between, center);
-                    @include Font('Inter', 600, 20px);
+                    @include Fonts(600, 20px);
                     @include Border(13px);
                     background-color: $--light;
                     color:  $--orange;
@@ -364,7 +364,7 @@
                         padding-left: 10px;
                         form{
                             label{
-                                @include Font('Inter', 600, 17px);
+                                @include Fonts(600, 17px);
                             }
                         }
                         .checkbox:checked {
@@ -376,7 +376,7 @@
                         }                          
                         .payment{
                             span{
-                                @include Font('Inter', 600, 16px);
+                                @include Fonts( 600, 16px);
                             }
                             div{
                                 border: 2px solid $--orange;
@@ -388,7 +388,7 @@
                         }
                         .make-order-btn{
                             button{
-                                @include Font('Inter', 600, 17px);
+                                @include Fonts(600, 17px);
                             @include Flex(row, center, center);
                             border: 2px solid $--orange;
                             @include Border(13px);

@@ -49,9 +49,10 @@
                 .page-text{
                         top:110px;
                         left: 70px;
-                        @include Font('Inter', 600, 18px);
+                        @include Fonts( 600, 18px);
                 }
         }
+        
 //----- Footer -------
         .footer{
                 margin-top: 50px;
@@ -81,7 +82,7 @@
                 }
         
         }
- 
+
 //----- Xidmetler -------
         .services{
                 .services-info{
@@ -170,7 +171,7 @@
                         width: 90%;
                         h1{
                                 margin: 0 0 23px 0;   
-                                @include Font('Inter', 600, 18px);
+                                @include Fonts(600, 18px);
                         } 
                         .register{
                                 @include Flex(column, center, center);
@@ -227,7 +228,7 @@
                 }
                 .prices{
                         h1{
-                                @include Font('Inter', 600, 22px)
+                                @include Fonts( 600, 22px)
                         }
                         .delivery{
                                 .branch-delivery{
@@ -258,7 +259,7 @@
                 width: 300px;
                 top: 150px;
                 left: 40px;    
-                @include Font('Inter', 400, 12px);
+                @include Fonts(400, 12px);
         }
         .highlights{
                 display: flex !important;
@@ -362,7 +363,7 @@
                                 width: 60%;
                                 }
                                 .step-number{
-                                @include Font('Inter', 600, 50px);
+                                @include Fonts( 600, 50px);
                                 color: rgba(102, 102, 102, 0.15);
                 
                                 }
@@ -421,14 +422,14 @@
                         }
                         .headline-responsive{
                                 display: block;
-                                @include Font('Inter', 600, 18px);
+                                @include Fonts(600, 18px);
                         }
                 }
                 .services{
                 flex-direction: column !important;
                 gap: 20px;
                         h5{
-                                @include Font('Inter', 600, 18px);
+                                @include Fonts(600, 18px);
                         }
                         .balance-services{
                                 width: 100%;
@@ -475,10 +476,10 @@
                                         padding: 10px 0;
                                 }
                                 p{
-                                        @include Font('Inter', 600, 18px);   
+                                        @include Fonts( 600, 18px);   
                                 }
                                 span{
-                                        @include Font('Inter', 500, 16px);
+                                        @include Fonts( 500, 16px);
                                 }
                                 .pay-btn{
                                 @include Border(13px);
@@ -558,7 +559,7 @@
                 padding: 20px 30px;
                 background-color: $--lightgray;
                 h5{
-                        @include Font('Inter', 600,18px)
+                        @include Fonts( 600,18px)
                 }
                 .package-number{
                 width: 80%;
@@ -589,10 +590,10 @@
                                         padding: 10px 0;
                                 }
                                 p{
-                                        @include Font('Inter', 600, 18px);   
+                                        @include Fonts( 600, 18px);   
                                 }
                                 span{
-                                        @include Font('Inter', 500, 16px);
+                                        @include Fonts( 500, 16px);
                                 }
                                 .product-btn{
                                 @include Border(13px);
@@ -653,7 +654,7 @@
                         padding: 20px 30px;
                         background-color: $--lightgray;
                         h5{
-                                @include Font('Inter', 600, 18px);
+                                @include Fonts(600, 18px);
                         }
                         .responsive-table{
                                 .product{
@@ -674,10 +675,10 @@
                                                 padding: 10px 0;
                                         }
                                         p{
-                                                @include Font('Inter', 600, 18px);   
+                                                @include Fonts( 600, 18px);   
                                         }
                                         span{
-                                                @include Font('Inter', 500, 16px);
+                                                @include Fonts( 500, 16px);
                                         }
                                         .pay-btn{
                                         @include Border(13px);
@@ -841,14 +842,14 @@
                                 }
                                 .headline-responsive{
                                         display: block;
-                                        @include Font('Inter', 600, 18px);
+                                        @include Fonts( 600, 18px);
                                 }
                         }
                         .services{
                         flex-direction: column !important;
                         gap: 20px;
                                 h5{
-                                        @include Font('Inter', 600, 18px);
+                                        @include Fonts( 600, 18px);
                                 }
                                 .balance-services{
                                         width: 100%;
@@ -895,10 +896,10 @@
                                                 padding: 10px 0;
                                         }
                                         p{
-                                                @include Font('Inter', 600, 18px);   
+                                                @include Fonts( 600, 18px);   
                                         }
                                         span{
-                                                @include Font('Inter', 500, 16px);
+                                                @include Fonts( 500, 16px);
                                         }
                                         .pay-btn{
                                         @include Border(13px);
@@ -985,14 +986,14 @@
                                 }
                                 .headline-responsive{
                                         display: block;
-                                        @include Font('Inter', 600, 18px);
+                                        @include Fonts( 600, 18px);
                                 }
                         }
                         .services{
                         flex-direction: column !important;
                         gap: 20px;
                                 h5{
-                                        @include Font('Inter', 600, 18px);
+                                        @include Fonts( 600, 18px);
                                 }
                                 .balance-services{
                                         width: 100%;
@@ -1056,14 +1057,14 @@
                                                 padding: 10px 0;
                                         }
                                         p{
-                                                @include Font('Inter', 600, 18px);   
+                                                @include Fonts( 600, 18px);   
                                         }
                                         span{
-                                                @include Font('Inter', 500, 16px);
+                                                @include Fonts( 500, 16px);
                                         }
                                 }
                                 .orders{
-                                        @include Font('Inter', 600, 18px);
+                                        @include Fonts( 600, 18px);
                                         display: flex !important;
                                         flex-direction: row !important;
                                         justify-content: center !important;
@@ -1088,7 +1089,6 @@
                                         }
                                 }
                         }
-
                         .pages{
                                 .previous{
                                 padding: 8px 15px;
@@ -1118,7 +1118,7 @@
         //         top: 150px ;
         //         .head{
         //                 .orders{
-        //                         @include Font('Inter',600,20px);
+        //                         @include Fonts(600,20px);
         //                         display: flex !important;
         //                         padding: 10px 25px;
         //                         background-color: $--light;
@@ -1172,23 +1172,23 @@
         //                                 padding: 10px 0;
         //                         }
         //                         p{
-        //                                 @include Font('Inter', 600, 18px);   
+        //                                 @include Fonts( 600, 18px);   
         //                         }
         //                         span{
-        //                                 @include Font('Inter', 500, 16px);
+        //                                 @include Fonts( 500, 16px);
         //                         }
                                 
         //                 }
         //         }
         //         h5{
-        //                 @include Font('Inter', 600, 16px); 
+        //                 @include Fonts( 600, 16px); 
         //                 margin: 20px 0;    
         //         }
         //         .make-order{
         //                 padding: 0 20px;
         //                 form{
         //                 label{
-        //                         @include Font('Inter', 600, 17px);
+        //                         @include Fonts( 600, 17px);
         //                 }
         //                 }
         //                 .checkbox:checked {
@@ -1200,7 +1200,7 @@
         //                 }                          
         //                 .payment{
         //                 span{
-        //                         @include Font('Inter', 600, 16px);
+        //                         @include Fonts( 600, 16px);
         //                 }
         //                 div{
         //                         border: 2px solid $--orange;
@@ -1212,7 +1212,7 @@
         //                 }
         //                 .make-order-btn{
         //                 button{
-        //                         @include Font('Inter', 600, 17px);
+        //                         @include Fonts( 600, 17px);
         //                 @include Flex(row, center, center);
         //                 border: 2px solid $--orange;
         //                 @include Border(13px);
@@ -1239,7 +1239,7 @@
                 .responsive-head{
                         display: block !important;
                         h4{
-                                @include Font('Inter',600,18px)
+                                @include Fonts(600,18px)
                         }
                 }
                 .addresses-abroad-table{
@@ -1262,11 +1262,11 @@
                                         padding: 10px 0;
                                 }
                                 p{
-                                        @include Font('Inter', 600, 18px);   
+                                        @include Fonts( 600, 18px);   
                                         color: $--orange
                                 }
                                 span{
-                                        @include Font('Inter', 500, 16px);
+                                        @include Fonts( 500, 16px);
                                 }
                         }
                 }
@@ -1347,13 +1347,13 @@
                 }
                 .head-responsive{
                         display: block !important;
-                        @include Font('Inter',600,18px)
+                        @include Fonts(600,18px)
                 }
                 .services{
                 flex-direction: column !important;
                 gap: 20px;
                         h5{
-                                @include Font('Inter', 600, 18px);
+                                @include Fonts( 600, 18px);
                         }
                         .balance-services{
                                 width: 100%;
@@ -1400,10 +1400,10 @@
                                         padding: 10px 0;
                                 }
                                 p{
-                                        @include Font('Inter', 600, 18px);   
+                                        @include Fonts( 600, 18px);   
                                 }
                                 span{
-                                        @include Font('Inter', 500, 16px);
+                                        @include Fonts( 500, 16px);
                                 }
                                 .confirm-btn{
                                 @include Border(13px);
@@ -1418,9 +1418,6 @@
 
         }
 }
-
-
-
 
 //  cox yerde olanlar
 .menu-bar{
@@ -1447,7 +1444,7 @@
         @include Border(13px);
         border: none;
         color: $--orange;
-        @include Font('Inter', 600, 20px);
+        @include Fonts(600, 20px);
         .icon{
                 background-color: $--orange;
                 @include Border(50px);

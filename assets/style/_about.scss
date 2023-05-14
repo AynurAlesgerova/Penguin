@@ -5,7 +5,7 @@
     width: 50%;
        h2{
            color: $--orange;
-           @include Font('Inter', 600, 34px);
+           @include Fonts(600, 34px);
        }
    }
     .about-img{
@@ -26,7 +26,7 @@
         color: $--orange;
         z-index: 999;
         text-align: center;
-        @include Font('Inter', 600, 18px);
+        @include Fonts(600, 18px);
     }
     p{
         z-index: 999;

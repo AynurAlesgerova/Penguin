@@ -6,7 +6,7 @@
     left: 460px;
     color: $--light;
     z-index: 999;
-    @include Font('Inter', 600, 34px);
+    @include Fonts( 600, 34px);
     line-height: 41px;
     text-align: center;
 }

@@ -21,13 +21,13 @@
                   
                     .number {
                         @include Flex(row, center, center);
-                        @include Font('Inter', 600, 16px);
+                        @include Fonts( 600, 16px);
                         gap: 6px;
                     }
     
                     .email {
                         @include Flex(row, center, center);
-                        @include Font('Inter', 600, 16px);
+                        @include Fonts(600, 16px);
                         gap: 6px;
                     }
                 }
@@ -38,7 +38,7 @@
     
                     .question {
                         @include Flex(row, flex-start, center);
-                        @include Font('Inter', 600, 16px);
+                        @include Fonts( 600, 16px);
                         gap: 6px;
                     }
                 }

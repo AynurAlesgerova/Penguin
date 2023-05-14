@@ -33,7 +33,7 @@ p {
   left: 460px;
   color: #fff;
   z-index: 999;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
   line-height: 41px;
@@ -172,6 +172,69 @@ header .penguin-logo-background {
   height: 300px;
 }
 
+.header-menu-bar {
+  background-color: red;
+  padding: 200px 150px;
+  position: relative;
+}
+.header-menu-bar .close-icon {
+  position: absolute;
+  right: 50px;
+  top: 70px;
+}
+.header-menu-bar .background-img {
+  position: absolute;
+  left: 37%;
+  top: 25%;
+}
+.header-menu-bar .menu-section {
+  width: 100%;
+}
+.header-menu-bar .menu-section #pages {
+  padding: 50px 0px 50px 50px;
+  border-left: 0.5px solid #FFFFFF;
+}
+.header-menu-bar .menu-section #pages:first-child {
+  border-left: none;
+}
+.header-menu-bar .menu-section #pages .page {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.header-menu-bar .menu-section #pages .page .icon-div {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-menu-bar .menu-section #pages .icons div {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header-menu-bar .menu-section #pages .icons div img {
+  color: #fff;
+}
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -214,7 +277,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   gap: 6px;
@@ -224,7 +287,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   gap: 6px;
@@ -241,7 +304,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   gap: 6px;
@@ -313,7 +376,7 @@ header .penguin-logo-background {
   width: 500px;
   height: 100px;
   color: #fff;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -378,7 +441,7 @@ header .penguin-logo-background {
 }
 .calculator .calculations p {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
@@ -450,7 +513,7 @@ header .penguin-logo-background {
   width: 100%;
 }
 .advantages .advantages-section .advantage p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   width: 100%;
@@ -507,7 +570,7 @@ header .penguin-logo-background {
   width: 60%;
 }
 .work .steps .step .step-number {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 50px;
   color: rgba(102, 102, 102, 0.15);
@@ -538,7 +601,7 @@ header .penguin-logo-background {
   padding: 40px 0;
 }
 .latest-news .news h2 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -571,7 +634,7 @@ header .penguin-logo-background {
 }
 .latest-news .news .some-news h4 {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 26px;
 }
@@ -583,7 +646,7 @@ header .penguin-logo-background {
   margin-top: 40px;
 }
 .example-sites h2 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -598,7 +661,7 @@ header .penguin-logo-background {
 }
 .about .info h2 {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -620,7 +683,7 @@ header .penguin-logo-background {
   color: #FF6600;
   z-index: 999;
   text-align: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
@@ -752,7 +815,7 @@ header .penguin-logo-background {
 .register-section .bg-sign-up h1 {
   text-align: center;
   margin-bottom: 46px;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -827,14 +890,14 @@ header .penguin-logo-background {
   color: #FF6600;
 }
 .rates .rates-info .main-info p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 147.52%;
 }
 .rates .prices h1 {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -885,12 +948,12 @@ header .penguin-logo-background {
 }
 .rates .prices .price-list .price #each-price {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 .rates .prices .price-list p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -928,7 +991,7 @@ header .penguin-logo-background {
   color: #FF6600;
 }
 .services .services-info .main-info p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 147.52%;
@@ -961,7 +1024,7 @@ header .penguin-logo-background {
 .login-section .bg-login h1 {
   text-align: center;
   margin: 94px 0 46px 0;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 34px;
 }
@@ -1008,12 +1071,12 @@ header .penguin-logo-background {
 }
 .menu-bar .account .account-info .name {
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
 .menu-bar .account .account-info .customer-code {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
@@ -1060,7 +1123,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1170,7 +1233,7 @@ header .penguin-logo-background {
   height: 50px;
   border: none;
   color: #fff;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
   background-color: #FF6600;
@@ -1244,7 +1307,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .balance-services .balance-transactions .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -1266,7 +1329,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1289,7 +1352,7 @@ header .penguin-logo-background {
   height: 10px;
 }
 .balance-services .balance-transactions .services h5 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1305,7 +1368,7 @@ header .penguin-logo-background {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .balance-services .balance-transactions .services .balance-services p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -1371,7 +1434,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
 }
 .balance-services .balance-transactions .transactions h4 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1434,7 +1497,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1593,7 +1656,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .dubts .balance-dubts .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -1615,7 +1678,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1638,7 +1701,7 @@ header .penguin-logo-background {
   height: 10px;
 }
 .dubts .balance-dubts .services h5 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1654,7 +1717,7 @@ header .penguin-logo-background {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .dubts .balance-dubts .services .balance-services p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -1720,7 +1783,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
 }
 .dubts .balance-dubts .services-table h4 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1798,7 +1861,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .make-courier-order .courier-order-section .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -1820,7 +1883,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1843,7 +1906,7 @@ header .penguin-logo-background {
   height: 10px;
 }
 .make-courier-order .courier-order-section .services h5 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -1859,7 +1922,7 @@ header .penguin-logo-background {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .make-courier-order .courier-order-section .services .balance-services p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -1932,7 +1995,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
   border-radius: 13px;
@@ -1969,7 +2032,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   border-radius: 13px;
@@ -2069,7 +2132,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
   border-radius: 13px;
@@ -2142,7 +2205,7 @@ header .penguin-logo-background {
   padding-left: 10px;
 }
 .onclick-modal .section .make-order form label {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
@@ -2154,7 +2217,7 @@ header .penguin-logo-background {
   box-shadow: none !important;
 }
 .onclick-modal .section .make-order .payment span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
@@ -2169,7 +2232,7 @@ header .penguin-logo-background {
   padding: 5px 8px;
 }
 .onclick-modal .section .make-order .make-order-btn button {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
   display: flex;
@@ -2193,7 +2256,7 @@ header .penguin-logo-background {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
   border-radius: 13px;
@@ -2266,7 +2329,7 @@ header .penguin-logo-background {
   padding-left: 10px;
 }
 .modal .modal-dialog .modal-content .modal-body .section .make-order form label {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
@@ -2278,7 +2341,7 @@ header .penguin-logo-background {
   box-shadow: none !important;
 }
 .modal .modal-dialog .modal-content .modal-body .section .make-order .payment span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
@@ -2293,7 +2356,7 @@ header .penguin-logo-background {
   padding: 5px 8px;
 }
 .modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
   display: flex;
@@ -2590,7 +2653,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .addresses-abroad .addresses-abroad-section .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -2612,7 +2675,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -2709,7 +2772,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .corrections .corrections-section .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -2731,7 +2794,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -2757,7 +2820,7 @@ header .penguin-logo-background {
   margin-bottom: 20px;
 }
 .corrections .corrections-section .services h5 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -2773,7 +2836,7 @@ header .penguin-logo-background {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .corrections .corrections-section .services .balance-services p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -2839,12 +2902,12 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
 }
 .corrections .corrections-section .corrections-header p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
 .corrections .corrections-section .corrections-header span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #FF6600;
@@ -2896,7 +2959,7 @@ header .penguin-logo-background {
   gap: 30px !important;
 }
 .awaiting-approval .awaiting-approval-section .head span {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
 }
@@ -2918,7 +2981,7 @@ header .penguin-logo-background {
   -o-border-radius: 13px;
   border: none;
   color: #FF6600;
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -2947,7 +3010,7 @@ header .penguin-logo-background {
   margin-bottom: 20px;
 }
 .awaiting-approval .awaiting-approval-section .services h5 {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
@@ -2963,7 +3026,7 @@ header .penguin-logo-background {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .awaiting-approval .awaiting-approval-section .services .balance-services p {
-  font-family: "Inter";
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -3119,7 +3182,7 @@ header .penguin-logo-background {
   header .page-text {
     top: 110px;
     left: 70px;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3237,7 +3300,7 @@ header .penguin-logo-background {
   }
   .login-section .bg-login h1 {
     margin: 0 0 23px 0;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3298,7 +3361,7 @@ header .penguin-logo-background {
     padding: 0 20px !important;
   }
   .rates .prices h1 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 22px;
   }
@@ -3318,7 +3381,7 @@ header .penguin-logo-background {
     width: 300px;
     top: 150px;
     left: 40px;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 12px;
   }
@@ -3437,7 +3500,7 @@ header .penguin-logo-background {
     width: 60%;
   }
   .work .steps-responsive .step .step-number {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 50px;
     color: rgba(102, 102, 102, 0.15);
@@ -3494,7 +3557,7 @@ header .penguin-logo-background {
   }
   .balance-services .balance-transactions .head .headline-responsive {
     display: block;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3503,7 +3566,7 @@ header .penguin-logo-background {
     gap: 20px;
   }
   .balance-services .balance-transactions .services h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3557,12 +3620,12 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .balance-services .balance-transactions .transactions-responsive .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .balance-services .balance-transactions .transactions-responsive .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -3669,7 +3732,7 @@ header .penguin-logo-background {
     background-color: #F5F5F5;
   }
   .packages .packages-section-responsive h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3710,12 +3773,12 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .packages .packages-section-responsive .responsive-table .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .packages .packages-section-responsive .responsive-table .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -3798,7 +3861,7 @@ header .penguin-logo-background {
     background-color: #F5F5F5;
   }
   .orders .order-section-responsive h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -3825,12 +3888,12 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .orders .order-section-responsive .responsive-table .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .orders .order-section-responsive .responsive-table .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -4054,7 +4117,7 @@ header .penguin-logo-background {
   }
   .dubts .balance-dubts .head .headline-responsive {
     display: block;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4063,7 +4126,7 @@ header .penguin-logo-background {
     gap: 20px;
   }
   .dubts .balance-dubts .services h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4117,12 +4180,12 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .dubts .balance-dubts .services-table-responsive .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .dubts .balance-dubts .services-table-responsive .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -4237,7 +4300,7 @@ header .penguin-logo-background {
   }
   .make-courier-order .courier-order-section .head .headline-responsive {
     display: block;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4246,7 +4309,7 @@ header .penguin-logo-background {
     gap: 20px;
   }
   .make-courier-order .courier-order-section .services h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4312,17 +4375,17 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .make-courier-order .courier-order-section .order-table-responsive .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .make-courier-order .courier-order-section .order-table-responsive .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
   .make-courier-order .courier-order-section .order-table-responsive .orders {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
     display: flex !important;
@@ -4405,7 +4468,7 @@ header .penguin-logo-background {
     display: block !important;
   }
   .addresses-abroad .addresses-abroad-section .responsive-head h4 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4435,13 +4498,13 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .addresses-abroad .addresses-abroad-section .addresses-abroad-table-responsive .informations p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
     color: #FF6600;
   }
   .addresses-abroad .addresses-abroad-section .addresses-abroad-table-responsive .informations span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -4522,7 +4585,7 @@ header .penguin-logo-background {
   }
   .awaiting-approval .awaiting-approval-section .head-responsive {
     display: block !important;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4531,7 +4594,7 @@ header .penguin-logo-background {
     gap: 20px;
   }
   .awaiting-approval .awaiting-approval-section .services h5 {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
@@ -4585,12 +4648,12 @@ header .penguin-logo-background {
     padding: 10px 0;
   }
   .awaiting-approval .awaiting-approval-section .awaiting-approval-table-responsive .product p {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
   .awaiting-approval .awaiting-approval-section .awaiting-approval-table-responsive .product span {
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
@@ -4634,7 +4697,7 @@ header .penguin-logo-background {
     -o-border-radius: 13px;
     border: none;
     color: #FF6600;
-    font-family: "Inter";
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
   }

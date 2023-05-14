@@ -17,7 +17,7 @@
         h1{
             text-align: center;
             margin: 94px 0 46px 0;
-            @include Font('Inter', 600, 34px);
+            @include Fonts(600, 34px);
         }
         .form-check{
             width: 100%

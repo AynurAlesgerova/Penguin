@@ -8,7 +8,7 @@
         gap: 30px !important;
         .head{
             span{
-                @include Font('Inter', 600, 24px);
+                @include Fonts(600, 24px);
 
             }
             .headline-responsive{
@@ -24,7 +24,7 @@
                 @include Border(13px);
                 border: none;
                 color: $--orange;
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
                 .icon{
                         background-color: $--orange;
                         @include Border(50px);
@@ -43,7 +43,7 @@
         }
         .services{
             h5{
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
             }
             .balance-services{
                 width: 48%;
@@ -52,7 +52,7 @@
                 @include Border(13px);
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
                 p{
-                    @include Font('Inter', 400, 16px);
+                    @include Fonts(400, 16px);
                 }
                 .money{
                     width: 25%;
@@ -96,7 +96,7 @@
         }
         .services-table{
             h4{
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
             }
             .table{
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);

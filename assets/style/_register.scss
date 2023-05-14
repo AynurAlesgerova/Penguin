@@ -18,7 +18,7 @@
         h1{
             text-align: center;
             margin-bottom: 46px;
-            @include Font('Inter', 600,34px)
+            @include Fonts(600,34px)
         }
         .register-btn{
             @include Border(13px);

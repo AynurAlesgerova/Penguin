@@ -16,7 +16,7 @@
                 @include Border(13px);
                 border: none;
                 color: $--orange;
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
                 .icon{
                     background-color: $--orange;
                     @include Border(50px);
@@ -98,7 +98,7 @@
                 height: 50px;
                 border: none;
                 color: $--light;
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
                 background-color: $--orange;
                 @include Flex(row, center, center);
                 gap: 10px;

@@ -38,7 +38,7 @@
                 
             }
             p{
-                @include Font('Inter', 400, 16px);
+                @include Fonts(400, 16px);
                 line-height: 147.52%;
             }
         }
@@ -46,7 +46,7 @@
     .prices{
         h1{
             color: $--orange;
-            @include Font('Inter', 600, 34px);
+            @include Fonts(600, 34px);
         }
         .delivery{
             .branch-delivery{
@@ -80,11 +80,11 @@
                 padding: 10px;
                 #each-price{
                     color: $--orange;
-                    @include Font('Inter', 600, 18px);
+                    @include Fonts(600, 18px);
                 }
             }
             p{
-                @include Font('Inter', 600, 20px);
+                @include Fonts(600, 20px);
 
             }
         }

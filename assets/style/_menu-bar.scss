@@ -11,10 +11,10 @@
         .account-info{
             .name{
                 color: $--orange;
-                @include Font('Inter', 600, 18px);
+                @include Fonts( 600, 18px);
             }
             .customer-code{
-                @include Font('Inter', 600, 18px);
+                @include Fonts( 600, 18px);
             }
         }
     }
