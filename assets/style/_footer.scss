@@ -18,7 +18,9 @@
                 .contact-section {
                     @include Flex(column, none, flex-start);
                     gap: 15px;
-                  
+                    p{
+                        @include Fonts(500,18px);
+                    }
                     .number {
                         @include Flex(row, center, center);
                         @include Fonts( 600, 16px);

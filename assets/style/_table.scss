@@ -2,11 +2,12 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     thead{
         color: $--light;
-        @include Border(13px);
         background-color: $--orange;
         tr{
+            @include Border(13px);
             th{
                 border-right: 2px solid $--light;
+         
             }
         }
     }
@@ -16,6 +17,15 @@
           width: 100%;
           &:nth-child(odd) {
             background: $--light;
+            td{
+                .pay-btn{
+                    background-color: $--dark;
+                    color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    padding: 5px 15px;
+                }
+            }
           }
             .col{
                 .insure-btn{

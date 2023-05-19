@@ -47,6 +47,11 @@
     .responsive-form{
         display: none !important;
     }
+    .chooses{
+        .form-check-label{
+            @include Fonts(600,16px);
+    }
+    }
     .chooses-responsive{
         display: none !important;
     }

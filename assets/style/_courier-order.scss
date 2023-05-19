@@ -7,7 +7,7 @@
         padding: 50px;
         gap: 30px !important;
         .head{
-            span{
+            #head-span{
                 @include Fonts(600, 24px);
 
             }
@@ -19,12 +19,10 @@
                 button{
                 padding-left: 10px;
                 background-color: $--light;
-                width: 155px;
-                height: 50px;
                 @include Border(13px);
                 border: none;
+                @include Fonts(600, 18px);
                 color: $--orange;
-                @include Fonts(600, 20px);
                 .icon{
                         background-color: $--orange;
                         @include Border(50px);
@@ -42,12 +40,13 @@
         
         }
         .services{
+            margin-bottom: 30px;
             h5{
                 @include Fonts(600, 20px);
             }
             .balance-services{
                 width: 48%;
-                padding: 10px 20px !important;
+                padding: 15px 20px !important;
                 background-color: #FFFFFF;
                 @include Border(13px);
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -101,11 +100,17 @@
                     @include Flex(row, center, center);
                     @include Fonts( 600, 20px);
                     @include Border(13px);
-                    padding: 10px 25px;
+                    padding: 0px 25px;
                     background-color: $--light;
                     color:  $--orange;
                     border: none;
                     gap: 10px;
+                    .courier-btn{
+                        color:  $--orange;
+                        @include Fonts(600,20px);
+                        border: none;
+                        background-color: $--light;
+                    }
                     div{
                         background-color: $--orange;
                         @include Border(50px);
@@ -128,32 +133,6 @@
                     border: 1.7px solid $--dark;
                     gap: 10px;
                     width: 25%;
-                }
-            }
-
-            .table{
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                margin-bottom: 70px;
-                .titles{
-                    color: $--light;
-                    background-color: $--orange;
-                    @include Border(13px 13px 0 0);
-                    .col{
-                        border-right: 1px solid $--light;
-                    }
-                }
-                .orders-section{
-                    .pay-btn{
-                        button{
-                            @include Border(13px);
-                            @include Flex(row, center, center);
-                            background-color:  $--dark;
-                            color: $--light;
-                            width: 100%;
-                            padding: 5px 20px;
-                            border: none;
-                        }
-                    }
                 }
             }
         }
@@ -182,124 +161,12 @@
     }
 
 }
-.onclick-modal{
-    // display: none ;
-    width: 70%;
-    z-index: 9999999;
-    position: absolute;
-    top: 10%;
-    left: 16%;
-    background-color: $--light;
-    @include Border(13px);
-    padding: 20px;
-    .head{
-        // display: none; 
-        .orders{
-            @include Flex(row, space-between, center);
-            @include Fonts(600, 20px);
-            @include Border(13px);
-            background-color: $--light;
-            color:  $--orange;
-            border: none;
-            gap: 10px;
-            div{
-                background-color: $--orange;
-                @include Border(50px);
-                width: 33px;
-                height: 33px;
-                @include Flex(row, center, center);
-                img{
-                    width: 20px;
-                    height: 20px; 
-                }
-            }
-        }
-        .close{
-            img{
-                width: 20px;
-                height: 20px;
-            }
-        }
-    } 
-    .section{
-        .choose-package{
-            width: 50%;
-            .table{
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                margin-bottom: 70px;
-                max-height: 300px;
-                
-                .titles{
-                    color: $--light;
-                    background-color: $--orange;
-                    @include Border(13px 13px 0 0);
-                    .col{
-                        border-right: 1px solid $--light;
-                    }
-                }
-                .orders-section{
-                    .pay-btn{
-                        button{
-                            @include Border(13px);
-                            background-color:  $--dark;
-                            color: $--light;
-                            width: 100%;
-                            padding: 5px 20px;
-                            border: none;
-                        }
-                    }
-                }
-            }
-        }
-        .make-order{
-            width: 49%;
-            border-left: 2px solid $--orange;
-            padding-left: 10px;
-            form{
-                label{
-                    @include Fonts( 600, 17px);
-                }
-            }
-            .checkbox:checked {
-                background-color: #a77e2d !important;
-                color: #ffffff !important;
-            }
-            .checkbox:after {
-                box-shadow: none !important;
-            }                          
-            .payment{
-                span{
-                    @include Fonts( 600, 16px);
-                }
-                div{
-                    border: 2px solid $--orange;
-                    @include Border(13px);
-                    color: $--orange;
-                    // width: 100%;
-                    padding: 5px 8px;
-                }
-            }
-            .make-order-btn{
-                button{
-                    @include Fonts( 600, 17px);
-                @include Flex(row, center, center);
-                border: 2px solid $--orange;
-                @include Border(13px);
-                color: $--light;
-                background-color:  $--orange;
-                padding: 10px 20px;
-                width: 50%;
-                }
-            }
-        }
-    }
-    
-}
+
 .modal{
+    padding-top: 40px;
     .modal-dialog{
         .modal-content{
-            .head{
-                // display: none; 
+            .modal-header{
                 .orders{
                     @include Flex(row, space-between, center);
                     @include Fonts(600, 20px);
@@ -330,33 +197,28 @@
             .modal-body{
                 .section{
                     .choose-package{
+                        padding-right: 20px;
                         width: 50%;
-                        .table{
-                            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                            margin-bottom: 70px;
-                            max-height: 300px;
-                            
-                            .titles{
-                                color: $--light;
-                                background-color: $--orange;
-                                @include Border(13px 13px 0 0);
-                                .col{
-                                    border-right: 1px solid $--light;
+                        table{
+                                input{
+                                    width: 15px;
+                                    height: 15px;
                                 }
-                            }
-                            .orders-section{
-                                .pay-btn{
-                                    button{
-                                        @include Border(13px);
-                                        background-color:  $--dark;
-                                        color: $--light;
-                                        width: 100%;
-                                        padding: 5px 20px;
-                                        border: none;
-                                    }
-                                }
-                            }
                         }
+                    }
+                    h5{
+                        display: none;
+                    }
+                    form{
+                        h5{
+                            display: block;
+                            @include Fonts(600,16px);
+
+                        }
+
+                    }
+                    .choose-package-responsive{
+                        display: none;
                     }
                     .make-order{
                         width: 49%;
@@ -365,6 +227,13 @@
                         form{
                             label{
                                 @include Fonts(600, 17px);
+                            }
+                            .select{
+                                @include Border(5px 0 0 5px);
+                                width: 45%;
+                            }
+                            #number{
+                                @include Border(0 5px 5px 0);
                             }
                         }
                         .checkbox:checked {
@@ -382,29 +251,25 @@
                                 border: 2px solid $--orange;
                                 @include Border(13px);
                                 color: $--orange;
-                                // width: 100%;
                                 padding: 5px 8px;
                             }
                         }
                         .make-order-btn{
                             button{
                                 @include Fonts(600, 17px);
-                            @include Flex(row, center, center);
-                            border: 2px solid $--orange;
-                            @include Border(13px);
-                            color: $--light;
-                            background-color:  $--orange;
-                            padding: 10px 20px;
-                            width: 50%;
+                                @include Flex(row, center, center);
+                                border: 2px solid $--orange;
+                                @include Border(13px);
+                                color: $--light;
+                                background-color:  $--orange;
+                                padding: 10px 0px;
+                                width: 30%;
                             }
                         }
                     }
+                    
                 }
             }
         }
     }
-}
-
-.onclick-modal-responsive{
-    display: none !important;
 }

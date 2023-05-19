@@ -55,10 +55,10 @@
                 </div>
             </nav>
             <div class="d-flex justify-content-center align-items-center">
-                <img class="penguin-logo-background" src="./assets/images/header/Group 62.svg">
+                <img class="penguin-logo-background d-none" src="./assets/images/header/Group 62.svg">
             </div>
         </div>
-        <p class="page-text"> ‘’Lorem Ipsum has been the industry's’’
+        <p class="page-text d-none"> ‘’Lorem Ipsum has been the industry's’’
         </p>
         <div class="header-menu-bar flex-column gap-5 d-flex justify-content-start align-items-center">
             <div class="close-icon">
@@ -209,46 +209,46 @@
         <div class="courier-order-section d-flex flex-column ">
             <div class="head d-flex align-items-center justify-content-between ">
                 <div class="headline">
-                    <span style="color: #FF6600 ;">Siz sifariş edin, biz çatdıraq. </span>
-                    <span>Sürətli və təhlükəsiz!</span>
+                    <span id="head-span" style="color: #FF6600 ;">Siz sifariş edin, biz çatdıraq. </span>
+                    <span id="head-span">Sürətli və təhlükəsiz!</span>
                 </div>
                 <div class="headline-responsive">Kuryer sifarişi</div>
-                <div class="make-order-btn">
-                    <button class="d-flex justify-content-start align-items-center gap-4">
+                <div class="make-order-btn d-flex justify-content-start align-items-center">
+                    <button class=" gap-2 d-flex justify-content-start align-items-center p-2" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div class="icon">
                             <img src="./assets/images/orders/Vector (30).svg">
                         </div>
-                        <span>Sifariş et</span>
+                        <span >Sifariş et</span>
                     </button>
                 </div>
             </div>
             <div class="services d-flex flex-row justify-content-between  ">
-                    <div class="balance-services  d-flex flex-column justify-content-around align-items-start">
+                    <div class="balance-services  d-flex flex-column justify-content-around align-items-start gap-2">
                         <h5>Balans (xidmətlər)</h5>
                         <p>Bu balansdan istifadə edərək siz xidmətlərin (çatdırılma, sürətli sifariş) ödənişini edə bilərsiniz
                         </p>
-                        <div class="money">15 AZN</div>
+                        <div class="money ">15 AZN</div>
                     </div>
-                     <div class="balance-services  d-flex flex-column justify-content-around align-items-start">
+                     <div class="balance-services  d-flex flex-column justify-content-around align-items-start gap-2">
                         <h5>Balans (xidmətlər)</h5>
                         <p>Bu balansdan istifadə edərək siz xidmətlərin (çatdırılma, sürətli sifariş) ödənişini edə bilərsiniz
                         </p>
-                        <div class="money">15 AZN</div>
+                        <div class="money ">15 AZN</div>
                     </div>
             </div>
+            <!---------Desktop table------------>
             <div class="order-table">
                 <div class="orders-header d-flex justify-content-between">
                     <div class="orders">
                         <div>
                             <img src="./assets/images/courier-order/Vector (38).svg"> 
                         </div>
-                        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">Kuryer ilə göndər</button>
+                        <button type="button" class="courier-btn" >Kuryer ilə göndər</button>
                     </div>
                     <button class="package-in-office">Baş ofisə çatan bağlamalar <img src="./assets/images/courier-order/Vector 103 (1).svg"></button>
                 </div>
-
-                 <table class="table">
-                    <thead class="">
+                <table class="table">
+                    <thead>
                       <tr>
                         <th scope="col">#</th>
                         <th scope="col">Track</th>
@@ -309,9 +309,8 @@
                         </td>
                       </tr>
                     </tbody>
-                  </table>
-            </div>
-       
+                </table>
+            </div> 
             <!---------Responsive table --------->
             <div class="order-table-responsive">
                 <div class="product">
@@ -385,335 +384,249 @@
             </div>
         </div>
     </section>
-    
 
+    <!-- ------Modal ------ -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-xl">
-      <div class="modal-content p-3">
-        <div class="modal-header head d-flex justify-content-between align-items-center mb-2 ">
-                <div class="orders">
-                    <div>
-                        <img src="./assets/images/courier-order/Vector (38).svg"> 
+        <div class="modal-content p-3">
+            <div class="modal-header  d-flex justify-content-between align-items-center mb-2 ">
+                    <div class="orders">
+                        <div class="icon">
+                            <img src="./assets/images/courier-order/Vector (38).svg"> 
+                        </div>
+                        <span>Kuryer sifariş et</span>
                     </div>
-                    <span>Kuryer ilə göndər</span>
-                </div>
-                <div class="close">
-                    <img src="./assets/images/courier-order/Vector (39).svg">
-                </div>
-        </div>
-        <div class="modal-body section d-flex gap-5">
-            <div class="section d-flex gap-5">
-                <section class="choose-package">
-                    <span class="mb-2">Kuryer ilə çatdırılacaq bağlamaları seçin </span>
-                    <div class="table">
-                        <div class=" titles row">
-                            <div class="col-1 d-flex justify-content-center align-items-center">
-                                <span>#</span>
+                    <div class="close">
+                        <img src="./assets/images/courier-order/Vector (39).svg">
+                    </div>
+            </div>
+            <div class="modal-body section d-flex flex-sm-column gap-5">
+                <div class="section d-flex">
+                    <section class="choose-package">
+                        <strong class="mb-lg-3">Kuryer ilə çatdırılacaq bağlamaları seçin </strong>
+                        <table class="table">
+                            <thead class="">
+                                <tr>
+                                    <th scope="col">
+                                        <input type="checkbox">
+                                    </th>
+                                    <th scope="col">Mağaza</th>
+                                    <th scope="col">Çəki</th>
+                                    <th scope="col">Qiymət</th>
+                                    <th scope="col">Valyuta</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <input type="checkbox">
+                                    </th>
+                                    <td>Trendyol
+                                    </td>
+                                    <td>0.5 kq
+                                    </td>
+                                    <td>23.76 
+                                    </td>
+                                    <td> TRY
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <div class="choose-package-responsive">
+                        <div class="product">
+                                <input class="checkbox" type="checkbox">
+                                <img class="icon-close" src="./assets/images/courier-order/close-icon.svg">
+                                <div class="info d-flex flex-column align-items-start justify-content-center">
+                                    <p>Mağaza</p>
+                                    <span>Trendyol
+                                    </span>
+                                </div>
+                                <div class="info d-flex flex-column align-items-start justify-content-center">
+                                    <p>Qiymət</p>
+                                    <span>23.76
+                                    </span>
+                                </div>
+                                <div class="info d-flex flex-column align-items-start justify-content-center">
+                                    <p>Çəki </p>
+                                    <span>0.15 kq
+                                    </span>
+                                </div>
+                                <div class="info d-flex flex-column align-items-start justify-content-center">
+                                    <p>Valyuta</p>
+                                    <span>1TRY
+                                    </span>
+                                </div>
+                        </div>
+                        <div class="product">
+                            <input class="checkbox" type="checkbox">
+                            <img class="icon-close" src="./assets/images/courier-order/close-icon.svg">
+                            <div class="info d-flex flex-column align-items-start justify-content-center">
+                                <p>Mağaza</p>
+                                <span>Trendyol
+                                </span>
                             </div>
-                             <div class="col-3 d-flex justify-content-center align-items-center">
-                                 <span>Mağaza</span>
-                             </div>
-                             <div class="col-3 d-flex justify-content-center align-items-center">
-                                 <span>Çəki</span>
-                             </div>
-                             <div class="col-3 d-flex justify-content-center align-items-center">
-                                 <span> Qiymət </span>
-                             </div>
-                             <div class="col-2 d-flex justify-content-center align-items-center">
-                                 <span>Valyuta</span>
-                             </div>
-                        </div>
-                        <div class="orders-section">
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center">
-                                        <span>1
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>Trendyol
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>0.5 kq
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>23.76 
-                                        </span>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <span>TRY</span>
-                                    </div>
+                            <div class="info d-flex flex-column align-items-start justify-content-center">
+                                <p>Qiymət</p>
+                                <span>23.76
+                                </span>
+                            </div>
+                            <div class="info d-flex flex-column align-items-start justify-content-center">
+                                <p>Çəki </p>
+                                <span>0.15 kq
+                                </span>
+                            </div>
+                            <div class="info d-flex flex-column align-items-start justify-content-center">
+                                <p>Valyuta</p>
+                                <span>1TRY
+                                </span>
+                            </div>
+                    </div>
+                    </div>
+                    <h5>Məlumatları doldurun</h5>
+                    <section class="make-order">
+                        <form >
+                            <h5>Məlumatları doldurun</h5>
+                            <div class="row gap-lg-0 gap-sm-3">
+                                <div class="col-lg-6 col-sm-12 mb-2">
+                                        <div class="d-flex">
+                                            <select id="inlineFormCustomSelectPref" class="custom-select form-control select" >
+                                                <option selected>+99450</option>
+                                                <option value="1" >+99451</option>
+                                                <option value="2">+99455</option>
+                                                <option value="3">+99470</option>
+                                                <option value="4">+99477</option>
+                                            </select>
+                                            <input id="number" type="text" class="form-control" placeholder="000-00-00" required>
+                                        </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center">
-                                        <span>2
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>Trendyol
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>0.5 kq
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>23.76 
-                                        </span>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <span>TRY</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center">
-                                        <span>3
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>Trendyol
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>0.5 kq
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>23.76 
-                                        </span>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <span>TRY</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center">
-                                        <span>4
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>Trendyol
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>0.5 kq
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>23.76 
-                                        </span>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <span>TRY</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-1 d-flex justify-content-center align-items-center">
-                                        <span>5
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>Trendyol
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>0.5 kq
-                                        </span>
-                                    </div>
-                                    <div class="col-3 d-flex justify-content-center align-items-center">
-                                        <span>23.76 
-                                        </span>
-                                    </div>
-                                    <div class="col-2 d-flex justify-content-center align-items-center">
-                                        <span>TRY</span>
-                                    </div>
-                                </div>
-                        </div>
-                     </div>
-                </section>
-                <section class="make-order">
-                    <form>
-                        <div class="row mb-3">
-                            <label>Məlumatları doldurun</label>
-                          <div class="col-6">
-                            <div class="row">
-                                <div class="col-6 border-end-0">
+                                <div class="col-lg-6 col-sm-12 mb-2">
                                     <select id="inputState" class="form-control">
-                                        <option selected>+99450</option>
-                                        <option>+99455</option>
-                                        <option>+99470</option>
-                                        <option>+99477</option>
-                                      </select>
+                                        <option selected>Binəqədi rayon</option>
+                                        <option>...</option>
+                                    </select>
                                 </div>
-                                <div class="col-6 border-start-0">
-                                    <input type="text" class="form-control" placeholder="000-00-00">
+                                <div class="col-12">
+                                    <input type="text" class="form-control" placeholder="Shikhov Beach. Baku, Azerbaijan">
                                 </div>
                             </div>
-                            
-                          </div>
-                          <div class="col-6">
-                            <select id="inputState" class="form-control">
-                                <option selected>Binəqədi rayon</option>
-                                <option>...</option>
-                              </select>
-                           </div>
+                        </form>
+                        <p class="mb-2 mt-1">Xahiş edirik sizə yaxın tanınmış əraziləri qeyd edin (Metro st.-ları, Şadlıq sarayları və s)
+                        </p>
+                        <p class="mb-2" style="color: #FF6600;">*Zəhmət olmasa məlumat xanalarını düzgün doldurduğunuzdan əmin olun
+                        </p>
+                        <div class="form-check">
+                            <input class="form-check-input checkbox" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Qaydalarla razıyam
+                            </label>
                         </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <input type="text" class="form-control" placeholder="Shikhov Beach. Baku, Azerbaijan">
-                            </div>
+                        <div class="payment d-flex align-items-center justify-content-start gap-3">
+                            <span>Kuryer xidməti üçün toplam ödəniləcək:   </span>
+                            <div>2.80 AZN</div>
                         </div>
-                    </form>
-                    <p class="mb-2 mt-1">Xahiş edirik sizə yaxın tanınmış əraziləri qeyd edin (Metro st.-ları, Şadlıq sarayları və s)
-                    </p>
-                    <p class="mb-2" style="color: #FF6600;">*Zəhmət olmasa məlumat xanalarını düzgün doldurduğunuzdan əmin olun
-                    </p>
-                    <div class="form-check">
-                        <input class="form-check-input checkbox" type="checkbox" id="gridCheck1">
-                        <label class="form-check-label" for="gridCheck1">
-                            Qaydalarla razıyam
-                        </label>
-                    </div>
-                    <div class="payment d-flex align-items-center justify-content-between gap-2">
-                        <span>Kuryer xidməti üçün toplam ödəniləcək:   </span>
-                        <div>2.80 AZN</div>
-                    </div>
-                    <div class="make-order-btn d-flex justify-content-center align-items-center mt-4">
-                        <button >
-                            Sifariş et
-                        </button>
-                    </div>
-                </section>
-            </d    iv>
-        </div> 
-      </div>
-    </div>
-    </div>
-
-  
-    <!--------Responsive Modal ------->
-    <div class="onclick-modal-responsive p-3">
-        <div class="head d-flex justify-content-between align-items-center mb-2">
-            <div class="orders">
-                <div>
-                    <img src="./assets/images/courier-order/Vector (38).svg"> 
+                        <div class="make-order-btn d-flex justify-content-center align-items-center mt-4">
+                            <button >
+                                Sifariş et
+                            </button>
+                        </div>
+                    </section>
                 </div>
-                <span>Kuryer ilə göndər</span>
-            </div>
-            <div class="close">
-                <img src="./assets/images/courier-order/Vector (39).svg">
-            </div>
+            </div> 
         </div>
-        <span class="mb-5">Kuryer ilə çatdırılacaq bağlamaları seçin
-        </span>
-        <div class="order-table-responsive">
-            <div class="product">
-                    <input class="checkbox" type="checkbox">
-                    <img class="icon-close" src="./assets/images/baglamalarim/Vector 112.svg">
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza</p>
-                        <span>Trendyol
-                        </span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Qiymət</p>
-                        <span>23.76
-                        </span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çəki </p>
-                        <span>0.15 kq
-                        </span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Valyuta</p>
-                        <span>1TRY
-                        </span>
-                    </div>
-            </div>
-            <div class="product">
-                <input class="checkbox" type="checkbox">
-                <img class="icon-close" src="./assets/images/baglamalarim/Vector 112.svg">
-                <div class="info d-flex flex-column align-items-start justify-content-center">
-                    <p>Mağaza</p>
-                    <span>Trendyol
-                    </span>
-                </div>
-                <div class="info d-flex flex-column align-items-start justify-content-center">
-                    <p>Qiymət</p>
-                    <span>23.76
-                    </span>
-                </div>
-                <div class="info d-flex flex-column align-items-start justify-content-center">
-                    <p>Çəki </p>
-                    <span>0.15 kq
-                    </span>
-                </div>
-                <div class="info d-flex flex-column align-items-start justify-content-center">
-                    <p>Valyuta</p>
-                    <span>1TRY
-                    </span>
-                </div>
-        `
-        </div>
-        <h5>Məlumatları doldurun</h5>
-        <section class="make-order">
-            <form>
-                <div class="row mb-3">
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col">
-                            <select id="inputState" class="form-control">
-                                <option selected>+99450</option>
-                                <option>+99455</option>
-                                <option>+99470</option>
-                                <option>+99477</option>
-                            </select>
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="000-00-00">
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-12 mt-3 mb-3">
-                    <select id="inputState" class="form-control">
-                        <option selected>Binəqədi rayon</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-12">
-                    <input type="text" class="form-control" placeholder="Shikhov Beach. Baku, Azerbaijan">
-                </div>
-                </div>
-            </form>
-            <p class="mb-2 mt-1">Xahiş edirik sizə yaxın tanınmış əraziləri qeyd edin (Metro st.-ları, Şadlıq sarayları və s)
-            </p>
-            <p class="mb-2" style="color: #FF6600;">*Zəhmət olmasa məlumat xanalarını düzgün doldurduğunuzdan əmin olun
-            </p>
-            <div class="form-check">
-                <input class="form-check-input checkbox" type="checkbox" id="gridCheck1">
-                <label class="form-check-label" for="gridCheck1">
-                    Qaydalarla razıyam
-                </label>
-            </div>
-            <div class="payment d-flex align-items-center justify-content-between gap-2">
-                <span>Kuryer xidməti üçün toplam ödəniləcək:   </span>
-                <div>2.80 AZN</div>
-            </div>
-            <div class="make-order-btn d-flex justify-content-center align-items-center mt-4">
-                <button >
-                    Sifariş et
-                </button>
-            </div>
-        </section>
-
         </div>
     </div>
-    
-
-
 
     <footer class="footer">
         <div class="contact-section" >

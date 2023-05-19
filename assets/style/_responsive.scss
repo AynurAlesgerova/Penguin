@@ -204,8 +204,12 @@
                         left: 20px; 
                         right: 28px;  
                         padding: 23px 0px 50px 0px;
+                        h1{
+                                margin: 0 0 30px 0;
+                        }
                         .register{
                                 @include Flex(column, center, center);
+                                margin-top: 30px;
                         }
                 }
         }
@@ -215,7 +219,10 @@
                 @include Flex(column, center, center);
                 .info{
                         width: 100%;
-                        padding: 10px 20px;
+                        padding:  20px 30px;
+                        h2{
+                                @include Fonts(600,18px)
+                        }
                 }
                 .about-img{
                         width: 100%;
@@ -288,7 +295,26 @@
                         .login{
                                 margin-top: 20px
                         }
+                       
                 }
+                .id-cards{ 
+                        display: flex ;
+                        flex-direction: column !important;
+                        align-items: center !important;
+                        justify-content: center !important;
+                        position: absolute;
+                        top: 200px;
+                        right: 0px;
+                        left: 10px;
+                        #identification-card-1{
+                            width: 340px;
+                            height: 224px;
+                        }
+                        #identification-card-2{
+                            width: 340px;
+                            height: 224px;
+                        }
+                    }
         }
 
 //----- Traifler -------
@@ -488,147 +514,149 @@
 
 //----- Balans xidmetleri -------
         .balance-services{
-        display: flex;
-        flex-direction: column !important;
-        .balance-transactions{
                 display: flex;
-                padding: 20px;
-                width: 100%;
-                padding: 20px 55px;
-                background-color: $--lightgray;
-                .head{
-                        display: flex;
-                        flex-direction: column !important;
-                        align-items: flex-start !important;
-                        gap: 20px;
-                        .headline{
-                                display: none;
-                        }
-                        .headline-responsive{
-                                display: block;
-                                @include Fonts(600, 18px);
-                        }
-                }
-                .services{
                 flex-direction: column !important;
-                gap: 20px;
-                        h5{
-                                @include Fonts(600, 18px);
-                        }
-                        .balance-services{
-                                width: 100%;
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                        }
-                        .increase-balance{
-                                width: 100%;
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                .buttons{
-                                        flex-direction: column !important;
-                                        .enter-amount{
-                                                width: 100%;
-                                                padding: 10px 80px;
-                                        }
-                                        .increase-btn{
-                                                width: 100%;
-                                                padding: 10px 100px;
-                                        }
-                                }
-                        }
-                }
-                .transactions{
-                        display: none !important;
-                }
-                .transactions-responsive{
-                        display: flex !important;
+                .balance-transactions{
+                        display: flex;
+                        padding: 20px;
                         width: 100%;
-                        .product{
-                                width: 100%;
-                                margin-bottom: 20px;
-                                position: relative;
-                                @include Border(14.2401px);
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                background-color: #FFFFFF;
-                                gap: 40px;
-                                padding: 13px 20px;
-                                .icon-close{
-                                        position: absolute;
-                                        right: 25px;
-                                        top: 25px;
+                        background-color: $--lightgray;
+                        .head{
+                                display: flex;
+                                flex-direction: column !important;
+                                align-items: flex-start !important;
+                                gap: 20px;
+                                .headline{
+                                        display: none;
                                 }
-                                .info{
-                                        border-bottom: 1px solid #DCDCDC;
-                                        padding: 10px 0;
+                                .headline-responsive{
+                                        display: block;
+                                        @include Fonts(600, 18px);
                                 }
-                                p{
-                                        @include Fonts( 600, 18px);   
+                        }
+                        .services{
+                        flex-direction: column !important;
+                        gap: 20px;
+                                h5{
+                                        @include Fonts(600, 18px);
                                 }
-                                span{
-                                        @include Fonts( 500, 16px);
+                                .balance-services{
+                                        width: 100%;
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
                                 }
-                                .pay-btn{
-                                @include Border(13px);
-                                background-color: $--orange;
-                                color: $--light;
-                                width: 100%;
-                                padding: 8px;
-                                border: none;
-                                }
-                                .insure-btn{
-                                @include Border(13px);
-                                background-color:  #4CB71A;
-                                color: $--light;
-                                width: 100%;
-                                padding: 8px;
-                                border: none;
-                                }
-                                .edit-trash{
-                                        .edit{
-                                                background-color: $--orange;
-                                                @include Border(50px);
-                                                width: 26px;
-                                                height: 26px;
-                                                @include Flex(row, center, center);
-                                                img{
-                                                width: 10px;
-                                                height: 10px; 
+                                .increase-balance{
+                                        width: 100%;
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        .buttons{
+                                                flex-direction: column !important;
+                                                .enter-amount{
+                                                        width: 100%;
+                                                        padding: 10px 80px;
                                                 }
-                                                
-                                        } 
-                                        .delete{
-                                                background-color: $--dark;
-                                                @include Border(50px);
-                                                width: 26px;
-                                                height: 26px;
-                                                @include Flex(row, center, center);
-                                                img{
-                                                width: 10px;
-                                                height: 10px; 
+                                                .increase-btn{
+                                                        width: 100%;
+                                                        padding: 10px 100px;
                                                 }
                                         }
                                 }
                         }
-                }
-                .pages{
-                        .previous{
-                                padding: 8px 15px;
-                                @include Flex(row, center, center);
-                                background-color: #E4E4E4;
-                                @include Border(13px);
-                                color:  #8B8B8B;
-                                border: none;
+                        .transactions{
+                                display: none !important;
                         }
-                        .next{
-                                padding: 8px 15px;
-                                @include Flex(row, center, center);
-                                background-color: $--orange;
-                                @include Border(13px);
-                                color:  $--light;
-                                border: none;
-                
+                        h4{
+                                display: block;
+                                @include Fonts(600,18px)
+                        }
+                        .transactions-responsive{
+                                display: flex !important;
+                                width: 100%;
+                                .product{
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                        position: relative;
+                                        @include Border(14.2401px);
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        background-color: #FFFFFF;
+                                        gap: 40px;
+                                        padding: 13px 20px;
+                                        .icon-close{
+                                                position: absolute;
+                                                right: 25px;
+                                                top: 25px;
+                                        }
+                                        .info{
+                                                border-bottom: 1px solid #DCDCDC;
+                                                padding: 10px 0;
+                                        }
+                                        p{
+                                                @include Fonts( 600, 18px);   
+                                        }
+                                        span{
+                                                @include Fonts( 500, 16px);
+                                        }
+                                        .pay-btn{
+                                        @include Border(13px);
+                                        background-color: $--orange;
+                                        color: $--light;
+                                        width: 100%;
+                                        padding: 8px;
+                                        border: none;
+                                        }
+                                        .insure-btn{
+                                        @include Border(13px);
+                                        background-color:  #4CB71A;
+                                        color: $--light;
+                                        width: 100%;
+                                        padding: 8px;
+                                        border: none;
+                                        }
+                                        .edit-trash{
+                                                .edit{
+                                                        background-color: $--orange;
+                                                        @include Border(50px);
+                                                        width: 26px;
+                                                        height: 26px;
+                                                        @include Flex(row, center, center);
+                                                        img{
+                                                        width: 10px;
+                                                        height: 10px; 
+                                                        }
+                                                        
+                                                } 
+                                                .delete{
+                                                        background-color: $--dark;
+                                                        @include Border(50px);
+                                                        width: 26px;
+                                                        height: 26px;
+                                                        @include Flex(row, center, center);
+                                                        img{
+                                                        width: 10px;
+                                                        height: 10px; 
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                        .pages{
+                                .previous{
+                                        padding: 8px 15px;
+                                        @include Flex(row, center, center);
+                                        background-color: #E4E4E4;
+                                        @include Border(13px);
+                                        color:  #8B8B8B;
+                                        border: none;
+                                }
+                                .next{
+                                        padding: 8px 15px;
+                                        @include Flex(row, center, center);
+                                        background-color: $--orange;
+                                        @include Border(13px);
+                                        color:  $--light;
+                                        border: none;
+                        
+                                }
                         }
                 }
-        }
-
         }
 
 //----- Baglamalarim -------
@@ -731,17 +759,33 @@
                 display: flex;
                 flex-direction: column !important;
                 .order-section{
-                        display: none !important;        
-                } 
-                .order-section-responsive{
-                        display: block !important;
-                        padding: 20px 30px;
-                        background-color: $--lightgray;
+                        width: 100%;
+                        padding: 30px !important;
+                        display: flex; 
+                        align-items: start !important;
+                        gap: 10px !important;
                         h5{
-                                @include Fonts(600, 18px);
+                                display: block !important;
+                                @include Fonts(600,18px);
+                        }
+                        .responsive-header{
+                                display: block !important;
+                        }
+                        .table{
+                                display: none;
+                        }
+                        .pay-btn{
+                                display: none !important;
                         }
                         .responsive-table{
+                                width: 100%;
+                                display: block !important;
+                                background-color: $--lightgray;
+                                h5{
+                                        @include Fonts(600, 18px);
+                                }
                                 .product{
+                                        width: 100%;
                                         margin-bottom: 20px;
                                         position: relative;
                                         @include Border(14.2401px);
@@ -765,12 +809,13 @@
                                                 @include Fonts( 500, 16px);
                                         }
                                         .pay-btn{
-                                        @include Border(13px);
-                                        background-color: $--orange;
-                                        color: $--light;
-                                        width: 100%;
-                                        padding: 8px;
-                                        border: none;
+                                                display: block !important;
+                                                @include Border(13px);
+                                                background-color: $--orange;
+                                                color: $--light;
+                                                width: 100%;
+                                                padding: 8px;
+                                                border: none;
                                         }
                                         .insure-btn{
                                         @include Border(13px);
@@ -806,24 +851,24 @@
                                                 }
                                         }
                                 }
-                        }
-                        .pages{
-                                .previous{
-                                padding: 8px 15px;
-                                @include Flex(row, center, center);
-                                background-color: #E4E4E4;
-                                @include Border(13px);
-                                color:  #8B8B8B;
-                                border: none;
-                                }
-                                .next{
+                                .pages{
+                                        .previous{
                                         padding: 8px 15px;
                                         @include Flex(row, center, center);
-                                        background-color: $--orange;
+                                        background-color: #E4E4E4;
                                         @include Border(13px);
-                                        color:  $--light;
+                                        color:  #8B8B8B;
                                         border: none;
-                        
+                                        }
+                                        .next{
+                                                padding: 8px 15px;
+                                                @include Flex(row, center, center);
+                                                background-color: $--orange;
+                                                @include Border(13px);
+                                                color:  $--light;
+                                                border: none;
+                                
+                                        }
                                 }
                         }
                 }
@@ -837,6 +882,7 @@
                 }
                 .responsive-h3{
                         display: block !important;
+                        @include Fonts(600,18px);
                 }
                 .info{
                         display: none !important;
@@ -900,6 +946,9 @@
                 }
                 .chooses-responsive{
                         display: flex !important;
+                        .form-check-label{
+                                @include Fonts(600,16px);
+                        }
                 }
                 .buttons{
                         display: none !important;
@@ -914,7 +963,6 @@
                         display: flex;
                         padding: 20px;
                         width: 100%;
-                        padding: 20px 55px;
                         background-color: $--lightgray;
                         .head{
                                 display: flex;
@@ -958,6 +1006,10 @@
                         .services-table{
                                 display: none !important;
                         }
+                        h4{
+                                display: block;
+                                @include Fonts(600,18px);
+                        }
                         .services-table-responsive{
                                 display: flex !important;
                                 width: 100%;
@@ -993,39 +1045,6 @@
                                         padding: 8px;
                                         border: none;
                                         }
-                                        .insure-btn{
-                                        @include Border(13px);
-                                        background-color:  #4CB71A;
-                                        color: $--light;
-                                        width: 100%;
-                                        padding: 8px;
-                                        border: none;
-                                        }
-                                        .edit-trash{
-                                                .edit{
-                                                        background-color: $--orange;
-                                                        @include Border(50px);
-                                                        width: 26px;
-                                                        height: 26px;
-                                                        @include Flex(row, center, center);
-                                                        img{
-                                                        width: 10px;
-                                                        height: 10px; 
-                                                        }
-                                                        
-                                                } 
-                                                .delete{
-                                                        background-color: $--dark;
-                                                        @include Border(50px);
-                                                        width: 26px;
-                                                        height: 26px;
-                                                        @include Flex(row, center, center);
-                                                        img{
-                                                        width: 10px;
-                                                        height: 10px; 
-                                                        }
-                                                }
-                                        }
                                 }
                         }
                         .pages{
@@ -1060,6 +1079,7 @@
                         padding: 20px 30px;
                         width: 100%;
                         background-color: $--lightgray;
+                        gap: 0px !important;
                         .head{
                                 display: flex;
                                 flex-direction: column !important;
@@ -1154,12 +1174,13 @@
                                         justify-content: center !important;
                                         align-items: center !important;
                                         @include Border(13px);
-                                        padding: 5px 15px;
+                                        padding: 5px 0px;
+                                        margin-bottom: 30px;
                                         background-color: $--light;
                                         color:  $--orange;
                                         border: none;
                                         gap: 10px;
-                                        width: 70%;
+                                        width: 75%;
                                         div{
                                         background-color: $--orange;
                                         @include Border(50px);
@@ -1193,356 +1214,309 @@
                                 }
                         }
                 }
-                
         }
-        // .onclick-modal-responsive{
-        //         display: block !important;
-        //         background-color: red;
-        //         position: absolute;
-        //         top: 150px ;
-        //         .head{
-        //                 .orders{
-        //                         @include Fonts(600,20px);
-        //                         display: flex !important;
-        //                         padding: 10px 25px;
-        //                         background-color: $--light;
-        //                         color:  $--light;
-        //                         border: none;
-        //                         gap: 10px;
-        //                         width: 60%;
-        //                         background-color: $--orange;
-        //                         // width: 33px;
-        //                         // height: 33px; 
-        //                         //         img{
-        //                         //         width: 20px;
-        //                         //         height: 20px; 
-        //                         //     }
-        //                         }
-        //                 //     } 
-        //                 .close{
-        //                 img{
-        //                         width: 20px;
-        //                         height: 20px;
-        //                 }
-        //                 }
-        //         }
-        //         .order-table-responsive{
-        //                 display: flex !important;
-        //                 flex-direction: column !important;
-        //                 width: 100%;
-        //                 .product{
-        //                         width: 100%;
-        //                         margin-bottom: 20px;
-        //                         position: relative;
-        //                         @include Border(14.2401px);
-        //                         box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-        //                         background-color: #FFFFFF;
-        //                         gap: 40px;
-        //                         padding: 10px 20px 30px 45px;
-        //                         .icon-close{
-        //                                 position: absolute;
-        //                                 right: 25px;
-        //                                 top: 30px;
-        //                         }
-        //                         .checkbox{
-        //                                 position: absolute;
-        //                                 left: 18px;
-        //                                 top: 25px;
-        //                                 width: 18px;
-        //                                 height: 18px;
-        //                         }
-        //                         .info{
-        //                                 border-bottom: 1px solid #DCDCDC;
-        //                                 padding: 10px 0;
-        //                         }
-        //                         p{
-        //                                 @include Fonts( 600, 18px);   
-        //                         }
-        //                         span{
-        //                                 @include Fonts( 500, 16px);
-        //                         }
-                                
-        //                 }
-        //         }
-        //         h5{
-        //                 @include Fonts( 600, 16px); 
-        //                 margin: 20px 0;    
-        //         }
-        //         .make-order{
-        //                 padding: 0 20px;
-        //                 form{
-        //                 label{
-        //                         @include Fonts( 600, 17px);
-        //                 }
-        //                 }
-        //                 .checkbox:checked {
-        //                 background-color: #a77e2d !important;
-        //                 color: #ffffff !important;
-        //                 }
-        //                 .checkbox:after {
-        //                 box-shadow: none !important;
-        //                 }                          
-        //                 .payment{
-        //                 span{
-        //                         @include Fonts( 600, 16px);
-        //                 }
-        //                 div{
-        //                         border: 2px solid $--orange;
-        //                         @include Border(13px);
-        //                         color: $--orange;
-        //                         // width: 100%;
-        //                         padding: 5px 8px;
-        //                 }
-        //                 }
-        //                 .make-order-btn{
-        //                 button{
-        //                         @include Fonts( 600, 17px);
-        //                 @include Flex(row, center, center);
-        //                 border: 2px solid $--orange;
-        //                 @include Border(13px);
-        //                 color: $--light;
-        //                 background-color:  $--orange;
-        //                 padding: 10px 20px;
-        //                 width: 100%;
-        //                 }
-        //                 }
-        //         }
-        // }
+        .modal{
+                padding: 200px 10px 0 10px;
+                padding-left: 10px;
+                .modal-dialog{
+                        .modal-content{
+                                .modal-header{
+                                        .orders{
+                                                display: flex !important;
+                                                flex-direction: row !important;
+                                                @include Fonts(600, 18px);
+                                                .icon{
+                                                        width: 40%;
+                                                }
+                                        }
+                                }
+                                .modal-body{
+                                        padding: 0;
+                                        .section{
+                                        display: flex !important;
+                                        flex-direction: column !important ;
+                                                .choose-package{
+                                                display: none !important;
+                                                }
+                                                .choose-package-responsive{
+                                                                display: flex !important;
+                                                                flex-direction: column !important;
+                                                                width: 100%;
+                                                                border-bottom: 2px solid $--orange;
+                                                                .product{
+                                                                        width: 100%;
+                                                                        margin-bottom: 20px;
+                                                                        position: relative;
+                                                                        @include Border(14.2401px);
+                                                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                                                        background-color: #FFFFFF;
+                                                                        gap: 40px;
+                                                                        padding: 13px 20px;
+                                                                        .icon-close{
+                                                                                position: absolute;
+                                                                                right: 25px;
+                                                                                top: 25px;
+                                                                        }
+                                                                        .info{
+                                                                                border-bottom: 1px solid #DCDCDC;
+                                                                                padding: 10px 0;
+                                                                        }
+                                                                        p{
+                                                                                @include Fonts( 600, 18px);   
+                                                                        }
+                                                                        span{
+                                                                                @include Fonts( 500, 16px);
+                                                                        }
+                                                                }
+                                                }
+                                                h5{
+                                                        display: block;
+                                                        margin: 15px 0;
+                                                        @include Fonts(600,16px);
 
-// ------Addresses abroad------
-.addresses-abroad{
-        display: flex;
-        flex-direction: column !important;
-        .addresses-abroad-section{
-                width: 100%;
-                padding: 25px;
-                gap: 15px !important;
-                .head{
-                        display: none !important;
-                }
-                .responsive-head{
-                        display: block !important;
-                        h4{
-                                @include Fonts(600,18px)
-                        }
-                }
-                .addresses-abroad-table{
-                        display: none !important;
-                }
-                .addresses-abroad-table-responsive{
-                        display: flex !important;
-                        flex-direction: column !important;
-                        width: 100%;
-                        .informations{
-                                width: 100%;
-                                margin-bottom: 20px;
-                                @include Border(14.2401px);
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                background-color: #FFFFFF;
-                                gap: 40px;
-                                padding: 13px 20px;
-                                .info{
-                                        border-bottom: 1px solid #DCDCDC;
-                                        padding: 10px 0;
+                                                }
+                                                .make-order{
+                                                        width: 100%;
+                                                        border-left: none;
+                                                        padding-top: 15px;
+                                                        padding:  10px;
+                                                        @include Border(14.2401px);
+                                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                                        background-color: #FFFFFF;
+                                                        form{
+                                                                h5{
+                                                                        display: none;
+                                                                }
+                                                        }
+                                                        .payment{
+                                                                display: flex;
+                                                                flex-direction: column !important;
+                                                                align-items: start !important;
+                                                        }
+                                                        .make-order-btn{
+                                                                button{
+                                                                        width: 100%;
+                                                                }
+                                                        }
+                                                }
                                 }
-                                p{
-                                        @include Fonts( 600, 18px);   
-                                        color: $--orange
-                                }
-                                span{
-                                        @include Fonts( 500, 16px);
                                 }
                         }
                 }
         }
-}
+// ------Addresses abroad------
+        .addresses-abroad{
+                display: flex;
+                flex-direction: column !important;
+                .addresses-abroad-section{
+                        width: 100%;
+                        padding: 25px;
+                        gap: 15px !important;
+                        .head{
+                                display: none !important;
+                        }
+                        .responsive-head{
+                                display: block !important;
+                                h4{
+                                        @include Fonts(600,18px)
+                                }
+                        }
+                        .addresses-abroad-table{
+                                display: none !important;
+                        }
+                        .addresses-abroad-table-responsive{
+                                display: flex !important;
+                                flex-direction: column !important;
+                                width: 100%;
+                                .informations{
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                        @include Border(14.2401px);
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        background-color: #FFFFFF;
+                                        gap: 40px;
+                                        padding: 13px 20px;
+                                        .info{
+                                                border-bottom: 1px solid #DCDCDC;
+                                                padding: 10px 0;
+                                        }
+                                        p{
+                                                @include Fonts( 600, 18px);   
+                                                color: $--orange
+                                        }
+                                        span{
+                                                @include Fonts( 500, 16px);
+                                        }
+                                }
+                        }
+                }
+        }
 
 // ----------Tenzimlenmeler---------
-.corrections{
-        display: flex;
-        flex-direction: column !important;
-        .corrections-section{
-                width: 100%;
-                padding: 25px;
-                .head{
-                        display: none !important;
-                }
-                .services{
-                        display: none !important;
-                }
-                .corrections-header{
-                        display: none !important;
-                }
-                .corrections-table{
-                        display: none !important;
-                }
-                .corrections-table-responsive{
-                        display: flex !important;
-                        flex-direction: column !important;
-                        width: 100%;  
-                        .informations{
-                                width: 100%;
-                                margin-bottom: 20px;
-                                position: relative;
-                                @include Border(14.2401px);
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                background-color: #FFFFFF;
-                                gap: 40px;
-                                padding: 13px 20px;
-                                form{
-                                        .row{
-                                                .col{
-                                                    position: relative;
-                                                    img{
-                                                        position: absolute;
-                                                        right: 20px;
-                                                        top: 9px;
-                                                        width: 18px;
-                                                        height: 18px;
-                                                    }
+        .corrections{
+                display: flex;
+                flex-direction: column !important;
+                .corrections-section{
+                        width: 100%;
+                        padding: 25px;
+                        .head{
+                                display: none !important;
+                        }
+                        .services{
+                                display: none !important;
+                        }
+                        .corrections-header{
+                                display: none !important;
+                        }
+                        .corrections-table{
+                                display: none !important;
+                        }
+                        h4{
+                                display: block;
+                                @include Fonts(600,18px);
+                        }
+                        .corrections-table-responsive{
+                                display: flex !important;
+                                flex-direction: column !important;
+                                width: 100%;  
+                                .informations{
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                        position: relative;
+                                        @include Border(14.2401px);
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        background-color: #FFFFFF;
+                                        gap: 40px;
+                                        padding: 13px 20px;
+                                        form{
+                                                .row{
+                                                        .col{
+                                                        position: relative;
+                                                        img{
+                                                                position: absolute;
+                                                                right: 20px;
+                                                                top: 9px;
+                                                                width: 18px;
+                                                                height: 18px;
+                                                        }
+                                                        }
                                                 }
-                                            }
-                                }
-                                .save-btn{
-                                        text-align: end;
-                                        button{
-                                            width: 100%;
-                                            padding: 8px;
-                                            color: $--light;
-                                            background-color: $--orange;
-                                            border: none;
-                                            @include Border(13px);
                                         }
-                                    }
+                                        .save-btn{
+                                                text-align: end;
+                                                button{
+                                                width: 100%;
+                                                padding: 8px;
+                                                color: $--light;
+                                                background-color: $--orange;
+                                                border: none;
+                                                @include Border(13px);
+                                                }
+                                        }
+                                }
                         }
                 }
         }
-}
 
 // ------Tesdiq gozleyenler--------
-.awaiting-approval{
-        display: flex;
-        flex-direction: column !important;
-        .awaiting-approval-section{
-                width: 100%;
-                padding: 25px;
-                .head{
-                       display: none !important;
-                }
-                .head-responsive{
-                        display: block !important;
-                        @include Fonts(600,18px)
-                }
-                .services{
+        .awaiting-approval{
+                display: flex;
                 flex-direction: column !important;
-                gap: 20px;
-                        h5{
-                                @include Fonts( 600, 18px);
-                        }
-                        .balance-services{
-                                width: 100%;
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                        }
-                        .increase-balance{
-                                width: 100%;
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                .buttons{
-                                        flex-direction: column !important;
-                                        .enter-amount{
-                                                width: 100%;
-                                                padding: 10px 80px;
-                                        }
-                                        .increase-btn{
-                                                width: 100%;
-                                                padding: 10px 100px;
-                                        }
-                                }
-                        }
-                }
-                .awaiting-approval-table{
-                        display: none !important;
-                }
-                .awaiting-approval-table-responsive{
-                        display: flex !important;
+                .awaiting-approval-section{
                         width: 100%;
-                        .product{
-                                width: 100%;
-                                margin-bottom: 20px;
-                                position: relative;
-                                @include Border(14.2401px);
-                                box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-                                background-color: #FFFFFF;
-                                gap: 40px;
-                                padding: 13px 20px;
-                                .icon-close{
-                                        position: absolute;
-                                        right: 25px;
-                                        top: 25px;
+                        padding: 25px;
+                        .head{
+                        display: none !important;
+                        }
+                        .head-responsive{
+                                display: block !important;
+                                @include Fonts(600,18px)
+                        }
+                        .services{
+                        flex-direction: column !important;
+                        gap: 20px;
+                                h5{
+                                        @include Fonts( 600, 18px);
                                 }
-                                .info{
-                                        border-bottom: 1px solid #DCDCDC;
-                                        padding: 10px 0;
+                                .balance-services{
+                                        width: 100%;
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
                                 }
-                                p{
-                                        @include Fonts( 600, 18px);   
-                                }
-                                span{
-                                        @include Fonts( 500, 16px);
-                                }
-                                .confirm-btn{
-                                @include Border(13px);
-                                background-color:  #4CB71A;
-                                color: $--light;
-                                width: 100%;
-                                padding: 8px;
-                                border: none;
+                                .increase-balance{
+                                        width: 100%;
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        .buttons{
+                                                flex-direction: column !important;
+                                                .enter-amount{
+                                                        width: 100%;
+                                                        padding: 10px 80px;
+                                                }
+                                                .increase-btn{
+                                                        width: 100%;
+                                                        padding: 10px 100px;
+                                                }
+                                        }
                                 }
                         }
-                }
+                        .awaiting-approval-table{
+                                display: none !important;
+                        }
+                        .awaiting-approval-table-responsive{
+                                display: flex !important;
+                                width: 100%;
+                                .product{
+                                        width: 100%;
+                                        margin-bottom: 20px;
+                                        position: relative;
+                                        @include Border(14.2401px);
+                                        box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
+                                        background-color: #FFFFFF;
+                                        gap: 40px;
+                                        padding: 13px 20px;
+                                        .icon-close{
+                                                position: absolute;
+                                                right: 25px;
+                                                top: 25px;
+                                        }
+                                        .info{
+                                                border-bottom: 1px solid #DCDCDC;
+                                                padding: 10px 0;
+                                        }
+                                        p{
+                                                @include Fonts( 600, 18px);   
+                                        }
+                                        span{
+                                                @include Fonts( 500, 16px);
+                                        }
+                                        .confirm-btn{
+                                        @include Border(13px);
+                                        background-color:  #4CB71A;
+                                        color: $--light;
+                                        width: 100%;
+                                        padding: 8px;
+                                        border: none;
+                                        }
+                                }
+                        }
 
+                }
         }
-}
 
 //  cox yerde olanlar
-.menu-bar{
-        width: 100%;
-        display: flex !important;
-        align-items: flex-start !important;
-        padding: 10px 0 10px 30px;
-        .account{
+        .menu-bar{
+                width: 100%;
                 display: flex !important;
                 align-items: flex-start !important;
-        }
-        .menu{
-                display: none !important;
-        }
-}
-
-.make-order-btn{
-        margin-bottom: 20px;
-        button{
-        padding-left: 10px;
-        background-color: $--light;
-        width: 155px;
-        height: 50px;
-        @include Border(13px);
-        border: none;
-        color: $--orange;
-        @include Fonts(600, 20px);
-        .icon{
-                background-color: $--orange;
-                @include Border(50px);
-                width: 26px;
-                height: 26px;
-                @include Flex(row, center, center);
-                img{
-                width: 10px;
-                height: 10px; 
+                padding: 10px 0 10px 30px;
+                .account{
+                        display: flex !important;
+                        align-items: flex-start !important;
                 }
-        
+                .menu{
+                        display: none !important;
+                }
         }
-        }
-}
+
 
 
 

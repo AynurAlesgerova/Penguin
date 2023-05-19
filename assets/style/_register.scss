@@ -9,7 +9,7 @@
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: absolute;
         top: -130px;
-        left: 75px;
+        left: 100px;
         right: 168px;
         padding: 31px 20px;
         z-index: 999;
@@ -43,6 +43,19 @@
         }
         #number{
             @include Border(0 5px 5px 0);
+        }
+    }
+    .id-cards{
+        position: absolute;
+        top: 200px;
+        right: 19px;
+        #identification-card-1{
+            width: 368px;
+            height: 224px;
+        }
+        #identification-card-2{
+            width: 368px;
+            height: 224px;
         }
     }
 }
