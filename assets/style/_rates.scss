@@ -90,3 +90,16 @@
         }
     }
 }
+
+.bg-orange{
+    background-color: $--orange;
+    span{
+        color: $--light;
+    }
+} 
+.bg-dark{
+    background-color: $--dark;
+    p{
+        color: $--light;
+    }
+}

@@ -19,9 +19,11 @@
     <header>
         <div class="container d-flex flex-column ">
             <nav class="d-flex justify-content-between align-items-center">
-                <div class="image-box">
-                    <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
-                </div>
+                <a href="./index.html">
+                    <div class="image-box">
+                        <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
+                    </div>
+                </a>
                 <div class="buttons-group d-flex justify-content-between align-items-center gap-3">
                     <div class="menu-box">
                         <button>
@@ -31,22 +33,26 @@
                             Menu Bar
                         </button>
                     </div>
-                    <div class="login-box">
-                        <button>
-                            <div class="login-icon-box">
-                                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
-                             </div>
-                             <a href="login.html">Login</a>
-                        </button>
-                    </div>
-                    <div class="register-box">
-                        <button>
-                            <div class="register-icon-box">
-                                <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
-                            </div>
-                            <a href="register.html">Qeydiyyat</a>
-                        </button>
-                    </div>
+                    <a href="./login.html">
+                        <div class="login-box">
+                            <button>
+                                <div class="login-icon-box">
+                                    <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                                 </div>
+                                 <a href="login.html">Login</a>
+                            </button>
+                        </div>
+                    </a>
+                    <a href="./register.html">
+                        <div class="register-box">
+                            <button>
+                                <div class="register-icon-box">
+                                    <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                                </div>
+                                <a href="register.html">Qeydiyyat</a>
+                            </button>
+                        </div>
+                    </a>
                     <div class="mobile-menu">
                         <button>
                             <div class="menu-icon-box">
@@ -194,8 +200,9 @@
                             <option value="3">Three</option>
                           </select>
                     </div>
-                    <div class="col-lg-4 mb-4 col-sm-12">
+                    <div class="col col-lg-4 mb-4 col-sm-12 d-flex">
                         <input type="text" class="form-control" placeholder="Fin kodunuz" required>
+                        <img id="info" src="./assets/images/corrections/Group 85.svg">
                     </div>
                     <div class="col-lg-6 mb-4 col-sm-12">
                         <input type="text" class="form-control " placeholder="Ünvanınız" required>
@@ -286,6 +293,9 @@
         </div>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 
 </body>
 

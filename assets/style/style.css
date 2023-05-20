@@ -177,7 +177,7 @@ header .penguin-logo-background {
   height: 300px;
 }
 header .header-menu-bar {
-  display: none;
+  display: none !important;
   background-color: #FF6600;
   padding: 200px 120px;
   width: 100%;
@@ -187,6 +187,7 @@ header .header-menu-bar {
   z-index: 999999;
 }
 header .header-menu-bar .close-icon {
+  cursor: pointer;
   position: absolute;
   right: 50px;
   top: 70px;
@@ -844,6 +845,15 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-weight: 600;
   font-size: 34px;
 }
+.register-section .bg-sign-up form .col {
+  position: relative;
+}
+.register-section .bg-sign-up form .col #info {
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 5px;
+}
 .register-section .bg-sign-up .register-btn {
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -1011,6 +1021,20 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-size: 20px;
 }
 
+.bg-orange {
+  background-color: #FF6600;
+}
+.bg-orange span {
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #000000;
+}
+.bg-dark p {
+  color: #fff;
+}
+
 .services {
   margin-bottom: 700px;
 }
@@ -1153,7 +1177,31 @@ header .header-menu-bar .menu-section #pages .icons div img {
   justify-content: center;
   align-items: center;
 }
-.menu-bar .menu .menu-logo img {
+.menu-bar .menu .menu-logo #current-logo {
+  width: 10px;
+  height: 10px;
+}
+.menu-bar .menu .menu-logo #choosed-logo {
+  display: none;
+}
+
+.bg-orange-rounded {
+  background-color: #FF6600;
+  padding: 5px;
+  border-radius: 10px;
+}
+.bg-orange-rounded .menu-logo {
+  background-color: #fff !important;
+}
+.bg-orange-rounded .menu-logo img {
+  color: #FF6600 !important;
+}
+.bg-orange-rounded span {
+  color: #fff;
+}
+
+.choosed-logo {
+  display: block !important;
   width: 10px;
   height: 10px;
 }
@@ -1182,10 +1230,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.orders .order-section .make-order-btn button a span {
+  color: #FF6600;
 }
 .orders .order-section .make-order-btn button .icon {
   background-color: #FF6600;
@@ -1292,6 +1342,215 @@ header .header-menu-bar .menu-section #pages .icons div img {
   display: none !important;
 }
 
+#exampleModal1 .modal-dialog .modal-content {
+  padding: 10px;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-header .title .img-div {
+  width: 30px;
+  height: 30px;
+  background-color: #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-header .title .img-div img {
+  width: 15px;
+  height: 15px;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-header .title .modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FF6600;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-body form label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-footer #by-card {
+  background-color: #FF6600;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+#exampleModal1 .modal-dialog .modal-content .modal-footer #from-balance {
+  background-color: #4CB71A;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+#exampleModal2 .modal-dialog .modal-content {
+  padding: 10px;
+}
+#exampleModal2 .modal-dialog .modal-content .modal-header .title .img-div {
+  width: 30px;
+  height: 30px;
+  background-color: #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#exampleModal2 .modal-dialog .modal-content .modal-header .title .img-div img {
+  width: 15px;
+  height: 15px;
+}
+#exampleModal2 .modal-dialog .modal-content .modal-header .title .modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FF6600;
+}
+#exampleModal2 .modal-dialog .modal-content .modal-footer #save {
+  background-color: #FF6600;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#exampleModal3 .modal-dialog .modal-content {
+  padding: 10px;
+}
+#exampleModal3 .modal-dialog .modal-content .modal-body h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+}
+#exampleModal3 .modal-dialog .modal-content .modal-footer #no {
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+#exampleModal3 .modal-dialog .modal-content .modal-footer #delete {
+  background-color: #FF6600;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#exampleModal4 .modal-dialog .modal-content {
+  padding: 0px 20px;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-header .title .img-div {
+  width: 30px;
+  height: 30px;
+  background-color: #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-header .title .img-div img {
+  width: 15px;
+  height: 15px;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-header .title .modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FF6600;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-body label {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-body #month {
+  border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  -ms-border-radius: 5px 0 0 5px;
+  -o-border-radius: 5px 0 0 5px;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-body #year {
+  border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  -ms-border-radius: 0 5px 5px 0;
+  -o-border-radius: 0 5px 5px 0;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-footer #refusal {
+  background-color: #fff;
+  padding: 8px 20px;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+#exampleModal4 .modal-dialog .modal-content .modal-footer #pay {
+  background-color: #FF6600;
+  padding: 8px 20px;
+  border: none;
+  color: #fff;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .balance-services .balance-transactions {
   width: 80%;
   height: 100%;
@@ -1319,10 +1578,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.balance-services .balance-transactions .head .make-order-btn button a span {
+  color: #FF6600;
 }
 .balance-services .balance-transactions .head .make-order-btn button .icon {
   background-color: #FF6600;
@@ -4015,6 +4276,51 @@ header .header-menu-bar .menu-section #pages .icons div img {
     -o-border-radius: 13px;
     color: #fff;
     border: none;
+  }
+  #exampleModal1 .modal-content {
+    padding: 0 20px !important;
+  }
+  #exampleModal1 .modal-content .modal-header {
+    padding: 14px 0;
+  }
+  #exampleModal1 .modal-content .modal-header .modal-title {
+    font-size: 18px !important;
+  }
+  #exampleModal1 .modal-content .modal-footer {
+    display: flex;
+    flex-direction: column;
+  }
+  #exampleModal1 .modal-content .modal-footer button {
+    width: 100%;
+  }
+  #exampleModal2 .modal-footer button {
+    width: 100%;
+  }
+  #exampleModal3 .modal-content .modal-body h3 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  #exampleModal3 .modal-content .modal-footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #exampleModal3 .modal-content .modal-footer button {
+    width: 100%;
+  }
+  #exampleModal4 .modal-content {
+    padding: 14px 0;
+  }
+  #exampleModal4 .modal-content .modal-header {
+    padding: 14px 0;
+  }
+  #exampleModal4 .modal-content .modal-footer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #exampleModal4 .modal-content .modal-footer button {
+    width: 100%;
   }
   .make-order-section {
     padding: 30px;

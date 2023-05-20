@@ -874,6 +874,65 @@
                 }
         }
 
+        #exampleModal1{
+                .modal-content{
+                        padding: 0 20px !important;
+                        .modal-header{
+                                padding: 14px 0;
+                                .modal-title{
+                                        font-size: 18px !important;
+                                }
+                        }
+                        .modal-footer{
+                                display: flex;
+                                flex-direction: column;
+                                button{
+                                        width: 100%;
+                                }
+                        }
+                }
+        }
+        #exampleModal2{
+                .modal-footer{
+                        button{
+                                width: 100%;
+                        }
+                }
+        }
+        #exampleModal3{
+                .modal-content{
+                        .modal-body{
+                                h3{
+                                        text-align: center;
+                                        @include Fonts(600,18px);
+                                }
+                        }
+                        .modal-footer{
+                                display: flex;
+                                flex-direction: column-reverse;
+                                button{
+                                        width: 100%;
+                                }
+                        }
+                }
+        }
+        #exampleModal4{
+                .modal-content{
+                        padding: 14px 0;
+                        .modal-header{
+                                padding: 14px 0;
+
+                        }
+                        .modal-footer{
+                                display: flex;
+                                flex-direction: column-reverse;
+                                button{
+                                        width: 100%;
+                                }
+                        }
+                }
+        }
+
 // ------Sifaris et------
         .make-order-section{
                 padding: 30px;

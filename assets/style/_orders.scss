@@ -16,8 +16,12 @@
                 background-color: $--light;
                 @include Border(13px);
                 border: none;
-                color: $--orange;
                 @include Fonts(600, 20px);
+                a{
+                    span{
+                        color: $--orange;
+                    }
+                }
                 .icon{
                     background-color: $--orange;
                     @include Border(50px);
@@ -89,5 +93,182 @@
     } 
     .order-section-responsive{
         display: none !important;
+    }
+}
+
+#exampleModal1{
+    .modal-dialog{
+        .modal-content{
+            padding: 10px;
+            .modal-header{
+                .title{
+                    .img-div{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $--orange;
+                        @include Flex(row,center,center);
+                        @include Border(50%);
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    .modal-title{
+                        @include Fonts(600,24px);
+                        color: $--orange;
+                    }
+                }
+            }
+            .modal-body{
+                form{
+                    label{
+                        @include Fonts(600,18px);
+                    }
+                }
+            }
+            .modal-footer{
+                #by-card{
+                    background-color: $--orange;
+                    padding: 8px 20px;
+                    border: none;
+                    color: $--light;
+                    @include Border(13px);
+                }
+                #from-balance{
+                    background-color: #4CB71A;
+                    padding: 8px 20px;
+                    border: none;
+                    color: $--light;
+                    @include Border(13px);
+                }
+            }
+        }
+    }
+}
+
+#exampleModal2{
+    .modal-dialog{
+        .modal-content{
+            padding: 10px;
+            .modal-header{
+                .title{
+                    .img-div{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $--orange;
+                        @include Flex(row,center,center);
+                        @include Border(50%);
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    .modal-title{
+                        @include Fonts(600,24px);
+                        color: $--orange;
+                    }
+                }
+            }
+            .modal-footer{
+                #save{
+                    background-color: $--orange;
+                    padding: 8px 20px;
+                    border: none;
+                    color: $--light;
+                    @include Border(13px);
+                    @include Fonts(600,20px);
+                }
+            }
+        }
+    }
+}
+
+#exampleModal3{
+    .modal-dialog{
+        .modal-content{
+            padding: 10px;
+            .modal-body{
+                h3{
+                    @include Fonts(600,26px);
+                }
+            }
+            .modal-footer{
+                #no{
+                    background-color: $--light;
+                    padding: 8px ;
+                    border: 1px solid $--dark;
+                    color: $--dark;
+                    @include Border(13px);
+                    @include Fonts(600,20px);
+                }
+                #delete{
+                    background-color: $--orange;
+                    padding: 8px 20px;
+                    border: none;
+                    color: $--light;
+                    @include Border(13px);
+                    @include Fonts(600,20px);
+                }
+            }
+        }
+    }
+}
+
+#exampleModal4{
+    .modal-dialog{
+        .modal-content{
+            padding: 0px 20px;
+            .modal-header{
+                .title{
+                    .img-div{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $--orange;
+                        @include Flex(row,center,center);
+                        @include Border(50%);
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    .modal-title{
+                        @include Fonts(600,24px);
+                        color: $--orange;
+                    }
+                }
+            }
+            .modal-body{
+                    label{
+                        @include Fonts(600,18px);
+                    }
+
+                #month{
+                    @include Border(5px 0 0 5px);
+                }
+                #year{
+                    @include Border(0 5px 5px 0);
+                }
+            }
+            .modal-footer{
+                #refusal{
+                    background-color: $--light;
+                    padding: 8px 20px;
+                    border: 1px solid $--dark;
+                    color: $--dark;
+                    @include Border(13px);
+                    @include Fonts(600,20px);
+
+                }
+                #pay{
+                    background-color: $--orange;
+                    padding: 8px 20px;
+                    border: none;
+                    color: $--light;
+                    @include Border(13px);
+                    @include Fonts(600,20px);
+
+                }
+            }
+        }
     }
 }

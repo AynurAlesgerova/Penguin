@@ -16,9 +16,11 @@
     <header>
         <div class="container d-flex flex-column ">
             <nav class="d-flex justify-content-between align-items-center">
-                <div class="image-box">
-                    <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
-                </div>
+                <a href="./index.html">
+                    <div class="image-box">
+                        <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
+                    </div>
+                </a>
                 <div class="buttons-group d-flex justify-content-between align-items-center gap-3">
                     <div class="menu-box">
                         <button>
@@ -28,22 +30,26 @@
                             Menu Bar
                         </button>
                     </div>
-                    <div class="login-box">
-                        <button>
-                            <div class="login-icon-box">
-                                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
-                             </div>
-                             <a href="login.html">Login</a>
-                        </button>
-                    </div>
-                    <div class="register-box">
-                        <button>
-                            <div class="register-icon-box">
-                                <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
-                            </div>
-                            <a href="register.html">Qeydiyyat</a>
-                        </button>
-                    </div>
+                    <a href="./login.html">
+                        <div class="login-box">
+                            <button>
+                                <div class="login-icon-box">
+                                    <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                                 </div>
+                                 <a href="login.html">Login</a>
+                            </button>
+                        </div>
+                    </a>
+                    <a href="./register.html">
+                        <div class="register-box">
+                            <button>
+                                <div class="register-icon-box">
+                                    <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                                </div>
+                                <a href="register.html">Qeydiyyat</a>
+                            </button>
+                        </div>
+                    </a>
                     <div class="mobile-menu">
                         <button>
                             <div class="menu-icon-box">
@@ -167,40 +173,66 @@
                 </div>
             </div>
             <div class="menu d-flex flex-column gap-3">
-                <div class="balance-services d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (33).svg"></div>
+                <div id="choosed-section" class="balance-services d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo" src="./assets/images/orders/Vector (33).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/dollar-orange.svg">
+                    </div>
                     <span>Balans (xidmətlər)</span>
                 </div>
-                <div class="orders d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Group (5).svg"></div>
+                <div id="choosed-section" class="orders d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo" src="./assets/images/orders/Group (5).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/orders-vector-orange.svg">
+                    </div>
                     <span>Sifarişlər</span>
                 </div>
-                <div class="my-packages d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Group (5).svg"></div>
+                <div id="choosed-section" class="my-packages d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo"src="./assets/images/orders/Group (5).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/batches-vector-orange.svg">
+                    </div>
                     <span>Bağlamalarım</span>
                 </div>
-                <div class="debts d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (24).svg"></div>
+                <div id="choosed-section" class="debts d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo"src="./assets/images/orders/Vector (24).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/dubts-vector-orange.svg">
+                    </div>
                     <span>Borclar</span>
                 </div>
-                <div class="courier-order d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (25).svg"></div>
+                <div id="choosed-section" class="courier-order d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo"src="./assets/images/orders/Vector (25).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/courier-vector-orange.svg">
+                    </div>
                     <span>Kuryer sifarişi</span>
                 </div>
-                <div class="address-abroad d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (26).svg"></div>
+                <div id="choosed-section" class="address-abroad d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo" src="./assets/images/orders/Vector (26).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/address-abroad-vector-orange.svg">
+                    </div>
                     <span>Xaricdəki ünvanlarım</span>
                 </div>
-                <div class="adjustment d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (27).svg"></div>
+                <div id="choosed-section" class="adjustment d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo" src="./assets/images/orders/Vector (27).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/corrections-vector-orange.svg">
+                    </div>
                     <span>Tənzimləmələr</span>
                 </div>
-                <div class="awaiting-approval d-flex justify-content-start align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Group (6).svg"></div>
+                <div id="choosed-section" class="awaiting-approval d-flex justify-content-start align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img id="current-logo"src="./assets/images/orders/Group (6).svg">
+                        <img id="choosed-logo" src="./assets/images/balance-services/waiting-approval-vector-orange.svg">
+                    </div>
                     <span>Təsdiq gözləyənlər</span>
                 </div>
-                <div class="log-out d-flex justify-content-start  align-items-center gap-2">
-                    <div class="menu-logo"><img src="./assets/images/orders/Vector (29).svg"></div>
+                <div id="choosed-section" class="log-out d-flex justify-content-start  align-items-center gap-2">
+                    <div class="menu-logo">
+                        <img src="./assets/images/orders/Vector (29).svg">
+                    </div>
                     <span>Çıxış</span>
                 </div>
             </div>
@@ -218,7 +250,9 @@
                         <div class="icon">
                             <img src="./assets/images/orders/Vector (30).svg">
                         </div>
-                        <span>Sifariş et</span>
+                        <a href="./make-order.html">
+                            <span>Sifariş et</span>
+                        </a>
                     </button>
                 </div>
             </div>
@@ -361,5 +395,10 @@
             <p>© 2022 Penguin | Bütün Hüquqlar Qorunur</p>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>

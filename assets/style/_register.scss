@@ -20,6 +20,17 @@
             margin-bottom: 46px;
             @include Fonts(600,34px)
         }
+        form{
+            .col{
+                position: relative;
+                #info{
+                    cursor: pointer;
+                    position: absolute;
+                    right: 18px;
+                    top: 5px
+                }
+            }
+        }
         .register-btn{
             @include Border(13px);
             background-color: $--orange;

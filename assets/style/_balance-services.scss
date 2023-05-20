@@ -21,8 +21,13 @@
                 background-color: $--light;
                 @include Border(13px);
                 border: none;
-                color: $--orange;
                 @include Fonts( 600, 20px);
+                a{
+                    span{
+                        color: $--orange;
+
+                    }
+                }
                 .icon{
                         background-color: $--orange;
                         @include Border(50px);
@@ -61,6 +66,7 @@
                     @include Flex(row, center, center);
                     @include Border(13px);
                 }
+                
             }
             .increase-balance{
                 width: 48%;
@@ -126,4 +132,5 @@
         }
     }
 }
+
 

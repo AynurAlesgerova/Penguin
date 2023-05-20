@@ -20,9 +20,11 @@
     <header>
         <div class="container d-flex flex-column ">
             <nav class="d-flex justify-content-between align-items-center">
-                <div class="image-box">
-                    <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
-                </div>
+                <a href="./index.html">
+                    <div class="image-box">
+                        <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
+                    </div>
+                </a>
                 <div class="buttons-group d-flex justify-content-between align-items-center gap-3">
                     <div class="menu-box">
                         <button>
@@ -32,22 +34,26 @@
                             Menu Bar
                         </button>
                     </div>
-                    <div class="login-box">
-                        <button>
-                            <div class="login-icon-box">
-                                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
-                            </div>
-                            <a href="login.html">Login</a>
-                        </button>
-                    </div>
-                    <div class="register-box">
-                        <button>
-                            <div class="register-icon-box">
-                                <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
-                            </div>
-                            <a href="register.html">Qeydiyyat</a>
-                        </button>
-                    </div>
+                    <a href="./login.html">
+                        <div class="login-box">
+                            <button>
+                                <div class="login-icon-box">
+                                    <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                                 </div>
+                                 <a href="login.html">Login</a>
+                            </button>
+                        </div>
+                    </a>
+                    <a href="./register.html">
+                        <div class="register-box">
+                            <button>
+                                <div class="register-icon-box">
+                                    <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                                </div>
+                                <a href="register.html">Qeydiyyat</a>
+                            </button>
+                        </div>
+                    </a>
                     <div class="mobile-menu">
                         <button>
                             <div class="menu-icon-box">
@@ -211,12 +217,14 @@
         </div>
         <div class="order-section d-flex flex-column align-items-end gap-4">
             <h5 class="responsive-header">Sifarişlər</h5>
-            <div class="make-order-btn">
-                <button class="d-flex justify-content-center align-items-center gap-3">
+            <div class="make-order-btn"  >
+                <button  class="d-flex justify-content-center align-items-center gap-3">
                     <div class="icon">
                         <img src="./assets/images/orders/Vector (30).svg">
                     </div>
-                    <span>Sifariş et</span>
+                    <a href="./make-order.html">
+                        <span>Sifariş et</span>
+                    </a>
                 </button>
             </div>
             <table class="table">
@@ -251,9 +259,11 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit"><img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                                        <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete"><img alt="delete-icon"
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                        <img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
                             </div>
@@ -276,9 +286,10 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit"><img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete"><img alt="delete-icon"
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
                             </div>
@@ -301,9 +312,10 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit"><img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                        <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete"><img alt="delete-icon"
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
                             </div>
@@ -311,7 +323,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="pay-btn d-flex justify-content-center align-items-center">
+            <div class="pay-btn d-flex justify-content-center align-items-center" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal1">
                 <button>
                     <div class="dollar-icon"><img src="./assets/images/orders/Vector (34).svg"></div>
                     <span>Ödəniş et</span>
@@ -396,28 +408,134 @@
         </div>
     </div>
 
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-        Launch demo modal
-    </button>
 
-    <!-- Modal -->
+    <!-- Modal-1 -->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <div class="title d-flex gap-2 align-items-center">
+                        <div class="img-div">
+                            <img src="./assets/images/orders/location white.svg">
+                        </div>
+                        <h5 class="modal-title" id="exampleModalLabel">Çatdırılma ofisini seçin</h5>
+                    </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form class="d-flex flex-column gap-2">
+                            <label>Bağlamanızi hansi ofisimizden almaq isteyirsiniz?</label>
+                            <div>
+                                <select id="inlineFormCustomSelectPref" class="custom-select form-control" >
+                                    <option selected>Çatdırılma ünvanını seçin</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                    </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <div class="modal-footer d-flex">
+                    <button id="by-card" type="button"  data-bs-dismiss="modal" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Bank kartı ilə</button>
+                    <button id="from-balance" type="button" >Balansdan</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <!---- Modal 2 ----->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="title d-flex gap-2 align-items-center">
+                <div class="img-div">
+                    <img src="./assets/images/orders/edit-white.svg">
+                </div>
+                <h5 class="modal-title" id="exampleModalLabel">Redaktə et</h5>
+            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-md-6 mb-2 col-sm-12">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Link">
+                </div>
+                <div class="col-md-6 col-sm-12 mb-2">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Qiymət">
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ünvan">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer ">
+          <button id="save" type="button"  data-bs-dismiss="modal">Yadda saxla</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------ Modal 3 ------>
+  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center gap-3 ">
+          <img src="./assets/images/orders/question-icon.svg">
+          <h3 >Silmək istədiyinizdən əminsinizmi?</h3>
+        </div>
+        <div class="modal-footer">
+          <button id="no" type="button"  data-bs-dismiss="modal">Xeyr</button>
+          <button id="delete" type="button" >Sil</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------ Modal 4 -------->
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="title d-flex gap-2 align-items-center">
+                <div class="img-div">
+                    <img src="./assets/images/orders/dollar-white.svg">
+                </div>
+                <h5 class="modal-title" id="exampleModalLabel">Kartdan ödə</h5>
+            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="row">
+                <div class="col-12 mb-2">
+                    <label>Kartın nömrəsi</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="**** **** **** ****">
+                </div>
+                <div class="col-md-8 col-sm-12 mb-2">
+                    <label>İstifadə müddəti</label>
+                    <div class=" d-flex">
+                        <input id="month" type="text" class="form-control" id="exampleFormControlInput1" placeholder="MM">
+                        <input id="year" type="text" class="form-control" id="exampleFormControlInput1" placeholder="YY">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <label>CVV</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Code">
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer d-flex gap-1">
+          <button id="refusal" type="button"  data-bs-dismiss="modal">İmtina</button>
+          <button id="pay" type="button" >Ödəniş et - TRY</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <footer class="footer">
         <div class="contact-section">
@@ -472,14 +590,12 @@
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.6.4.js"
-        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>

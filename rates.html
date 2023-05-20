@@ -17,9 +17,11 @@
     <header>
         <div class="container d-flex flex-column ">
             <nav class="d-flex justify-content-between align-items-center">
-                <div class="image-box">
-                    <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
-                </div>
+                <a href="./index.html">
+                    <div class="image-box">
+                        <img src="./assets/images/header/PENGUIN_CARGO_LOGO_KLAVUZ-02 1.svg" alt="">
+                    </div>
+                </a>
                 <div class="buttons-group d-flex justify-content-between align-items-center gap-3">
                     <div class="menu-box">
                         <button>
@@ -68,22 +70,26 @@
                 <img src="./assets/images/header/Group 62.svg">
             </div>
             <div class="login-register-buttons d-flex gap-1">
-                <div class="login-box">
-                    <button>
-                        <div class="login-icon-box">
-                            <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
-                         </div>
-                         <a href="login.html">Login</a>
-                    </button>
-                </div>
-                <div class="register-box">
-                    <button>
-                        <div class="register-icon-box">
-                            <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
-                        </div>
-                        <a href="register.html">Qeydiyyat</a>
-                    </button>
-                </div>
+                <a href="./login.html">
+                    <div class="login-box">
+                        <button>
+                            <div class="login-icon-box">
+                                <i class="fa-sharp fa-solid fa-arrow-right-to-bracket"></i>
+                             </div>
+                             <a href="login.html">Login</a>
+                        </button>
+                    </div>
+                </a>
+                <a href="./register.html">
+                    <div class="register-box">
+                        <button>
+                            <div class="register-icon-box">
+                                <img style="width: 20px; height: 15px;" src="./assets/images/header/Vector (10).svg">
+                            </div>
+                            <a href="register.html">Qeydiyyat</a>
+                        </button>
+                    </div>
+                </a>
             </div>
             <div class="menu-section d-flex">
                 <div id="pages" class=" d-flex flex-column gap-4">
@@ -199,9 +205,9 @@
                 </div>
             </div>
             <div class="branches d-flex justify-content-between align-items-center mt-4 gap-3">
-                <div class="branch">Bakı filialı</div>
-                <div class="branch">Sumqayıt filialı</div>
-                <div class="branch">Xırdalan filialı</div>
+                <div id="Baki" class="branch"><p>Bakı filialı</p></div>
+                <div id='Sumgayit' class="branch"><p>Sumqayıt filialı</p></div>
+                <div id='Xirdalan' class="branch"><p>Xırdalan filialı</p></div>
             </div>
             <div class="price-list mt-5">
                 <div class="price d-flex justify-content-between" id="0-100">
@@ -281,5 +287,9 @@
             <p>© 2022 Penguin | Bütün Hüquqlar Qorunur</p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
