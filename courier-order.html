@@ -219,12 +219,14 @@
                     <span id="head-span">Sürətli və təhlükəsiz!</span>
                 </div>
                 <div class="headline-responsive">Kuryer sifarişi</div>
-                <div class="make-order-btn d-flex justify-content-start align-items-center">
-                    <button class=" gap-2 d-flex justify-content-start align-items-center p-2" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="make-order-btn">
+                    <button class="d-flex justify-content-start align-items-center gap-4">
                         <div class="icon">
                             <img src="./assets/images/orders/Vector (30).svg">
                         </div>
-                        <span >Sifariş et</span>
+                        <a href="./make-order.html">
+                            <span>Sifariş et</span>
+                        </a>
                     </button>
                 </div>
             </div>
@@ -249,7 +251,7 @@
                         <div>
                             <img src="./assets/images/courier-order/Vector (38).svg"> 
                         </div>
-                        <button type="button" class="courier-btn" >Kuryer ilə göndər</button>
+                        <button class="courier-btn" type="button"  data-bs-toggle="modal" data-bs-target="#courier-order-modal">Kuryer ilə göndər</button>
                     </div>
                     <button class="package-in-office">Baş ofisə çatan bağlamalar <img src="./assets/images/courier-order/Vector 103 (1).svg"></button>
                 </div>
@@ -375,7 +377,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="orders">
+                <div class="orders" type="button"  data-bs-toggle="modal" data-bs-target="#courier-order-modal">
                     <div>
                         <img src="./assets/images/courier-order/Vector (38).svg"> 
                     </div>
@@ -391,8 +393,9 @@
         </div>
     </section>
 
+
     <!-- ------Modal ------ -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="courier-order-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog  modal-xl">
         <div class="modal-content p-3">
             <div class="modal-header  d-flex justify-content-between align-items-center mb-2 ">
@@ -402,9 +405,8 @@
                         </div>
                         <span>Kuryer sifariş et</span>
                     </div>
-                    <div class="close">
-                        <img src="./assets/images/courier-order/Vector (39).svg">
-                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
             </div>
             <div class="modal-body section d-flex flex-sm-column gap-5">
                 <div class="section d-flex">

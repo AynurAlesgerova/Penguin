@@ -8,9 +8,6 @@
     .responsive-h3{
         display: none;
     }
-    .responsive-turkey-btn{
-        display: none !important;
-    } 
     .desktop-form{
         position: relative;
         background-color: $--light;
@@ -25,7 +22,23 @@
             margin-bottom: 20px;
             background-color: $--light;
         }
+    }
+    .new-form{
+        position: relative;
+        background-color: $--light;
+        padding: 20px 30px;
+        @include Border(13px);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        button{
+            padding: 5px 10px;
+            border: 2px solid $--orange;
+            color: $--orange;
+            @include Border(13px);
+            margin-bottom: 20px;
+            background-color: $--light;
+        }
         .delete-btn{
+            cursor: pointer;
             position: absolute;
             right: 20px;
             top: 20px;
@@ -44,19 +57,14 @@
             }
         }
     }
-    .responsive-form{
-        display: none !important;
-    }
     .chooses{
         .form-check-label{
-            @include Fonts(600,16px);
-    }
-    }
-    .chooses-responsive{
-        display: none !important;
+                @include Fonts(600,16px);
+        }
     }
     .buttons{
         .add-new-link{
+            border: 1px solid $--orange;
             width: 15%;
             background-color: $--light;
             @include Border(13px);

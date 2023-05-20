@@ -166,7 +166,7 @@
         </div>
     </header>
 
-    <div class="packages d-flex">
+    <div class="batches d-flex">
         <div class="menu-bar d-flex flex-column justify-content-start align-items-center gap-3">
             <div class="account d-flex gap-2 align-items-center gap-3">
                 <div class="logo"><img src="./assets/images/orders/Group 61.svg"></div>
@@ -184,7 +184,7 @@
                     <div class="menu-logo"><img src="./assets/images/orders/Group (5).svg"></div>
                     <span>Sifarişlər</span>
                 </div>
-                <div class="my-packages d-flex justify-content-start align-items-center gap-2">
+                <div class="my-batches d-flex justify-content-start align-items-center gap-2">
                     <div class="menu-logo"><img src="./assets/images/orders/Group (5).svg"></div>
                     <span>Bağlamalarım</span>
                 </div>
@@ -214,17 +214,18 @@
                 </div>
             </div>
         </div>
-        <div class="packages-section d-flex flex-column align-items-end gap-4 p-5">
+        <div class="batches-section d-flex flex-column align-items-end gap-4 p-5">
             <div class="make-order-btn">
                 <button class="d-flex justify-content-center align-items-center gap-4">
                     <div class="icon">
                         <img src="./assets/images/packages/Vector (46).svg">
                     </div>
-                    <span>Sifariş et</span>
+                    <a href="./make-order.html">
+                        <span>Sifariş et</span>
+                    </a>
                 </button>
             </div>
-            <div class="package-number">Sifariş edilənlər (10)</div>
-
+            <div class="batches-number">Sifariş edilənlər (10)</div>
             <table class="table">
                 <thead class="">
                     <tr>
@@ -273,13 +274,12 @@
                     <tr>
                         <td class="details  d-flex  align-items-center justify-content-between gap-2 ">
                             <div class="products">
-                                <button class="products">Məhsullar</button>
+                                <button type="button"  data-bs-toggle="modal" data-bs-target="#products-modal" class="products">Məhsullar</button>
                             </div>
                             <div class="history">
                                 <button class="history">Tarixçə</button>
                             </div>
                         </td>
-
                     </tr>
                     <tr>
                         <th scope="col">
@@ -310,7 +310,7 @@
                     </tr>
                     <tr class="details  d-flex  align-items-center justify-content-between gap-2 ">
                         <td class="products">
-                            <button class="products">Məhsullar</button>
+                            <button type="button"  data-bs-toggle="modal" data-bs-target="#products-modal" class="products">Məhsullar</button>
                         </td>
                         <td class="history">
                             <button class="history">Tarixçə</button>
@@ -324,18 +324,20 @@
                 <button class="next">Növbəti</button>
             </div>
         </div>
-        <!--------------- Responsive table ------------------->
-        <div class="packages-section-responsive">
+        <!--------------- Responsive ------------------->
+        <div class="batches-section-responsive">
             <div class="make-order-btn">
                 <button class="d-flex justify-content-start align-items-center gap-4">
                     <div class="icon">
-                        <img src="./assets/images/sifarislerim/Vector (30).svg">
+                        <img src="./assets/images/orders/Vector (30).svg">
                     </div>
-                    <span>Sifariş et</span>
+                    <a href="./make-order.html">
+                        <span>Sifariş et</span>
+                    </a>
                 </button>
             </div>
             <h5>Bağlamalar</h5>
-            <div class="package-number">Sifariş edilənlər (10) <img src="./assets/images/packages/Vector 103.svg"></div>
+            <div class="batches-number">Sifariş edilənlər (10) <img src="./assets/images/packages/Vector 103.svg"></div>
 
             <div class="responsive-table">
                 <div class="product">
@@ -369,151 +371,7 @@
                         <span>1.23 USD </span>
                     </div>
                     <div class="buttons d-flex flex-column gap-1">
-                        <button class="product-btn">Məhsullar</button>
-                        <button class="history-btn">Tarixçə</button>
-                        <button class="insure-btn">Sığortala</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img class="icon-close" src="./assets/images/packages/Vector 112.svg">
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza</p>
-                        <span>Trendyol</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza kodu</p>
-                        <span>4830384</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma ofisi</p>
-                        <span>Nərimanov ofisi</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Tarix</p>
-                        <span>2022-11-24 22:04:02</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Qiymət</p>
-                        <span>360.54 TRY</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çəki</p>
-                        <span>0.64 kq</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma qiyməti</p>
-                        <span>1.23 USD </span>
-                    </div>
-                    <div class="buttons d-flex flex-column gap-1">
-                        <button class="product-btn">Məhsullar</button>
-                        <button class="history-btn">Tarixçə</button>
-                        <button class="insure-btn">Sığortala</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img class="icon-close" src="./assets/images/packages/Vector 112.svg">
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza</p>
-                        <span>Trendyol</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza kodu</p>
-                        <span>4830384</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma ofisi</p>
-                        <span>Nərimanov ofisi</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Tarix</p>
-                        <span>2022-11-24 22:04:02</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Qiymət</p>
-                        <span>360.54 TRY</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çəki</p>
-                        <span>0.64 kq</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma qiyməti</p>
-                        <span>1.23 USD </span>
-                    </div>
-                    <div class="buttons d-flex flex-column gap-1">
-                        <button class="product-btn">Məhsullar</button>
-                        <button class="history-btn">Tarixçə</button>
-                        <button class="insure-btn">Sığortala</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img class="icon-close" src="./assets/images/packages/Vector 112.svg">
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza</p>
-                        <span>Trendyol</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza kodu</p>
-                        <span>4830384</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma ofisi</p>
-                        <span>Nərimanov ofisi</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Tarix</p>
-                        <span>2022-11-24 22:04:02</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Qiymət</p>
-                        <span>360.54 TRY</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çəki</p>
-                        <span>0.64 kq</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma qiyməti</p>
-                        <span>1.23 USD </span>
-                    </div>
-                    <div class="buttons d-flex flex-column gap-1">
-                        <button class="product-btn">Məhsullar</button>
-                        <button class="history-btn">Tarixçə</button>
-                        <button class="insure-btn">Sığortala</button>
-                    </div>
-                </div>
-                <div class="product">
-                    <img class="icon-close" src="./assets/images/packages/Vector 112.svg">
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza</p>
-                        <span>Trendyol</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Mağaza kodu</p>
-                        <span>4830384</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma ofisi</p>
-                        <span>Nərimanov ofisi</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Tarix</p>
-                        <span>2022-11-24 22:04:02</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Qiymət</p>
-                        <span>360.54 TRY</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çəki</p>
-                        <span>0.64 kq</span>
-                    </div>
-                    <div class="info d-flex flex-column align-items-start justify-content-center">
-                        <p>Çatdırılma qiyməti</p>
-                        <span>1.23 USD </span>
-                    </div>
-                    <div class="buttons d-flex flex-column gap-1">
-                        <button class="product-btn">Məhsullar</button>
+                        <button class="product-btn" type="button"  data-bs-toggle="modal" data-bs-target="#products-modal">Məhsullar</button>
                         <button class="history-btn">Tarixçə</button>
                         <button class="insure-btn">Sığortala</button>
                     </div>
@@ -527,6 +385,86 @@
 
         </div>
     </div>
+
+
+  <!----- Modal ------>
+  <div class="modal fade" id="products-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="title d-flex gap-2 align-items-center">
+                <div class="img-div">
+                    <img src="./assets/images/packages/batches-vector-white.svg">
+                </div>
+                <h5 class="modal-title" id="exampleModalLabel">Məhsullar</h5>
+            </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-column gap-2 mt-3">
+          <p>Məhsullarınız haqqında ümumi məlumat</p>
+          <table class="table">
+            <thead class="">
+                <tr>
+                    <th scope="col">
+                        <span>#</span>
+                    </th>
+                    <th scope="col">Link</th>
+                    <th scope="col">Qiymət</th>
+                    <th scope="col">Qeyd</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">
+                        <span>#</span>
+                    </th>
+                    <td>Trendyol
+                    </td>
+                    <td>360.54 TRY
+                    </td>
+                    <td>Long established fact
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="col">
+                        <span>#</span>
+                    </th>
+                    <td>Trendyol
+                    </td>
+                    <td>360.54 TRY
+                    </td>
+                    <td>Long established fact
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="col">
+                        <span>#</span>
+                    </th>
+                    <td>Trendyol
+                    </td>
+                    <td>360.54 TRY
+                    </td>
+                    <td>Long established fact
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="col">
+                        <span>#</span>
+                    </th>
+                    <td>Trendyol
+                    </td>
+                    <td>360.54 TRY
+                    </td>
+                    <td>Long established fact
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <footer class="footer">
@@ -581,6 +519,14 @@
             <p>© 2022 Penguin | Bütün Hüquqlar Qorunur</p>
         </div>
     </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

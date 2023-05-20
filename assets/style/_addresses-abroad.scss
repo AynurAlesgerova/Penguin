@@ -17,31 +17,30 @@
             .make-order-btn{
                 margin-bottom: 20px;
                 button{
-                padding: 5px 10px;
-                background-color: $--light;
-                @include Border(13px);
-                border: none;
-                color: $--orange;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-                button{
-                    span{
-                        @include Fonts(600, 16px);
+                    padding: 10px;
+                    background-color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Fonts(600, 20px);
+                    a{
+                        span{
+                            color: $--orange;
+                        }
                     }
-                }
-                .icon{
+                    .icon{
                         background-color: $--orange;
                         @include Border(50px);
                         width: 26px;
                         height: 26px;
                         @include Flex(row, center, center);
                         img{
-                        width: 10px;
-                        height: 10px; 
+                            width: 10px;
+                            height: 10px; 
                         }
-                
+                    
+                    }
                 }
-                }
-        }
+            }
         
         }
         .responsive-head{
@@ -63,32 +62,33 @@
             padding: 30px !important;
             @include Border(13px);
             width: 100%;
-            
-
-            .table{
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-                margin-bottom: 70px;
-                .titles{
-                    color: $--light;
-                    background-color: $--orange;
-                    @include Border(13px 13px 0 0);
-                    .col{
-                        border-right: 1px solid $--light;
+            table{
+                width: 100%;
+                tbody{
+                   
+                }
+                tr{
+                    display: flex;
+                    gap: 10px;
+                    margin-bottom: 25px;
+                    td{
+                        width: 30%;
                     }
                 }
-                .orders-section{
-                    .pay-btn{
-                        button{
-                            @include Border(13px);
-                            @include Flex(row, center, center);
-                            background-color:  $--dark;
-                            color: $--light;
-                            width: 100%;
-                            padding: 5px 20px;
-                            border: none;
-                        }
-                    }
-                }
+            }
+        }
+        .a-table{
+            .row{
+                // :nth-child(odd){
+                //     background-color: $--orange;
+                // }
+                div{
+                    border-right: 1px solid $--orange;
+                //     :last-child{
+                //     border: 1px solid transparent;
+                //     background-color: red;
+                // }
+                } 
             }
         }
         .addresses-abroad-table-responsive{

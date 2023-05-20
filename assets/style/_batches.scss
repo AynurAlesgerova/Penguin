@@ -1,7 +1,7 @@
 
-.packages{
+.batches{
    
-    .packages-section{
+    .batches-section{
         width: 85%;
         padding: 20px;
         background-color: $--lightgray;
@@ -9,14 +9,16 @@
         .make-order-btn{
             margin-bottom: 20px;
             button{
-                padding-left: 10px;
+                padding: 10px;
                 background-color: $--light;
-                width: 155px;
-                height: 50px;
                 @include Border(13px);
                 border: none;
-                color: $--orange;
                 @include Fonts(600, 20px);
+                a{
+                    span{
+                        color: $--orange;
+                    }
+                }
                 .icon{
                     background-color: $--orange;
                     @include Border(50px);
@@ -31,75 +33,11 @@
                 }
             }
         }
-        .package-number{
+        .batches-number{
+            cursor: pointer;
             padding: 9px 20px; 
             border: 2px solid $--dark;
             @include Border(13px);
-        }
-        .table{
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-            .titles{
-                color: $--light;
-                background-color: $--orange;
-                @include Border(13px 13px 0 0);
-                .col{
-                            @include Flex(row, none, center);
-                    border-right: 1px solid $--light;
-                }
-                // :last-child {
-                //     border-right: 1px solid $--orange !important ;
-                // }
-            }
-           .packages-row{
-            // :nth-child(odd) {
-            //     background-color: $--light;
-            // }
-            // :nth-child(even) {
-            //     background-color: $--lightgray;
-            // }
-            width: 100%;
-            .col{
-                .insure-btn{
-                    background-color: $--green;
-                    width: 105px;
-                    height: 35px;
-                    color: $--light;
-                    @include Border(13px);
-                    border: none;
-                    @include Flex(row, center, center);
-                }
-                .open-detail{
-                    background-color: $--light;
-                    @include Border(50px);
-                    width: 35px;
-                    height: 35px;
-                    @include Flex(row, center, center);
-                    img{
-                        width: 20px;
-                        height: 20px; 
-                    }
-                    
-                }  
-            }
-            .details{
-                width: 100%;
-                padding: 20px;
-                .products{
-                    width: 48%;
-                    background-color: $--orange;
-                    color: $--light;
-                    @include Border(13px);
-                    border: none;
-                }
-                .history{
-                    width: 48%;
-                    background-color: $--dark;
-                    color: $--light;
-                    @include Border(13px);
-                    border: none;
-                }
-            }
-           }
         }
         .pages{
             .previous{
@@ -122,7 +60,43 @@
             }
         }
     }
-    .packages-section-responsive{
+    .batches-section-responsive{
         display: none;
+    }
+} 
+
+
+
+#products-modal{
+    .modal-dialog{
+        .modal-content{
+            padding: 10px 35px;
+            .modal-header{
+                padding: 10px 0;
+                .title{
+                    .img-div{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $--orange;
+                        @include Flex(row,center,center);
+                        @include Border(50%);
+                        img{
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    .modal-title{
+                        @include Fonts(600,24px);
+                        color: $--orange;
+                    }
+                }
+            }
+            .modal-body{
+                padding: 0;
+                p{
+                    @include Fonts(600,20px);
+                }
+            }
+        }
     }
 }

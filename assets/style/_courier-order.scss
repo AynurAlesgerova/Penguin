@@ -17,26 +17,30 @@
             .make-order-btn{
                 margin-bottom: 20px;
                 button{
-                padding-left: 10px;
-                background-color: $--light;
-                @include Border(13px);
-                border: none;
-                @include Fonts(600, 18px);
-                color: $--orange;
-                .icon{
+                    padding: 10px;
+                    background-color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Fonts(600, 20px);
+                    a{
+                        span{
+                            color: $--orange;
+                        }
+                    }
+                    .icon{
                         background-color: $--orange;
                         @include Border(50px);
                         width: 26px;
                         height: 26px;
                         @include Flex(row, center, center);
                         img{
-                        width: 10px;
-                        height: 10px; 
+                            width: 10px;
+                            height: 10px; 
                         }
-                
+                    
+                    }
                 }
-                }
-        }
+            }
         
         }
         .services{
@@ -162,7 +166,7 @@
 
 }
 
-.modal{
+#courier-order-modal{
     padding-top: 40px;
     .modal-dialog{
         .modal-content{

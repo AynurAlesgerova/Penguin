@@ -8,7 +8,7 @@ $(".close-icon").on("click",function(){
 
 
 // ------Register-------
-$("#info").on("click",function(){
+$("#id-card-info").on("click",function(){
     $(".id-cards").addClass("d-block").removeClass("d-none")
     // $(".id-cards").toggle()
 })
@@ -53,3 +53,15 @@ $("#choosed-section").on("click", function() {
     $("#choosed-logo").addClass("choosed-logo")
     $("#current-logo").addClass("d-none")
 });
+
+
+
+
+// ----- Make-order ------
+$("#delete-btn").on("click",function(){
+    $(".new-form").addClass("d-none").removeClass("d-block")
+})
+
+$(".add-new-link").on("click",function(){
+    $(".new-form").addClass("d-block").removeClass("d-none")
+})

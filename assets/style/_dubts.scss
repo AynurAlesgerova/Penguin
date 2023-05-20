@@ -20,26 +20,30 @@
             .make-order-btn{
                 margin-bottom: 20px;
                 button{
-                padding: 5px 10px;
-                background-color: $--light;
-                @include Border(13px);
-                border: none;
-                color: $--orange;
-                @include Fonts(600, 20px);
-                .icon{
+                    padding: 10px;
+                    background-color: $--light;
+                    @include Border(13px);
+                    border: none;
+                    @include Fonts(600, 20px);
+                    a{
+                        span{
+                            color: $--orange;
+                        }
+                    }
+                    .icon{
                         background-color: $--orange;
                         @include Border(50px);
                         width: 26px;
                         height: 26px;
                         @include Flex(row, center, center);
                         img{
-                        width: 10px;
-                        height: 10px; 
+                            width: 10px;
+                            height: 10px; 
                         }
-                
+                    
+                    }
                 }
-                }
-        }
+            }
         
         }
         .services{

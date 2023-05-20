@@ -848,7 +848,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
 .register-section .bg-sign-up form .col {
   position: relative;
 }
-.register-section .bg-sign-up form .col #info {
+.register-section .bg-sign-up form .col #id-card-info {
   cursor: pointer;
   position: absolute;
   right: 18px;
@@ -1342,10 +1342,10 @@ header .header-menu-bar .menu-section #pages .icons div img {
   display: none !important;
 }
 
-#exampleModal1 .modal-dialog .modal-content {
+#pay-modal .modal-dialog .modal-content {
   padding: 10px;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-header .title .img-div {
+#pay-modal .modal-dialog .modal-content .modal-header .title .img-div {
   width: 30px;
   height: 30px;
   background-color: #FF6600;
@@ -1359,22 +1359,22 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-header .title .img-div img {
+#pay-modal .modal-dialog .modal-content .modal-header .title .img-div img {
   width: 15px;
   height: 15px;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-header .title .modal-title {
+#pay-modal .modal-dialog .modal-content .modal-header .title .modal-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #FF6600;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-body form label {
+#pay-modal .modal-dialog .modal-content .modal-body form label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-footer #by-card {
+#pay-modal .modal-dialog .modal-content .modal-footer #by-card {
   background-color: #FF6600;
   padding: 8px 20px;
   border: none;
@@ -1385,7 +1385,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-#exampleModal1 .modal-dialog .modal-content .modal-footer #from-balance {
+#pay-modal .modal-dialog .modal-content .modal-footer #from-balance {
   background-color: #4CB71A;
   padding: 8px 20px;
   border: none;
@@ -1397,10 +1397,10 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -o-border-radius: 13px;
 }
 
-#exampleModal2 .modal-dialog .modal-content {
+#edit-modal .modal-dialog .modal-content {
   padding: 10px;
 }
-#exampleModal2 .modal-dialog .modal-content .modal-header .title .img-div {
+#edit-modal .modal-dialog .modal-content .modal-header .title .img-div {
   width: 30px;
   height: 30px;
   background-color: #FF6600;
@@ -1414,17 +1414,17 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#exampleModal2 .modal-dialog .modal-content .modal-header .title .img-div img {
+#edit-modal .modal-dialog .modal-content .modal-header .title .img-div img {
   width: 15px;
   height: 15px;
 }
-#exampleModal2 .modal-dialog .modal-content .modal-header .title .modal-title {
+#edit-modal .modal-dialog .modal-content .modal-header .title .modal-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #FF6600;
 }
-#exampleModal2 .modal-dialog .modal-content .modal-footer #save {
+#edit-modal .modal-dialog .modal-content .modal-footer #save {
   background-color: #FF6600;
   padding: 8px 20px;
   border: none;
@@ -1439,15 +1439,15 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-size: 20px;
 }
 
-#exampleModal3 .modal-dialog .modal-content {
+#delete-modal .modal-dialog .modal-content {
   padding: 10px;
 }
-#exampleModal3 .modal-dialog .modal-content .modal-body h3 {
+#delete-modal .modal-dialog .modal-content .modal-body h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 26px;
 }
-#exampleModal3 .modal-dialog .modal-content .modal-footer #no {
+#delete-modal .modal-dialog .modal-content .modal-footer #no {
   background-color: #fff;
   padding: 8px;
   border: 1px solid #000000;
@@ -1461,7 +1461,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-weight: 600;
   font-size: 20px;
 }
-#exampleModal3 .modal-dialog .modal-content .modal-footer #delete {
+#delete-modal .modal-dialog .modal-content .modal-footer #delete {
   background-color: #FF6600;
   padding: 8px 20px;
   border: none;
@@ -1476,10 +1476,10 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-size: 20px;
 }
 
-#exampleModal4 .modal-dialog .modal-content {
+#pay-by-card .modal-dialog .modal-content {
   padding: 0px 20px;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-header .title .img-div {
+#pay-by-card .modal-dialog .modal-content .modal-header .title .img-div {
   width: 30px;
   height: 30px;
   background-color: #FF6600;
@@ -1493,36 +1493,36 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-header .title .img-div img {
+#pay-by-card .modal-dialog .modal-content .modal-header .title .img-div img {
   width: 15px;
   height: 15px;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-header .title .modal-title {
+#pay-by-card .modal-dialog .modal-content .modal-header .title .modal-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: #FF6600;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-body label {
+#pay-by-card .modal-dialog .modal-content .modal-body label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 18px;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-body #month {
+#pay-by-card .modal-dialog .modal-content .modal-body #month {
   border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
   -ms-border-radius: 5px 0 0 5px;
   -o-border-radius: 5px 0 0 5px;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-body #year {
+#pay-by-card .modal-dialog .modal-content .modal-body #year {
   border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-footer #refusal {
+#pay-by-card .modal-dialog .modal-content .modal-footer #refusal {
   background-color: #fff;
   padding: 8px 20px;
   border: 1px solid #000000;
@@ -1536,7 +1536,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-weight: 600;
   font-size: 20px;
 }
-#exampleModal4 .modal-dialog .modal-content .modal-footer #pay {
+#pay-by-card .modal-dialog .modal-content .modal-footer #pay {
   background-color: #FF6600;
   padding: 8px 20px;
   border: none;
@@ -1731,32 +1731,32 @@ header .header-menu-bar .menu-section #pages .icons div img {
   border: none;
 }
 
-.packages .packages-section {
+.batches .batches-section {
   width: 85%;
   padding: 20px;
   background-color: #F5F5F5;
   padding: 30px 50px 200px 50px !important;
 }
-.packages .packages-section .make-order-btn {
+.batches .batches-section .make-order-btn {
   margin-bottom: 20px;
 }
-.packages .packages-section .make-order-btn button {
-  padding-left: 10px;
+.batches .batches-section .make-order-btn button {
+  padding: 10px;
   background-color: #fff;
-  width: 155px;
-  height: 50px;
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
 }
-.packages .packages-section .make-order-btn button .icon {
+.batches .batches-section .make-order-btn button a span {
+  color: #FF6600;
+}
+.batches .batches-section .make-order-btn button .icon {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -1770,11 +1770,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   justify-content: center;
   align-items: center;
 }
-.packages .packages-section .make-order-btn button .icon img {
+.batches .batches-section .make-order-btn button .icon img {
   width: 10px;
   height: 10px;
 }
-.packages .packages-section .package-number {
+.batches .batches-section .batches-number {
+  cursor: pointer;
   padding: 9px 20px;
   border: 2px solid #000000;
   border-radius: 13px;
@@ -1783,89 +1784,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-.packages .packages-section .table {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-.packages .packages-section .table .titles {
-  color: #fff;
-  background-color: #FF6600;
-  border-radius: 13px 13px 0 0;
-  -webkit-border-radius: 13px 13px 0 0;
-  -moz-border-radius: 13px 13px 0 0;
-  -ms-border-radius: 13px 13px 0 0;
-  -o-border-radius: 13px 13px 0 0;
-}
-.packages .packages-section .table .titles .col {
-  display: flex;
-  flex-direction: row;
-  justify-content: none;
-  align-items: center;
-  border-right: 1px solid #fff;
-}
-.packages .packages-section .table .packages-row {
-  width: 100%;
-}
-.packages .packages-section .table .packages-row .col .insure-btn {
-  background-color: #4CB71A;
-  width: 105px;
-  height: 35px;
-  color: #fff;
-  border-radius: 13px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.packages .packages-section .table .packages-row .col .open-detail {
-  background-color: #fff;
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.packages .packages-section .table .packages-row .col .open-detail img {
-  width: 20px;
-  height: 20px;
-}
-.packages .packages-section .table .packages-row .details {
-  width: 100%;
-  padding: 20px;
-}
-.packages .packages-section .table .packages-row .details .products {
-  width: 48%;
-  background-color: #FF6600;
-  color: #fff;
-  border-radius: 13px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  border: none;
-}
-.packages .packages-section .table .packages-row .details .history {
-  width: 48%;
-  background-color: #000000;
-  color: #fff;
-  border-radius: 13px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  border: none;
-}
-.packages .packages-section .pages .previous {
+.batches .batches-section .pages .previous {
   padding: 13px 25px;
   display: flex;
   flex-direction: row;
@@ -1884,7 +1803,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   color: #8B8B8B;
   border: none;
 }
-.packages .packages-section .pages .next {
+.batches .batches-section .pages .next {
   padding: 13px 25px;
   background-color: #FF6600;
   display: flex;
@@ -1899,8 +1818,47 @@ header .header-menu-bar .menu-section #pages .icons div img {
   color: #fff;
   border: none;
 }
-.packages .packages-section-responsive {
+.batches .batches-section-responsive {
   display: none;
+}
+
+#products-modal .modal-dialog .modal-content {
+  padding: 10px 35px;
+}
+#products-modal .modal-dialog .modal-content .modal-header {
+  padding: 10px 0;
+}
+#products-modal .modal-dialog .modal-content .modal-header .title .img-div {
+  width: 30px;
+  height: 30px;
+  background-color: #FF6600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+#products-modal .modal-dialog .modal-content .modal-header .title .img-div img {
+  width: 15px;
+  height: 15px;
+}
+#products-modal .modal-dialog .modal-content .modal-header .title .modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #FF6600;
+}
+#products-modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+#products-modal .modal-dialog .modal-content .modal-body p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .dubts .balance-dubts {
@@ -1922,7 +1880,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
 }
 .dubts .balance-dubts .head .make-order-btn button {
-  padding: 5px 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -1930,10 +1888,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.dubts .balance-dubts .head .make-order-btn button a span {
+  color: #FF6600;
 }
 .dubts .balance-dubts .head .make-order-btn button .icon {
   background-color: #FF6600;
@@ -2129,7 +2089,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
 }
 .make-courier-order .courier-order-section .head .make-order-btn button {
-  padding-left: 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -2139,7 +2099,9 @@ header .header-menu-bar .menu-section #pages .icons div img {
   border: none;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
+}
+.make-courier-order .courier-order-section .head .make-order-btn button a span {
   color: #FF6600;
 }
 .make-courier-order .courier-order-section .head .make-order-btn button .icon {
@@ -2347,10 +2309,10 @@ header .header-menu-bar .menu-section #pages .icons div img {
   border: none;
 }
 
-.modal {
+#courier-order-modal {
   padding-top: 40px;
 }
-.modal .modal-dialog .modal-content .modal-header .orders {
+#courier-order-modal .modal-dialog .modal-content .modal-header .orders {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2368,7 +2330,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   border: none;
   gap: 10px;
 }
-.modal .modal-dialog .modal-content .modal-header .orders div {
+#courier-order-modal .modal-dialog .modal-content .modal-header .orders div {
   background-color: #FF6600;
   border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -2382,45 +2344,45 @@ header .header-menu-bar .menu-section #pages .icons div img {
   justify-content: center;
   align-items: center;
 }
-.modal .modal-dialog .modal-content .modal-header .orders div img {
+#courier-order-modal .modal-dialog .modal-content .modal-header .orders div img {
   width: 20px;
   height: 20px;
 }
-.modal .modal-dialog .modal-content .modal-header .close img {
+#courier-order-modal .modal-dialog .modal-content .modal-header .close img {
   width: 20px;
   height: 20px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .choose-package {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package {
   padding-right: 20px;
   width: 50%;
 }
-.modal .modal-dialog .modal-content .modal-body .section .choose-package table input {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package table input {
   width: 15px;
   height: 15px;
 }
-.modal .modal-dialog .modal-content .modal-body .section h5 {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section h5 {
   display: none;
 }
-.modal .modal-dialog .modal-content .modal-body .section form h5 {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section form h5 {
   display: block;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive {
   display: none;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order {
   width: 49%;
   border-left: 2px solid #FF6600;
   padding-left: 10px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order form label {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order form label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order form .select {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order form .select {
   border-radius: 5px 0 0 5px;
   -webkit-border-radius: 5px 0 0 5px;
   -moz-border-radius: 5px 0 0 5px;
@@ -2428,26 +2390,26 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -o-border-radius: 5px 0 0 5px;
   width: 45%;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order form #number {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order form #number {
   border-radius: 0 5px 5px 0;
   -webkit-border-radius: 0 5px 5px 0;
   -moz-border-radius: 0 5px 5px 0;
   -ms-border-radius: 0 5px 5px 0;
   -o-border-radius: 0 5px 5px 0;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:checked {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:checked {
   background-color: #a77e2d !important;
   color: #ffffff !important;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:after {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .checkbox:after {
   box-shadow: none !important;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order .payment span {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .payment span {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order .payment div {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .payment div {
   border: 2px solid #FF6600;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -2457,7 +2419,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   color: #FF6600;
   padding: 5px 8px;
 }
-.modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
+#courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 17px;
@@ -2637,9 +2599,6 @@ header .header-menu-bar .menu-section #pages .icons div img {
 .make-order-section .responsive-h3 {
   display: none;
 }
-.make-order-section .responsive-turkey-btn {
-  display: none !important;
-}
 .make-order-section .desktop-form {
   position: relative;
   background-color: #fff;
@@ -2663,7 +2622,31 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
   background-color: #fff;
 }
-.make-order-section .desktop-form .delete-btn {
+.make-order-section .new-form {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.make-order-section .new-form button {
+  padding: 5px 10px;
+  border: 2px solid #FF6600;
+  color: #FF6600;
+  border-radius: 13px;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.make-order-section .new-form .delete-btn {
+  cursor: pointer;
   position: absolute;
   right: 20px;
   top: 20px;
@@ -2681,7 +2664,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   width: 25px;
   height: 25px;
 }
-.make-order-section .desktop-form .delete-btn .img {
+.make-order-section .new-form .delete-btn .img {
   border-radius: 50px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -2692,18 +2675,13 @@ header .header-menu-bar .menu-section #pages .icons div img {
   width: 20px;
   height: 20px;
 }
-.make-order-section .responsive-form {
-  display: none !important;
-}
 .make-order-section .chooses .form-check-label {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
 }
-.make-order-section .chooses-responsive {
-  display: none !important;
-}
 .make-order-section .buttons .add-new-link {
+  border: 1px solid #FF6600;
   width: 15%;
   background-color: #fff;
   border-radius: 13px;
@@ -2780,7 +2758,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
 }
 .addresses-abroad .addresses-abroad-section .head .make-order-btn button {
-  padding: 5px 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -2788,13 +2766,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
-}
-.addresses-abroad .addresses-abroad-section .head .make-order-btn button button span {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
+}
+.addresses-abroad .addresses-abroad-section .head .make-order-btn button a span {
+  color: #FF6600;
 }
 .addresses-abroad .addresses-abroad-section .head .make-order-btn button .icon {
   background-color: #FF6600;
@@ -2845,37 +2822,19 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -o-border-radius: 13px;
   width: 100%;
 }
-.addresses-abroad .addresses-abroad-section .addresses-abroad-table .table {
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 70px;
-}
-.addresses-abroad .addresses-abroad-section .addresses-abroad-table .table .titles {
-  color: #fff;
-  background-color: #FF6600;
-  border-radius: 13px 13px 0 0;
-  -webkit-border-radius: 13px 13px 0 0;
-  -moz-border-radius: 13px 13px 0 0;
-  -ms-border-radius: 13px 13px 0 0;
-  -o-border-radius: 13px 13px 0 0;
-}
-.addresses-abroad .addresses-abroad-section .addresses-abroad-table .table .titles .col {
-  border-right: 1px solid #fff;
-}
-.addresses-abroad .addresses-abroad-section .addresses-abroad-table .table .orders-section .pay-btn button {
-  border-radius: 13px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000;
-  color: #fff;
+.addresses-abroad .addresses-abroad-section .addresses-abroad-table table {
   width: 100%;
-  padding: 5px 20px;
-  border: none;
+}
+.addresses-abroad .addresses-abroad-section .addresses-abroad-table table tr {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.addresses-abroad .addresses-abroad-section .addresses-abroad-table table tr td {
+  width: 30%;
+}
+.addresses-abroad .addresses-abroad-section .a-table .row div {
+  border-right: 1px solid #FF6600;
 }
 .addresses-abroad .addresses-abroad-section .addresses-abroad-table-responsive {
   display: none !important;
@@ -2900,7 +2859,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
 }
 .corrections .corrections-section .head .make-order-btn button {
-  padding: 5px 15px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -2908,10 +2867,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.corrections .corrections-section .head .make-order-btn button a span {
+  color: #FF6600;
 }
 .corrections .corrections-section .head .make-order-btn button .icon {
   background-color: #FF6600;
@@ -3031,21 +2992,29 @@ header .header-menu-bar .menu-section #pages .icons div img {
   background-color: #fff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  position: relative;
   border-radius: 13px;
   -webkit-border-radius: 13px;
   -moz-border-radius: 13px;
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
 }
-.corrections .corrections-section .corrections-table form .row .col {
+.corrections .corrections-section .corrections-table form .row .col-md-4 {
   position: relative;
 }
-.corrections .corrections-section .corrections-table form .row .col img {
+.corrections .corrections-section .corrections-table form .row .col-md-4 img {
   position: absolute;
   right: 20px;
   top: 9px;
   width: 22px;
   height: 22px;
+  cursor: pointer;
+}
+.corrections .corrections-section .corrections-table form .row .col-md-4 #id-card-info {
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 5px;
 }
 .corrections .corrections-section .corrections-table form .save-btn {
   text-align: end;
@@ -3064,10 +3033,20 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-weight: 600;
   font-size: 18px;
 }
-.corrections .corrections-section h4 {
-  display: none;
+.corrections .corrections-section .corrections-table .id-cards {
+  position: absolute;
+  top: 150px;
+  left: 19px;
 }
-.corrections .corrections-section .corrections-table-responsive {
+.corrections .corrections-section .corrections-table .id-cards #identification-card-1 {
+  width: 300px;
+  height: 200px;
+}
+.corrections .corrections-section .corrections-table .id-cards #identification-card-2 {
+  width: 368px;
+  height: 224px;
+}
+.corrections .corrections-section .responsive-header {
   display: none !important;
 }
 
@@ -3090,7 +3069,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   margin-bottom: 20px;
 }
 .awaiting-approval .awaiting-approval-section .head .make-order-btn button {
-  padding: 5px 10px;
+  padding: 10px;
   background-color: #fff;
   border-radius: 13px;
   -webkit-border-radius: 13px;
@@ -3098,10 +3077,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   -ms-border-radius: 13px;
   -o-border-radius: 13px;
   border: none;
-  color: #FF6600;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 20px;
+}
+.awaiting-approval .awaiting-approval-section .head .make-order-btn button a span {
+  color: #FF6600;
 }
 .awaiting-approval .awaiting-approval-section .head .make-order-btn button .icon {
   background-color: #FF6600;
@@ -3988,24 +3969,62 @@ header .header-menu-bar .menu-section #pages .icons div img {
     color: #fff;
     border: none;
   }
-  .packages {
+  .batches {
     display: flex;
     flex-direction: column !important;
   }
-  .packages .packages-section {
+  .batches .batches-section {
     display: none !important;
   }
-  .packages .packages-section-responsive {
+  .batches .batches-section-responsive {
     display: block !important;
     padding: 20px 30px;
     background-color: #F5F5F5;
   }
-  .packages .packages-section-responsive h5 {
+  .batches .batches-section-responsive h5 {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
-  .packages .packages-section-responsive .package-number {
+  .batches .batches-section-responsive .make-order-btn {
+    margin-bottom: 20px;
+  }
+  .batches .batches-section-responsive .make-order-btn button {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 13px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    -ms-border-radius: 13px;
+    -o-border-radius: 13px;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .batches .batches-section-responsive .make-order-btn button a span {
+    color: #FF6600;
+  }
+  .batches .batches-section-responsive .make-order-btn button .icon {
+    background-color: #FF6600;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .batches .batches-section-responsive .make-order-btn button .icon img {
+    width: 10px;
+    height: 10px;
+  }
+  .batches .batches-section-responsive .batches-number {
+    cursor: pointer;
     width: 80%;
     margin-bottom: 20px;
     padding: 9px 0 9px 10px;
@@ -4016,10 +4035,10 @@ header .header-menu-bar .menu-section #pages .icons div img {
     -ms-border-radius: 13px;
     -o-border-radius: 13px;
   }
-  .packages .packages-section-responsive .package-number img {
+  .batches .batches-section-responsive .batches-number img {
     margin-left: 35px;
   }
-  .packages .packages-section-responsive .responsive-table .product {
+  .batches .batches-section-responsive .responsive-table .product {
     margin-bottom: 20px;
     position: relative;
     border-radius: 14.2401px;
@@ -4032,26 +4051,26 @@ header .header-menu-bar .menu-section #pages .icons div img {
     gap: 40px;
     padding: 13px 20px;
   }
-  .packages .packages-section-responsive .responsive-table .product .icon-close {
+  .batches .batches-section-responsive .responsive-table .product .icon-close {
     position: absolute;
     right: 25px;
     top: 25px;
   }
-  .packages .packages-section-responsive .responsive-table .product .info {
+  .batches .batches-section-responsive .responsive-table .product .info {
     border-bottom: 1px solid #DCDCDC;
     padding: 10px 0;
   }
-  .packages .packages-section-responsive .responsive-table .product p {
+  .batches .batches-section-responsive .responsive-table .product p {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
-  .packages .packages-section-responsive .responsive-table .product span {
+  .batches .batches-section-responsive .responsive-table .product span {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
-  .packages .packages-section-responsive .responsive-table .product .product-btn {
+  .batches .batches-section-responsive .responsive-table .product .product-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -4063,7 +4082,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
     padding: 8px;
     border: none;
   }
-  .packages .packages-section-responsive .responsive-table .product .history-btn {
+  .batches .batches-section-responsive .responsive-table .product .history-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -4075,7 +4094,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
     padding: 8px;
     border: none;
   }
-  .packages .packages-section-responsive .responsive-table .product .insure-btn {
+  .batches .batches-section-responsive .responsive-table .product .insure-btn {
     border-radius: 13px;
     -webkit-border-radius: 13px;
     -moz-border-radius: 13px;
@@ -4087,7 +4106,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
     padding: 8px;
     border: none;
   }
-  .packages .packages-section-responsive .pages .previous {
+  .batches .batches-section-responsive .pages .previous {
     padding: 8px 15px;
     display: flex;
     flex-direction: row;
@@ -4102,7 +4121,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
     color: #8B8B8B;
     border: none;
   }
-  .packages .packages-section-responsive .pages .next {
+  .batches .batches-section-responsive .pages .next {
     padding: 8px 15px;
     display: flex;
     flex-direction: row;
@@ -4277,49 +4296,49 @@ header .header-menu-bar .menu-section #pages .icons div img {
     color: #fff;
     border: none;
   }
-  #exampleModal1 .modal-content {
+  #pay-modal .modal-content {
     padding: 0 20px !important;
   }
-  #exampleModal1 .modal-content .modal-header {
+  #pay-modal .modal-content .modal-header {
     padding: 14px 0;
   }
-  #exampleModal1 .modal-content .modal-header .modal-title {
+  #pay-modal .modal-content .modal-header .modal-title {
     font-size: 18px !important;
   }
-  #exampleModal1 .modal-content .modal-footer {
+  #pay-modal .modal-content .modal-footer {
     display: flex;
     flex-direction: column;
   }
-  #exampleModal1 .modal-content .modal-footer button {
+  #pay-modal .modal-content .modal-footer button {
     width: 100%;
   }
-  #exampleModal2 .modal-footer button {
+  #edit-modal .modal-footer button {
     width: 100%;
   }
-  #exampleModal3 .modal-content .modal-body h3 {
+  #delete-modal .modal-content .modal-body h3 {
     text-align: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
-  #exampleModal3 .modal-content .modal-footer {
+  #delete-modal .modal-content .modal-footer {
     display: flex;
     flex-direction: column-reverse;
   }
-  #exampleModal3 .modal-content .modal-footer button {
+  #delete-modal .modal-content .modal-footer button {
     width: 100%;
   }
-  #exampleModal4 .modal-content {
+  #pay-by-card .modal-content {
     padding: 14px 0;
   }
-  #exampleModal4 .modal-content .modal-header {
+  #pay-by-card .modal-content .modal-header {
     padding: 14px 0;
   }
-  #exampleModal4 .modal-content .modal-footer {
+  #pay-by-card .modal-content .modal-footer {
     display: flex;
     flex-direction: column-reverse;
   }
-  #exampleModal4 .modal-content .modal-footer button {
+  #pay-by-card .modal-content .modal-footer button {
     width: 100%;
   }
   .make-order-section {
@@ -4337,106 +4356,14 @@ header .header-menu-bar .menu-section #pages .icons div img {
   .make-order-section .info {
     display: none !important;
   }
-  .make-order-section .responsive-turkey-btn {
-    display: flex !important;
-    padding: 5px 10px;
-    border: 2px solid #FF6600;
-    color: #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 40%;
-  }
-  .make-order-section .desktop-form {
-    display: none !important;
-  }
-  .make-order-section .responsive-form {
-    display: block !important;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-  }
-  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive {
-    width: 100%;
-    background-color: #fff;
-    border: 1.5px solid #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0px;
-  }
-  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    color: #FF6600;
-    width: 25px;
-    height: 25px;
-  }
-  .make-order-section .responsive-form .buttons-responsive .add-new-link-responsive div .img {
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    background-color: #FF6600;
-    padding: 5px;
-    width: 20px;
-    height: 20px;
-  }
-  .make-order-section .responsive-form .buttons-responsive .make-order-btn-responsive {
-    background-color: #FF6600;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 0;
-    width: 100%;
-    border: none;
-    color: #fff;
-  }
-  .make-order-section .chooses {
-    display: none !important;
-  }
-  .make-order-section .chooses-responsive {
-    display: flex !important;
-  }
-  .make-order-section .chooses-responsive .form-check-label {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-  }
   .make-order-section .buttons {
-    display: none !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .make-order-section .buttons button {
+    width: 100% !important;
+    padding: 10px 0 !important;
   }
   .dubts {
     display: flex;
@@ -4754,37 +4681,37 @@ header .header-menu-bar .menu-section #pages .icons div img {
     color: #fff;
     border: none;
   }
-  .modal {
+  #courier-order-modal {
     padding: 200px 10px 0 10px;
     padding-left: 10px;
   }
-  .modal .modal-dialog .modal-content .modal-header .orders {
+  #courier-order-modal .modal-dialog .modal-content .modal-header .orders {
     display: flex !important;
     flex-direction: row !important;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
-  .modal .modal-dialog .modal-content .modal-header .orders .icon {
+  #courier-order-modal .modal-dialog .modal-content .modal-header .orders .icon {
     width: 40%;
   }
-  .modal .modal-dialog .modal-content .modal-body {
+  #courier-order-modal .modal-dialog .modal-content .modal-body {
     padding: 0;
   }
-  .modal .modal-dialog .modal-content .modal-body .section {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section {
     display: flex !important;
     flex-direction: column !important;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package {
     display: none !important;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive {
     display: flex !important;
     flex-direction: column !important;
     width: 100%;
     border-bottom: 2px solid #FF6600;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product {
     width: 100%;
     margin-bottom: 20px;
     position: relative;
@@ -4798,33 +4725,33 @@ header .header-menu-bar .menu-section #pages .icons div img {
     gap: 40px;
     padding: 13px 20px;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product .icon-close {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product .icon-close {
     position: absolute;
     right: 25px;
     top: 25px;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product .info {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product .info {
     border-bottom: 1px solid #DCDCDC;
     padding: 10px 0;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product p {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product p {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product span {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .choose-package-responsive .product span {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .section h5 {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section h5 {
     display: block;
     margin: 15px 0;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 16px;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .make-order {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order {
     width: 100%;
     border-left: none;
     padding-top: 15px;
@@ -4837,15 +4764,15 @@ header .header-menu-bar .menu-section #pages .icons div img {
     box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
     background-color: #FFFFFF;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .make-order form h5 {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order form h5 {
     display: none;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .make-order .payment {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .payment {
     display: flex;
     flex-direction: column !important;
     align-items: start !important;
   }
-  .modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
+  #courier-order-modal .modal-dialog .modal-content .modal-body .section .make-order .make-order-btn button {
     width: 100%;
   }
   .addresses-abroad {
@@ -4921,58 +4848,14 @@ header .header-menu-bar .menu-section #pages .icons div img {
   .corrections .corrections-section .corrections-header {
     display: none !important;
   }
-  .corrections .corrections-section .corrections-table {
-    display: none !important;
+  .corrections .corrections-section .responsive-header {
+    display: block !important;
   }
   .corrections .corrections-section h4 {
     display: block;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 18px;
-  }
-  .corrections .corrections-section .corrections-table-responsive {
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100%;
-  }
-  .corrections .corrections-section .corrections-table-responsive .informations {
-    width: 100%;
-    margin-bottom: 20px;
-    position: relative;
-    border-radius: 14.2401px;
-    -webkit-border-radius: 14.2401px;
-    -moz-border-radius: 14.2401px;
-    -ms-border-radius: 14.2401px;
-    -o-border-radius: 14.2401px;
-    box-shadow: 0px 4.38158px 16.4309px rgba(0, 0, 0, 0.1);
-    background-color: #FFFFFF;
-    gap: 40px;
-    padding: 13px 20px;
-  }
-  .corrections .corrections-section .corrections-table-responsive .informations form .row .col {
-    position: relative;
-  }
-  .corrections .corrections-section .corrections-table-responsive .informations form .row .col img {
-    position: absolute;
-    right: 20px;
-    top: 9px;
-    width: 18px;
-    height: 18px;
-  }
-  .corrections .corrections-section .corrections-table-responsive .informations .save-btn {
-    text-align: end;
-  }
-  .corrections .corrections-section .corrections-table-responsive .informations .save-btn button {
-    width: 100%;
-    padding: 8px;
-    color: #fff;
-    background-color: #FF6600;
-    border: none;
-    border-radius: 13px;
-    -webkit-border-radius: 13px;
-    -moz-border-radius: 13px;
-    -ms-border-radius: 13px;
-    -o-border-radius: 13px;
   }
   .awaiting-approval {
     display: flex;

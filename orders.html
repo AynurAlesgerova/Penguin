@@ -259,10 +259,10 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" >
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-modal" >
                                         <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#delete-modal">
                                         <img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
@@ -286,10 +286,10 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-modal">
                                         <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img alt="delete-icon"
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#delete-modal"><img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
                             </div>
@@ -312,10 +312,10 @@
                             <div class="col d-flex justify-content-center align-items-center gap-3">
                                 <button class="insure-btn">Sığortala</button>
                                 <div class="edit-trash d-flex justify-content-center align-items-center gap-3">
-                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <div class="edit" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#edit-modal">
                                         <img alt="edit-icon" src="./assets/images/orders/Vector (31).svg">
                                     </div>
-                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal3"><img alt="delete-icon"
+                                    <div class="delete" type="button"  data-bs-toggle="modal" data-bs-target="#delete-modal"><img alt="delete-icon"
                                             src="./assets/images/orders/Vector (32).svg"></div>
                                 </div>
                             </div>
@@ -323,7 +323,7 @@
                     </tr>
                 </tbody>
             </table>
-            <div class="pay-btn d-flex justify-content-center align-items-center" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal1">
+            <div class="pay-btn d-flex justify-content-center align-items-center" type="button" class="btn " data-bs-toggle="modal" data-bs-target="#pay-modal">
                 <button>
                     <div class="dollar-icon"><img src="./assets/images/orders/Vector (34).svg"></div>
                     <span>Ödəniş et</span>
@@ -410,7 +410,7 @@
 
 
     <!-- Modal-1 -->
-    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="pay-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -436,7 +436,7 @@
                     </form>
                 </div>
                 <div class="modal-footer d-flex">
-                    <button id="by-card" type="button"  data-bs-dismiss="modal" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Bank kartı ilə</button>
+                    <button id="by-card" type="button"  data-bs-dismiss="modal" type="button"  data-bs-toggle="modal" data-bs-target="#pay-by-card">Bank kartı ilə</button>
                     <button id="from-balance" type="button" >Balansdan</button>
                 </div>
             </div>
@@ -445,7 +445,7 @@
 
 
     <!---- Modal 2 ----->
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -479,7 +479,7 @@
 
 
   <!------ Modal 3 ------>
-  <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="delete-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -498,7 +498,7 @@
   </div>
 
   <!------ Modal 4 -------->
-  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="pay-by-card" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
