@@ -848,7 +848,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
 .register-section .bg-sign-up form .col {
   position: relative;
 }
-.register-section .bg-sign-up form .col #id-card-info {
+.register-section .bg-sign-up form .col .id-card-info {
   cursor: pointer;
   position: absolute;
   right: 18px;
@@ -1126,6 +1126,23 @@ header .header-menu-bar .menu-section #pages .icons div img {
 .login-section .bg-login form {
   width: 70%;
 }
+.login-section .bg-login form .col {
+  position: relative;
+}
+.login-section .bg-login form .show-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 20px;
+  height: 15px;
+}
+.login-section .bg-login form .hidden-icon {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 20px;
+  height: 15px;
+}
 .login-section .bg-login .register {
   display: flex;
   flex-direction: row;
@@ -1163,6 +1180,9 @@ header .header-menu-bar .menu-section #pages .icons div img {
   font-weight: 600;
   font-size: 18px;
 }
+.menu-bar .menu div {
+  cursor: pointer;
+}
 .menu-bar .menu .menu-logo {
   background-color: #FF6600;
   border-radius: 50px;
@@ -1177,33 +1197,12 @@ header .header-menu-bar .menu-section #pages .icons div img {
   justify-content: center;
   align-items: center;
 }
-.menu-bar .menu .menu-logo #current-logo {
+.menu-bar .menu .menu-logo .current-logo {
   width: 10px;
   height: 10px;
 }
-.menu-bar .menu .menu-logo #choosed-logo {
+.menu-bar .menu .menu-logo .choosed-logo {
   display: none;
-}
-
-.bg-orange-rounded {
-  background-color: #FF6600;
-  padding: 5px;
-  border-radius: 10px;
-}
-.bg-orange-rounded .menu-logo {
-  background-color: #fff !important;
-}
-.bg-orange-rounded .menu-logo img {
-  color: #FF6600 !important;
-}
-.bg-orange-rounded span {
-  color: #fff;
-}
-
-.choosed-logo {
-  display: block !important;
-  width: 10px;
-  height: 10px;
 }
 
 .orders {
@@ -3010,7 +3009,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
   height: 22px;
   cursor: pointer;
 }
-.corrections .corrections-section .corrections-table form .row .col-md-4 #id-card-info {
+.corrections .corrections-section .corrections-table form .row .col-md-4 .id-card-info {
   cursor: pointer;
   position: absolute;
   right: 18px;
@@ -3036,7 +3035,7 @@ header .header-menu-bar .menu-section #pages .icons div img {
 .corrections .corrections-section .corrections-table .id-cards {
   position: absolute;
   top: 150px;
-  left: 19px;
+  left: 200px;
 }
 .corrections .corrections-section .corrections-table .id-cards #identification-card-1 {
   width: 300px;

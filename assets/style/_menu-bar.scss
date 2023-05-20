@@ -20,17 +20,20 @@
         }
     }
     .menu{
+        div{
+            cursor: pointer;
+        }
         .menu-logo{
                 background-color: $--orange;
                 @include Border(50px);
                 width: 26px;
                 height: 26px;
                 @include Flex(row, center, center);
-                #current-logo{
+                .current-logo{
                     width: 10px;
                     height: 10px; 
                 }
-                #choosed-logo{
+                .choosed-logo{
                     display: none ;
                 }
         }
@@ -39,24 +42,23 @@
 
 
 
-// for jquery
-.bg-orange-rounded{
-    background-color: $--orange;
-    padding: 5px;
-    border-radius: 10px;
-        .menu-logo{
-            background-color: $--light !important;
-            img{
-                color: $--orange !important;
-            }
-    }
-    span{
-        color: $--light; 
-    }
-}
+// .active{
+//     background-color: $--orange;
+//     padding: 5px;
+//     border-radius: 10px;
+//         .menu-logo{
+//             background-color: $--light !important;
+//             img{
+//                 color: $--orange !important;
+//             }
+//     }
+//     span{
+//         color: $--light; 
+//     }
+// }
 
-.choosed-logo{
-    display: block !important;
-    width: 10px;
-    height: 10px;
-}
+// .choosed-logo{
+//     display: block !important;
+//     width: 10px;
+//     height: 10px;
+// }
