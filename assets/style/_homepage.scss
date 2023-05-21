@@ -15,8 +15,9 @@
 .calculator{
     .calculator-info{
         width: 30%;
+        height: 100%;
         background-color: $--orange;
-        padding: 10px 10px 0 10px;
+        padding: 25px 10px 0 10px;
         color: $--light;
         .calc-logo-img{
             background-color: $--light;
@@ -34,13 +35,16 @@
         }
         .calc-img{
             img{
-                    width: 421px;
-                    height: 486px;
+                    width: 280px;
+                    height: 350px;
             }
         }
     }
     .calculations{
         width: 70%;
+        h1{
+            @include Fonts(600,26px);
+        }
         .select-form{
             width: 800px;
             select{
@@ -95,7 +99,6 @@
         }
         .advantage{
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            gap: 20px;
             .logo{
                 background-color: $--orange;
                 @include Border(50px);
@@ -120,7 +123,7 @@
         }
         :nth-child(1){
             width: 30%;
-            padding: 10px 20px;
+            padding: 0px 20px;
         }
         :nth-child(2){
             width: 30%;
@@ -184,19 +187,80 @@
         display: none !important;
     }
 }
+.about-info{
+    margin-bottom: 50px;
+    padding: 250px 240px ;
+    position: relative;
+    background-color: #EEEEEE;
+    h1{
+        color: $--orange;
+        z-index: 999;
+        text-align: center;
+        @include Fonts(600, 18px);
+    }
+    p{
+        z-index: 999;
+    }
+    .icon-1{
+        position: absolute;
+        top: 0;
+        left: 300px;
+    }
+    .icon-2{
+        position: absolute;
+        top: 0;
+        left: 50%;
+    }
+    .icon-3{
+        position: absolute;
+        top: 0;
+        right: 300px;
+    }
+    .about-logo-img{
+        position: absolute;
+        bottom: 200px;
+        left: 550px;
+    }
+    .about-letter{
+        position: absolute;
+        bottom: 70px;
+        left: 300px;
+    }
+    .car-icon{
+        position: absolute;
+        bottom: 90px;
+        left: 230px;
+    }
+    .basket-icon{
+        position: absolute;
+        bottom: 90px;
+        right: 190px;
+       
+    }
+    .box-icon{
+        position: absolute;
+        top: 30px;
+        left: 47%;
+    }
+}
 .latest-news{
     padding: 40px 0;
     .news{
         h2{
             @include Fonts( 600, 34px);
         }
-        span{
-            color: $--orange;
+        .see-all{
+            color: $--orange !important;
             text-align: end;
         }
         .some-news{
             box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
             padding: 20px 30px;
+            .date{
+                .date-info{
+                    color: $--orange;
+                }
+            }
             .logo{
                 margin-bottom: 10px;
                 background-color: $--orange;

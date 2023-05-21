@@ -8,38 +8,38 @@
                         height: 40px;    
                         }
                         .buttons-group{
-                        .menu-box {
-                                display: none;
-                        }
-                        .login-box{
-                                display: none;
-                
-                        }
-                        .register-box{
-                                display: none;
-                        }
-                        .mobile-menu{
-                                display: block;
-                                button{
-                                        @include Flex(row, none, center);
-                                        @include Border(50.1425px);
-                                        gap: 11px;
-                                        background-color: $--light;
-                                        border: none;
-                                        color: $--orange;
-                                        padding: 4px;
+                                .menu-box {
+                                        display: none;
                                 }
-                                .menu-icon-box {
-                                        background-color: $--light;
-                                        @include Border(50px);
-                                        width: 30px;
-                                        height: 30px;
-                                        @include Flex(row, center, center);
-                                        i {
-                                        color: $--orange;
+                                .login-box{
+                                        display: none;
+                        
+                                }
+                                .register-box{
+                                        display: none;
+                                }
+                                .mobile-menu{
+                                        display: block;
+                                        button{
+                                                @include Flex(row, none, center);
+                                                @include Border(50.1425px);
+                                                gap: 11px;
+                                                background-color: $--light;
+                                                border: none;
+                                                color: $--orange;
+                                                padding: 4px;
+                                        }
+                                        .menu-icon-box {
+                                                background-color: $--light;
+                                                @include Border(50px);
+                                                width: 30px;
+                                                height: 30px;
+                                                @include Flex(row, center, center);
+                                                i {
+                                                color: $--orange;
+                                                }
                                         }
                                 }
-                        }
                         }
                 }
                 .penguin-logo-background{
@@ -148,7 +148,44 @@
                         }
                 }
         }
-        
+
+//------Main page header-----    
+       .main-page-header{
+        width: 100%;
+        height: 430px;
+        nav{
+                .buttons-group{
+                        .mobile-menu{
+                                display: block;
+                                button{
+                                        @include Flex(row, none, center);
+                                        @include Border(50.1425px);
+                                        gap: 11px;
+                                        background-color: $--orange;
+                                        border: none;
+                                        color: $--light;
+                                        padding: 4px;
+                                }
+                                .menu-icon-box {
+                                        background-color: $--orange;
+                                        @include Border(50px);
+                                        width: 30px;
+                                        height: 30px;
+                                        @include Flex(row, center, center);
+                                }
+                        }       
+                }
+        }
+       } 
+       .main-page-text{
+        top: 250px;
+        left: 20px;
+        width: 280px;
+        .head{
+            @include Fonts( 600, 20px);
+        }
+       }
+
 //----- Footer -------
         .footer{
                 margin-top: 50px;
@@ -374,6 +411,7 @@
         .highlights{
                 display: flex !important;
                 padding: 20px 0;
+                overflow-y: scroll;
                 .highlight{
                 .highlight-img{
                         width: 100px;
@@ -493,11 +531,22 @@
         }
         .latest-news{
                 .news{
+                        div{
+                                display: flex;
+                                flex-direction: column !important;
+                        }
                         .some-news{
                                 .logo{
                                         width: 40px;
                                         height: 40px;
                                         img{
+                                                width: 20px;
+                                                height: 20px;
+                                        }
+                                }
+                                .date{
+                                        display: flex !important;
+                                        .date-logo{
                                                 width: 20px;
                                                 height: 20px;
                                         }

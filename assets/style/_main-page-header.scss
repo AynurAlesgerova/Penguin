@@ -1,0 +1,173 @@
+.main-page-header{
+    padding: 20px ;
+    position: relative;
+    background-image: url("../images/anasehife/main-page-header-background.svg");
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 100%;
+    nav{
+        .image-box{
+            background-color: $--light;
+            @include Border(50px);
+            width: 60px;
+            height: 60px;
+            @include Flex(row, center, center);
+            img{
+                width: 30px;
+                height: 30px; 
+            }
+        }
+        .buttons-group { 
+            .menu-box {
+                button {
+                    @include Flex(row, none, center);
+                    @include Border(50.1425px);
+                    gap: 11px;
+                    background-color: $--orange;
+                    border: none;
+                    color: $--light;
+                    padding: 4px 25px 4px 8px;
+    
+                    .menu-icon-box {
+                        background-color: $--light;
+                        @include Border(50px);
+                        width: 30px;
+                        height: 30px;
+                        @include Flex(row, center, center);
+    
+                        i {
+                            color: $--orange;
+                        }
+                    }
+                }
+            }
+            .login-box{
+                button {
+                    @include Flex(row, none, center);
+                    @include Border(50.1425px);
+                    gap: 13px;
+                    background-color: $--orange;
+                    border: none;
+                    color: $--orange;
+                    padding: 4px 35px 4px 8px;
+    
+                    .login-icon-box {
+                        background-color: $--light;
+                        @include Border(50px);
+                        width: 30px;
+                        height: 30px;
+                        @include Flex(row, center, center);
+    
+                        i {
+                            color: $--orange;
+                        }
+                    }
+                    a{
+                        color: $--light;
+                    }
+                }
+            }
+            .register-box{
+                button {
+                    @include Flex(row, none, center);
+                    gap: 9px;
+                    background-color: $--dark;
+                    border: none;
+                    color: $--light;
+                    padding: 4px 20px 4px 8px;
+                    @include Border(50.1425px);
+                    .register-icon-box {
+                        background-color: $--light;
+                        @include Border(50px);
+                        width: 30px;
+                        height: 30px;
+                        @include Flex(row, center, center);
+    
+                        i {
+                            color: $--dark;
+                        }
+                        a{
+                                color: $--light;
+                        }
+                    }
+                }
+            }
+            .mobile-menu{
+                display: none;
+            }
+        }
+    }
+    .header-menu-bar{
+        display: none !important;
+        background-color: $--orange;
+        padding: 200px 120px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 999999;
+        .close-icon{
+            cursor: pointer;
+            position: absolute;
+            right: 50px;
+            top: 70px;
+        }
+        .login-register-buttons{
+            display: none !important;
+        }
+        .menu-section{
+            width: 100%;
+            z-index: 9999;
+            #pages{
+                padding: 50px;
+                width: 30%;
+                border-left: 0.5px solid #FFFFFF;
+                &:first-child{
+                    border-left: none;
+            }
+            .page{
+                color: $--light;
+                @include Fonts( 600,30px);
+                .icon-div{
+                    width: 30px;
+                    height: 30px;
+                    background-color: $--light;
+                    @include Border(50px);
+                    @include Flex(row, center,center);
+                    .img{
+                        // width: 25px;
+                        // height: 25px;
+                    }
+                }
+            }
+            .icons{
+                padding-left: 55px;
+                div{
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid $--light;
+                    @include Border(50px);
+                    @include Flex(row, center,center);
+                    img{
+                        color: $--light;
+                    }
+                }
+            }
+            }
+        }
+    }
+}
+.main-page-text{
+    position: absolute;
+    top: 400px;
+    left: 70px;
+    color: $--light;
+    z-index: 999;
+    // line-height: 41px;
+    text-align: start;
+    width: 330px;
+    .head{
+        @include Fonts( 600, 34px);
+
+    }
+}
